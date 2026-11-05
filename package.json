@@ -8,7 +8,7 @@
     "check": "node scripts/build.mjs",
     "check-links": "node scripts/check-links.mjs"
   },
-  "repository": "github:HyperautomationLabs/ai-engineer-map",
+  "repository": "github:hyperautomationlabs-a11y/ai-engineer-map",
   "homepage": "https://hyperautomationlabs.co/university/ai-engineer-map",
   "author": "Hyperautomation Labs",
   "license": "MIT",
