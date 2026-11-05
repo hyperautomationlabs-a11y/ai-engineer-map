@@ -1,0 +1,2039 @@
+{
+ "python-basics": {
+  "id": "kqtD5dpn9C8",
+  "channel": "Programming with Mosh",
+  "minutes": 60,
+  "views": 25838073,
+  "title": "Python for Beginners - Learn Coding with Python in 1 Hour",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=kqtD5dpn9C8"
+ },
+ "python-data-structures": {
+  "id": "W8KRzm-HUcc",
+  "channel": "Corey Schafer",
+  "minutes": 29,
+  "views": 1839156,
+  "title": "Python Tutorial for Beginners 4: Lists, Tuples, and Sets",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=W8KRzm-HUcc"
+ },
+ "python-functions-modules": {
+  "id": "CqvZ3vGoGs0",
+  "channel": "Corey Schafer",
+  "minutes": 22,
+  "views": 1041111,
+  "title": "Python Tutorial for Beginners 9: Import Modules and Exploring The Standard Library",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=CqvZ3vGoGs0"
+ },
+ "python-oop": {
+  "id": "ZDa-Z5JzLYM",
+  "channel": "Corey Schafer",
+  "minutes": 15,
+  "views": 5108096,
+  "title": "Python OOP Tutorial 1: Classes and Instances",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=ZDa-Z5JzLYM"
+ },
+ "python-errors": {
+  "id": "NIWwJbo-9_8",
+  "channel": "Corey Schafer",
+  "minutes": 11,
+  "views": 820444,
+  "title": "Python Tutorial: Using Try/Except Blocks for Error Handling",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=NIWwJbo-9_8"
+ },
+ "python-files-io": {
+  "id": "Uh2ebFW8OYM",
+  "channel": "Corey Schafer",
+  "minutes": 25,
+  "views": 2093650,
+  "title": "Python Tutorial: File Objects - Reading and Writing to Files",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=Uh2ebFW8OYM"
+ },
+ "python-venv-pip": {
+  "id": "AMdG7IjgSPM",
+  "channel": "Corey Schafer",
+  "minutes": 27,
+  "views": 302856,
+  "title": "Python Tutorial: UV - A Faster, All-in-One Package Manager to Replace Pip and Venv",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=AMdG7IjgSPM"
+ },
+ "python-typing": {
+  "id": "RwH2UzC2rIo",
+  "channel": "Corey Schafer",
+  "minutes": 41,
+  "views": 60810,
+  "title": "Python Tutorial: Type Hints - From Basic Annotations to Advanced Generics",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=RwH2UzC2rIo"
+ },
+ "python-async": {
+  "id": "oAkLSJNr5zY",
+  "channel": "Corey Schafer",
+  "minutes": 103,
+  "views": 203344,
+  "title": "Python Tutorial: AsyncIO - Complete Guide to Asynchronous Programming with Animations",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=oAkLSJNr5zY"
+ },
+ "command-line": {
+  "id": "yz7nYlnXLfE",
+  "channel": "freeCodeCamp.org",
+  "minutes": 36,
+  "views": 232393,
+  "title": "Command Line Crash Course",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=yz7nYlnXLfE"
+ },
+ "git-basics": {
+  "id": "8JJ101D3knE",
+  "channel": "Programming with Mosh",
+  "minutes": 69,
+  "views": 3609372,
+  "title": "Git Tutorial for Beginners: Learn Git in 1 Hour",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=8JJ101D3knE"
+ },
+ "github-collab": {
+  "id": "nCKdihvneS0",
+  "channel": "GitHub",
+  "minutes": 4,
+  "views": 339808,
+  "title": "How to create a pull request in 4 min | GitHub for Beginners",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=nCKdihvneS0"
+ },
+ "jupyter": {
+  "id": "5pf0_bpNbkw",
+  "channel": "Rob Mulla",
+  "minutes": 25,
+  "views": 697801,
+  "title": "Jupyter Notebook Complete Beginner Guide - From Jupyter to Jupyterlab, Google Colab and Kaggle!",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=5pf0_bpNbkw"
+ },
+ "json-yaml": {
+  "id": "1uFVr15xDGg",
+  "channel": "TechWorld with Nana",
+  "minutes": 18,
+  "views": 772089,
+  "title": "Yaml Tutorial | Learn YAML in 18 mins",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=1uFVr15xDGg"
+ },
+ "http-rest": {
+  "id": "WXsD0ZgxjRw",
+  "channel": "freeCodeCamp.org",
+  "minutes": 187,
+  "views": 4445721,
+  "title": "APIs for Beginners - How to use an API (Full Course / Tutorial)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=WXsD0ZgxjRw"
+ },
+ "python-requests": {
+  "id": "JVQNywo4AbU",
+  "channel": "Bro Code",
+  "minutes": 9,
+  "views": 332921,
+  "title": "Request API data using Python in 8 minutes! ↩️",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=JVQNywo4AbU"
+ },
+ "env-secrets": {
+  "id": "17UVejOw3zA",
+  "channel": "The Coding Train",
+  "minutes": 12,
+  "views": 310030,
+  "title": "3.4 Hiding API Keys with Environment Variables (dotenv) and Pushing Code to GitHub",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=17UVejOw3zA"
+ },
+ "sql-basics": {
+  "id": "7S_tz1z_5bA",
+  "channel": "Programming with Mosh",
+  "minutes": 190,
+  "views": 15618390,
+  "title": "SQL Course for Beginners [Full Course]",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=7S_tz1z_5bA"
+ },
+ "data-structures-algorithms": {
+  "id": "BgLTDT03QtU",
+  "channel": "NeetCode",
+  "minutes": 21,
+  "views": 827950,
+  "title": "Big-O Notation - For Coding Interviews",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=BgLTDT03QtU"
+ },
+ "testing-pytest": {
+  "id": "cHYq1MRoyI0",
+  "channel": "freeCodeCamp.org",
+  "minutes": 89,
+  "views": 383035,
+  "title": "Pytest Tutorial – How to Test Python Code",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=cHYq1MRoyI0"
+ },
+ "linux-servers": {
+  "id": "YS5Zh7KExvE",
+  "channel": "Learn Linux TV",
+  "minutes": 88,
+  "views": 798527,
+  "title": "SSH for Beginners: Everything You Need to Get Started",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=YS5Zh7KExvE"
+ },
+ "docker": {
+  "id": "3c-iBn73dDE",
+  "channel": "TechWorld with Nana",
+  "minutes": 166,
+  "views": 6566207,
+  "title": "Docker Tutorial for Beginners [FULL COURSE in 3 Hours]",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=3c-iBn73dDE"
+ },
+ "web-backend": {
+  "id": "Lu8lXXlstvM",
+  "channel": "Telusko",
+  "minutes": 123,
+  "views": 715538,
+  "title": "FastAPI for Beginners - Python Web Framework",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=Lu8lXXlstvM"
+ },
+ "web-frontend-basics": {
+  "id": "W6NZfCO5SIk",
+  "channel": "Programming with Mosh",
+  "minutes": 48,
+  "views": 15440862,
+  "title": "JavaScript Course for Beginners – Your First Step to Web Development",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=W6NZfCO5SIk"
+ },
+ "vectors": {
+  "id": "fNk_zzaMoSs",
+  "channel": "3Blue1Brown",
+  "minutes": 10,
+  "views": 13041474,
+  "title": "Vectors | Chapter 1, Essence of linear algebra",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=fNk_zzaMoSs"
+ },
+ "dot-product": {
+  "id": "LyGKycYT2v0",
+  "channel": "3Blue1Brown",
+  "minutes": 14,
+  "views": 3443977,
+  "title": "Dot products and duality | Chapter 9, Essence of linear algebra",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=LyGKycYT2v0"
+ },
+ "matrices": {
+  "id": "XkY2DOUCWMU",
+  "channel": "3Blue1Brown",
+  "minutes": 10,
+  "views": 4500423,
+  "title": "Matrix multiplication as composition | Chapter 4, Essence of linear algebra",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=XkY2DOUCWMU"
+ },
+ "linear-transformations": {
+  "id": "kYB8IZa5AuE",
+  "channel": "3Blue1Brown",
+  "minutes": 11,
+  "views": 7324293,
+  "title": "Linear transformations and matrices | Chapter 3, Essence of linear algebra",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=kYB8IZa5AuE"
+ },
+ "eigen": {
+  "id": "PFDu9oVAE-g",
+  "channel": "3Blue1Brown",
+  "minutes": 17,
+  "views": 6451295,
+  "title": "Eigenvectors and eigenvalues | Chapter 14, Essence of linear algebra",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=PFDu9oVAE-g"
+ },
+ "svd": {
+  "id": "mBcLRGuAFUk",
+  "channel": "MIT OpenCourseWare",
+  "minutes": 14,
+  "views": 727100,
+  "title": "Singular Value Decomposition (the SVD)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=mBcLRGuAFUk"
+ },
+ "tensors": {
+  "id": "exaWOE8jvy8",
+  "channel": "Patrick Loeber",
+  "minutes": 18,
+  "views": 333158,
+  "title": "PyTorch Tutorial 02 - Tensor Basics",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=exaWOE8jvy8"
+ },
+ "functions-graphs": {
+  "id": "kvGsIo1TmsM",
+  "channel": "Khan Academy",
+  "minutes": 8,
+  "views": 3539627,
+  "title": "What is a function? | Functions and their graphs | Algebra II | Khan Academy",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=kvGsIo1TmsM"
+ },
+ "exp-log": {
+  "id": "kqVpPSzkTYA",
+  "channel": "The Organic Chemistry Tutor",
+  "minutes": 10,
+  "views": 3587829,
+  "title": "Logarithms - The Easy Way!",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=kqVpPSzkTYA"
+ },
+ "derivatives": {
+  "id": "N2PpRnFqnqY",
+  "channel": "Khan Academy",
+  "minutes": 7,
+  "views": 1527250,
+  "title": "Derivative as a concept | Derivatives introduction | AP Calculus AB | Khan Academy",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=N2PpRnFqnqY"
+ },
+ "chain-rule": {
+  "id": "YG15m2VwSjA",
+  "channel": "3Blue1Brown",
+  "minutes": 16,
+  "views": 2361654,
+  "title": "Visualizing the chain rule and product rule | Chapter 4, Essence of calculus",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=YG15m2VwSjA"
+ },
+ "partial-derivatives-gradients": {
+  "id": "GkB4vW16QHI",
+  "channel": "Physics Videos by Eugene Khutoryansky",
+  "minutes": 5,
+  "views": 713679,
+  "title": "Gradients and Partial Derivatives",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=GkB4vW16QHI"
+ },
+ "gradient-descent": {
+  "id": "IHZwWFHWa-w",
+  "channel": "3Blue1Brown",
+  "minutes": 21,
+  "views": 9727490,
+  "title": "Gradient descent, how neural networks learn | Deep Learning Chapter 2",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=IHZwWFHWa-w"
+ },
+ "probability-basics": {
+  "id": "uzkc-qNVoOk",
+  "channel": "Khan Academy",
+  "minutes": 8,
+  "views": 5814578,
+  "title": "Probability explained | Independent and dependent events | Probability and Statistics | Khan Academy",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=uzkc-qNVoOk"
+ },
+ "conditional-probability-bayes": {
+  "id": "_IgyaD7vOOA",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 11,
+  "views": 341647,
+  "title": "Conditional Probabilities, Clearly Explained!!!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=_IgyaD7vOOA"
+ },
+ "distributions": {
+  "id": "oI3hZJqXJuc",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 5,
+  "views": 661081,
+  "title": "The Main Ideas behind Probability Distributions",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=oI3hZJqXJuc"
+ },
+ "descriptive-stats": {
+  "id": "E4HAYd0QnRc",
+  "channel": "Khan Academy",
+  "minutes": 13,
+  "views": 2653718,
+  "title": "Range, variance and standard deviation as measures of dispersion | Khan Academy",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=E4HAYd0QnRc"
+ },
+ "hypothesis-testing": {
+  "id": "0oc49DyA3hU",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 15,
+  "views": 886173,
+  "title": "Hypothesis Testing and The Null Hypothesis, Clearly Explained!!!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=0oc49DyA3hU"
+ },
+ "maximum-likelihood": {
+  "id": "XepXtl9YKwc",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 6,
+  "views": 1807953,
+  "title": "Maximum Likelihood, clearly explained!!!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=XepXtl9YKwc"
+ },
+ "entropy-cross-entropy": {
+  "id": "YtebGVx-Fxw",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 17,
+  "views": 921238,
+  "title": "Entropy (for data science) Clearly Explained!!!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=YtebGVx-Fxw"
+ },
+ "kl-divergence": {
+  "id": "SxGYPqCgJWM",
+  "channel": "Adian Liusie",
+  "minutes": 5,
+  "views": 143464,
+  "title": "Intuitively Understanding the KL Divergence",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=SxGYPqCgJWM"
+ },
+ "optimization-basics": {
+  "id": "AM6BY4btj-M",
+  "channel": "Visually Explained",
+  "minutes": 12,
+  "views": 235507,
+  "title": "What Is Mathematical Optimization?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=AM6BY4btj-M"
+ },
+ "numpy": {
+  "id": "VXU4LSAQDSc",
+  "channel": "Bro Code",
+  "minutes": 60,
+  "views": 788307,
+  "title": "Learn NumPy in 1 hour! 🔢",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=VXU4LSAQDSc"
+ },
+ "pandas": {
+  "id": "F6kmIpWWEdU",
+  "channel": "codebasics",
+  "minutes": 21,
+  "views": 989197,
+  "title": "Python Pandas Tutorial 2: Dataframe Basics",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=F6kmIpWWEdU"
+ },
+ "data-visualization": {
+  "id": "MiiANxRHSv4",
+  "channel": "Simplilearn",
+  "minutes": 27,
+  "views": 343348,
+  "title": "Data Visualization Tutorial For Beginners | Big Data Analytics Tutorial | Simplilearn",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=MiiANxRHSv4"
+ },
+ "data-cleaning": {
+  "id": "bDhvCp3_lYw",
+  "channel": "Alex The Analyst",
+  "minutes": 39,
+  "views": 630800,
+  "title": "Data Cleaning in Pandas | Python Pandas Tutorials",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=bDhvCp3_lYw"
+ },
+ "eda": {
+  "id": "xhB-dmKmzRk",
+  "channel": "Krish Naik",
+  "minutes": 14,
+  "views": 249166,
+  "title": "Step By Step Process In EDA And Feature Engineering In Data Science Projects",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=xhB-dmKmzRk"
+ },
+ "feature-engineering": {
+  "id": "xhB-dmKmzRk",
+  "channel": "Krish Naik",
+  "minutes": 14,
+  "views": 249166,
+  "title": "Step By Step Process In EDA And Feature Engineering In Data Science Projects",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=xhB-dmKmzRk"
+ },
+ "train-test-split": {
+  "id": "fSytzGwwBVw",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 6,
+  "views": 1535446,
+  "title": "Machine Learning Fundamentals: Cross Validation",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=fSytzGwwBVw"
+ },
+ "data-leakage": {
+  "id": "n9jz7G68pVg",
+  "channel": "Krish Naik",
+  "minutes": 11,
+  "views": 50075,
+  "title": "What is Data Leakage In Machine Learning?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=n9jz7G68pVg"
+ },
+ "text-data": {
+  "id": "nxhCyeRR75Q",
+  "channel": "Machine Learning TV",
+  "minutes": 15,
+  "views": 87598,
+  "title": "NLP - Text Preprocessing and Text Classification (using Python)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=nxhCyeRR75Q"
+ },
+ "document-parsing": {
+  "id": "9lBTS5dM27c",
+  "channel": "Dave Ebbelaar",
+  "minutes": 25,
+  "views": 219599,
+  "title": "How to Get Your Data Ready for AI Agents (Docs, PDFs, Websites)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=9lBTS5dM27c"
+ },
+ "web-scraping": {
+  "id": "ng2o98k983k",
+  "channel": "Corey Schafer",
+  "minutes": 46,
+  "views": 1196761,
+  "title": "Python Tutorial: Web Scraping with BeautifulSoup and Requests",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=ng2o98k983k"
+ },
+ "data-labeling": {
+  "id": "lMwX-n_1NXs",
+  "channel": "What's AI by Louis-François Bouchard",
+  "minutes": 4,
+  "views": 68156,
+  "title": "What is Data Labeling ? | Prepare Your Data for ML and AI | Attaching meaning to digital data 27",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=lMwX-n_1NXs"
+ },
+ "synthetic-data": {
+  "id": "HIusawrGBN4",
+  "channel": "IBM Technology",
+  "minutes": 7,
+  "views": 83212,
+  "title": "What is Synthetic Data? No, It's Not \"Fake\" Data",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=HIusawrGBN4"
+ },
+ "data-pipelines": {
+  "id": "6kEGUCrBEU0",
+  "channel": "IBM Technology",
+  "minutes": 8,
+  "views": 275470,
+  "title": "What Are Data Pipelines?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=6kEGUCrBEU0"
+ },
+ "what-is-ml": {
+  "id": "znF2U_3Z210",
+  "channel": "IBM Technology",
+  "minutes": 11,
+  "views": 126378,
+  "title": "Machine Learning Explained: A Guide to ML, AI, & Deep Learning",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=znF2U_3Z210"
+ },
+ "supervised-learning": {
+  "id": "1FZ0A1QCMWc",
+  "channel": "Simplilearn",
+  "minutes": 6,
+  "views": 504079,
+  "title": "Supervised vs Unsupervised vs Reinforcement Learning | Machine Learning Tutorial | Simplilearn",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=1FZ0A1QCMWc"
+ },
+ "unsupervised-learning": {
+  "id": "W01tIRP_Rqs",
+  "channel": "IBM Technology",
+  "minutes": 7,
+  "views": 400791,
+  "title": "Supervised vs. Unsupervised Learning",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=W01tIRP_Rqs"
+ },
+ "linear-regression": {
+  "id": "7ArmBVF2dCs",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 27,
+  "views": 758802,
+  "title": "Linear Regression, Clearly Explained!!!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=7ArmBVF2dCs"
+ },
+ "loss-functions": {
+  "id": "QBbC3Cjsnjg",
+  "channel": "CodeEmporium",
+  "minutes": 8,
+  "views": 173968,
+  "title": "Loss Functions - EXPLAINED!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=QBbC3Cjsnjg"
+ },
+ "logistic-regression": {
+  "id": "yIYKR4sgzI8",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 9,
+  "views": 2886443,
+  "title": "StatQuest: Logistic Regression",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=yIYKR4sgzI8"
+ },
+ "overfitting": {
+  "id": "BqzgUnrNhFM",
+  "channel": "Krish Naik",
+  "minutes": 17,
+  "views": 349437,
+  "title": "Machine Learning-Bias And Variance In Depth Intuition| Overfitting Underfitting",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=BqzgUnrNhFM"
+ },
+ "bias-variance": {
+  "id": "EuBBz3bI-aA",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 7,
+  "views": 1814511,
+  "title": "Machine Learning Fundamentals: Bias and Variance",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=EuBBz3bI-aA"
+ },
+ "regularization": {
+  "id": "Q81RR3yKn30",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 20,
+  "views": 1442658,
+  "title": "Regularization Part 1: Ridge (L2) Regression",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=Q81RR3yKn30"
+ },
+ "classification-metrics": {
+  "id": "Kdsp6soqA7o",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 7,
+  "views": 1008343,
+  "title": "Machine Learning Fundamentals: The Confusion Matrix",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=Kdsp6soqA7o"
+ },
+ "roc-auc": {
+  "id": "4jRBRDbJemM",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 16,
+  "views": 2016727,
+  "title": "ROC and AUC, Clearly Explained!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=4jRBRDbJemM"
+ },
+ "cross-validation": {
+  "id": "fSytzGwwBVw",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 6,
+  "views": 1535438,
+  "title": "Machine Learning Fundamentals: Cross Validation",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=fSytzGwwBVw"
+ },
+ "hyperparameter-tuning": {
+  "id": "HdlDYng8g9s",
+  "channel": "codebasics",
+  "minutes": 16,
+  "views": 383138,
+  "title": "Machine Learning Tutorial Python - 16: Hyper parameter Tuning (GridSearchCV)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=HdlDYng8g9s"
+ },
+ "scikit-learn": {
+  "id": "0B5eIE_1vpU",
+  "channel": "freeCodeCamp.org",
+  "minutes": 129,
+  "views": 779571,
+  "title": "Scikit-learn Crash Course - Machine Learning Library for Python",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=0B5eIE_1vpU"
+ },
+ "knn": {
+  "id": "HVXime0nQeI",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 6,
+  "views": 827338,
+  "title": "StatQuest: K-nearest neighbors, Clearly Explained",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=HVXime0nQeI"
+ },
+ "decision-trees": {
+  "id": "_L39rN6gz7Y",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 18,
+  "views": 1360006,
+  "title": "Decision and Classification Trees, Clearly Explained!!!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y"
+ },
+ "random-forests": {
+  "id": "J4Wdy0Wc_xQ",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 10,
+  "views": 1500116,
+  "title": "StatQuest: Random Forests Part 1 - Building, Using and Evaluating",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ"
+ },
+ "gradient-boosting": {
+  "id": "3CC4N4z3GJc",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 16,
+  "views": 1093199,
+  "title": "Gradient Boost Part 1 (of 4): Regression Main Ideas",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=3CC4N4z3GJc"
+ },
+ "svm": {
+  "id": "_PwhiWxHK8o",
+  "channel": "MIT OpenCourseWare",
+  "minutes": 50,
+  "views": 2217204,
+  "title": "16. Learning: Support Vector Machines",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=_PwhiWxHK8o"
+ },
+ "naive-bayes": {
+  "id": "O2L2Uv9pdDA",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 15,
+  "views": 1431438,
+  "title": "Naive Bayes, Clearly Explained!!!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=O2L2Uv9pdDA"
+ },
+ "k-means": {
+  "id": "4b5d3muPQmA",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 8,
+  "views": 2270250,
+  "title": "StatQuest: K-means clustering",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=4b5d3muPQmA"
+ },
+ "pca": {
+  "id": "FgakZw6K1QQ",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 22,
+  "views": 3785344,
+  "title": "StatQuest: Principal Component Analysis (PCA), Step-by-Step",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=FgakZw6K1QQ"
+ },
+ "anomaly-detection": {
+  "id": "OS9xRGKfx4E",
+  "channel": "Krish Naik",
+  "minutes": 37,
+  "views": 154467,
+  "title": "Complete Anomaly Detection Tutorials Machine Learning And Its Types With Implementation | Krish Naik",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=OS9xRGKfx4E"
+ },
+ "recommender-systems": {
+  "id": "n3RKsY2H-NE",
+  "channel": "Art of the Problem",
+  "minutes": 8,
+  "views": 318904,
+  "title": "The Math Behind Recommender Systems",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=n3RKsY2H-NE"
+ },
+ "time-series": {
+  "id": "GE3JOFwTWVM",
+  "channel": "IBM Technology",
+  "minutes": 7,
+  "views": 494498,
+  "title": "What is Time Series Analysis?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=GE3JOFwTWVM"
+ },
+ "perceptron-neuron": {
+  "id": "aircAruvnKk",
+  "channel": "3Blue1Brown",
+  "minutes": 19,
+  "views": 25125607,
+  "title": "But what is a neural network? | Deep learning chapter 1",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=aircAruvnKk"
+ },
+ "activation-functions": {
+  "id": "s-V7gKrsels",
+  "channel": "CodeEmporium",
+  "minutes": 10,
+  "views": 164646,
+  "title": "Activation Functions - EXPLAINED!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=s-V7gKrsels"
+ },
+ "mlp": {
+  "id": "u5GAVdLQyIg",
+  "channel": "The Coding Train",
+  "minutes": 16,
+  "views": 348327,
+  "title": "10.4: Neural Networks: Multilayer Perceptron Part 1 - The Nature of Code",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=u5GAVdLQyIg"
+ },
+ "backpropagation": {
+  "id": "Ilg3gGewQ5U",
+  "channel": "3Blue1Brown",
+  "minutes": 13,
+  "views": 6385841,
+  "title": "Backpropagation, intuitively | Deep Learning Chapter 3",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=Ilg3gGewQ5U"
+ },
+ "softmax": {
+  "id": "KpKog-L9veg",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 14,
+  "views": 249404,
+  "title": "Neural Networks Part 5: ArgMax and SoftMax",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=KpKog-L9veg"
+ },
+ "pytorch-basics": {
+  "id": "ORMx45xqWkA",
+  "channel": "Fireship",
+  "minutes": 3,
+  "views": 1427290,
+  "title": "PyTorch in 100 Seconds",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=ORMx45xqWkA"
+ },
+ "training-loop": {
+  "id": "VVDHU_TWwUg",
+  "channel": "Patrick Loeber",
+  "minutes": 14,
+  "views": 137558,
+  "title": "PyTorch Tutorial 06 - Training Pipeline: Model, Loss, and Optimizer",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=VVDHU_TWwUg"
+ },
+ "optimizers": {
+  "id": "JXQT_vxqwIs",
+  "channel": "DeepLearningAI",
+  "minutes": 7,
+  "views": 274842,
+  "title": "Adam Optimization Algorithm (C2W2L08)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=JXQT_vxqwIs"
+ },
+ "learning-rate-schedules": {
+  "id": "QzulmoOg2JE",
+  "channel": "DeepLearningAI",
+  "minutes": 7,
+  "views": 84675,
+  "title": "Learning Rate Decay (C2W2L09)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=QzulmoOg2JE"
+ },
+ "batching": {
+  "id": "U4WB9p6ODjM",
+  "channel": "deeplizard",
+  "minutes": 4,
+  "views": 124957,
+  "title": "Batch Size in a Neural Network explained",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=U4WB9p6ODjM"
+ },
+ "normalization-layers": {
+  "id": "nUUqwaxLnWs",
+  "channel": "DeepLearningAI",
+  "minutes": 12,
+  "views": 219128,
+  "title": "Why Does Batch Norm Work? (C2W3L06)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=nUUqwaxLnWs"
+ },
+ "dropout": {
+  "id": "lcI8ukTUEbo",
+  "channel": "codebasics",
+  "minutes": 19,
+  "views": 120222,
+  "title": "Dropout Regularization | Deep Learning Tutorial 20 (Tensorflow2.0, Keras & Python)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=lcI8ukTUEbo"
+ },
+ "weight-init": {
+  "id": "tMjdQLylyGI",
+  "channel": "Krish Naik",
+  "minutes": 13,
+  "views": 158830,
+  "title": "Tutorial 11- Various Weight Initialization Techniques in Neural Network",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=tMjdQLylyGI"
+ },
+ "vanishing-gradients": {
+  "id": "qowp6SQ9_Oo",
+  "channel": "codebasics",
+  "minutes": 10,
+  "views": 168901,
+  "title": "Vanishing and exploding gradients | Deep Learning Tutorial 35 (Tensorflow, Keras & Python)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=qowp6SQ9_Oo"
+ },
+ "residual-connections": {
+  "id": "o_3mboe1jYI",
+  "channel": "rupert ai",
+  "minutes": 10,
+  "views": 225725,
+  "title": "ResNet (actually) explained in under 10 minutes",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=o_3mboe1jYI"
+ },
+ "cnn": {
+  "id": "KuXjwB4LzSA",
+  "channel": "3Blue1Brown",
+  "minutes": 23,
+  "views": 3800494,
+  "title": "But what is a convolution?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=KuXjwB4LzSA"
+ },
+ "rnn-lstm": {
+  "id": "AsNTP8Kwu80",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 17,
+  "views": 1074950,
+  "title": "Recurrent Neural Networks (RNNs), Clearly Explained!!!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=AsNTP8Kwu80"
+ },
+ "autoencoders": {
+  "id": "qiUEgSCyY5o",
+  "channel": "IBM Technology",
+  "minutes": 5,
+  "views": 209863,
+  "title": "What are Autoencoders?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=qiUEgSCyY5o"
+ },
+ "transfer-learning": {
+  "id": "LsdxvjLWkIY",
+  "channel": "codebasics",
+  "minutes": 26,
+  "views": 239366,
+  "title": "Transfer Learning | Deep Learning Tutorial 27 (Tensorflow, Keras & Python)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=LsdxvjLWkIY"
+ },
+ "gpu-basics": {
+  "id": "pPStdjuYzSI",
+  "channel": "Fireship",
+  "minutes": 3,
+  "views": 2337977,
+  "title": "Nvidia CUDA in 100 Seconds",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=pPStdjuYzSI"
+ },
+ "mixed-precision": {
+  "id": "i1fIBtdhjIg",
+  "channel": "NVIDIA Developer",
+  "minutes": 6,
+  "views": 16356,
+  "title": "NVIDIA Developer How To Series: Mixed-Precision Training",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=i1fIBtdhjIg"
+ },
+ "distributed-training": {
+  "id": "9MvD-XsowsE",
+  "channel": "Stanford Online",
+  "minutes": 73,
+  "views": 59032,
+  "title": "Stanford CS231N | Spring 2025 | Lecture 11: Large Scale Distributed Training",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=9MvD-XsowsE"
+ },
+ "experiment-tracking": {
+  "id": "RnYa3QsXRAc",
+  "channel": "Anton T. Ruberts",
+  "minutes": 27,
+  "views": 27634,
+  "title": "MLFlow Tutorial Part 1: Experiment Tracking",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=RnYa3QsXRAc"
+ },
+ "tokenization": {
+  "id": "zduSFxRajkE",
+  "channel": "Andrej Karpathy",
+  "minutes": 134,
+  "views": 1257642,
+  "title": "Let's build the GPT Tokenizer",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=zduSFxRajkE"
+ },
+ "word-embeddings": {
+  "id": "viZrOnJclY0",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 16,
+  "views": 619985,
+  "title": "Word Embedding and Word2Vec, Clearly Explained!!!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=viZrOnJclY0"
+ },
+ "language-modeling": {
+  "id": "LPZh9BOjkQs",
+  "channel": "3Blue1Brown",
+  "minutes": 8,
+  "views": 8404289,
+  "title": "Large Language Models explained briefly",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs"
+ },
+ "seq2seq": {
+  "id": "L8HKweZIOmg",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 17,
+  "views": 387520,
+  "title": "Sequence-to-Sequence (seq2seq) Encoder-Decoder Neural Networks, Clearly Explained!!!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=L8HKweZIOmg"
+ },
+ "attention": {
+  "id": "eMlx5fFNoYc",
+  "channel": "3Blue1Brown",
+  "minutes": 26,
+  "views": 4876154,
+  "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc"
+ },
+ "self-attention-qkv": {
+  "id": "eMlx5fFNoYc",
+  "channel": "3Blue1Brown",
+  "minutes": 26,
+  "views": 4876154,
+  "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc"
+ },
+ "multi-head-attention": {
+  "id": "eMlx5fFNoYc",
+  "channel": "3Blue1Brown",
+  "minutes": 26,
+  "views": 4876154,
+  "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc"
+ },
+ "positional-encoding": {
+  "id": "ZMxVe-HK174",
+  "channel": "CodeEmporium",
+  "minutes": 12,
+  "views": 59707,
+  "title": "Positional Encoding in Transformer Neural Networks Explained",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=ZMxVe-HK174"
+ },
+ "transformer-architecture": {
+  "id": "wjZofJX0v4M",
+  "channel": "3Blue1Brown",
+  "minutes": 27,
+  "views": 11595917,
+  "title": "Transformers, the tech behind LLMs | Deep Learning Chapter 5",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=wjZofJX0v4M"
+ },
+ "build-gpt-from-scratch": {
+  "id": "kCc8FmEb1nY",
+  "channel": "Andrej Karpathy",
+  "minutes": 116,
+  "views": 8201741,
+  "title": "Let's build GPT: from scratch, in code, spelled out.",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY"
+ },
+ "encoder-vs-decoder": {
+  "id": "GDN649X_acE",
+  "channel": "StatQuest with Josh Starmer",
+  "minutes": 19,
+  "views": 123664,
+  "title": "Encoder-Only Transformers (like BERT) for RAG, Clearly Explained!!!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=GDN649X_acE"
+ },
+ "pretraining": {
+  "id": "zjkBMFhNj_g",
+  "channel": "Andrej Karpathy",
+  "minutes": 60,
+  "views": 4323155,
+  "title": "[1hr Talk] Intro to Large Language Models",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g"
+ },
+ "scaling-laws": {
+  "id": "5eqRuVp65eY",
+  "channel": "Welch Labs",
+  "minutes": 24,
+  "views": 2524979,
+  "title": "AI can't cross this line and we don't know why.",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=5eqRuVp65eY"
+ },
+ "instruction-tuning": {
+  "id": "ezdIOLbUSWg",
+  "channel": "codebasics",
+  "minutes": 7,
+  "views": 75686,
+  "title": "Fine Tuning LLM Explained Simply",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=ezdIOLbUSWg"
+ },
+ "rlhf": {
+  "id": "T_X4XFwKX8k",
+  "channel": "IBM Technology",
+  "minutes": 11,
+  "views": 110387,
+  "title": "Reinforcement Learning from Human Feedback (RLHF) Explained",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=T_X4XFwKX8k"
+ },
+ "constitutional-ai": {
+  "id": "quyqRIHRa60",
+  "channel": "Sam Witteveen",
+  "minutes": 11,
+  "views": 12226,
+  "title": "Understanding Constitutional AI - the paper and key concepts",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=quyqRIHRa60"
+ },
+ "reasoning-models": {
+  "id": "enLbj0igyx4",
+  "channel": "IBM Technology",
+  "minutes": 9,
+  "views": 165623,
+  "title": "What Are Large Reasoning Models (LRMs)? Smarter AI Beyond LLMs",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=enLbj0igyx4"
+ },
+ "mixture-of-experts": {
+  "id": "LPv1KfUXLCo",
+  "channel": "Stanford Online",
+  "minutes": 82,
+  "views": 87348,
+  "title": "Stanford CS336 Language Modeling from Scratch | Spring 2025 | Lecture 4: Mixture of experts",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=LPv1KfUXLCo"
+ },
+ "kv-cache": {
+  "id": "o0gkdZBtwEg",
+  "channel": "IBM Technology and Red Hat",
+  "minutes": 11,
+  "views": 231772,
+  "title": "How KV Cache Speeds Up LLMs for Faster AI Models on GPUs",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=o0gkdZBtwEg"
+ },
+ "context-window": {
+  "id": "-QVoIxEpFkM",
+  "channel": "IBM Technology",
+  "minutes": 12,
+  "views": 166032,
+  "title": "What is a Context Window? Unlocking LLM Secrets",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=-QVoIxEpFkM"
+ },
+ "sampling-temperature": {
+  "id": "jnikMver_CE",
+  "channel": "Under The Hood",
+  "minutes": 10,
+  "views": 18034,
+  "title": "What is Temperature in LLM",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=jnikMver_CE"
+ },
+ "hallucination": {
+  "id": "cfqtFvWOfg0",
+  "channel": "IBM Technology",
+  "minutes": 10,
+  "views": 378584,
+  "title": "Why Large Language Models Hallucinate",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=cfqtFvWOfg0"
+ },
+ "hugging-face-hub": {
+  "id": "QEaBAZQCtwE",
+  "channel": "AssemblyAI",
+  "minutes": 15,
+  "views": 632055,
+  "title": "Getting Started With Hugging Face in 15 Minutes | Transformers, Pipeline, Tokenizer, Models",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=QEaBAZQCtwE"
+ },
+ "interpretability": {
+  "id": "UGO_Ehywuxc",
+  "channel": "Welch Labs",
+  "minutes": 24,
+  "views": 315783,
+  "title": "The Dark Matter of AI [Mechanistic Interpretability]",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=UGO_Ehywuxc"
+ },
+ "llm-landscape": {
+  "id": "y9k-U9AuDeM",
+  "channel": "IBM Technology",
+  "minutes": 7,
+  "views": 417603,
+  "title": "Should You Use Open Source Large Language Models?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=y9k-U9AuDeM"
+ },
+ "llm-api-basics": {
+  "id": "oH00h-zpfTE",
+  "channel": "United Top Tech",
+  "minutes": 7,
+  "views": 13026,
+  "title": "How to Use Claude AI API with Python | Latest 2026 Tutorial",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=oH00h-zpfTE"
+ },
+ "tokens-and-pricing": {
+  "id": "nKSk_TiR8YA",
+  "channel": "Matt Pocock",
+  "minutes": 11,
+  "views": 442183,
+  "title": "Most devs don't understand how LLM tokens work",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=nKSk_TiR8YA"
+ },
+ "system-prompts": {
+  "id": "vD0E3EUb8-8",
+  "channel": "IBM Technology",
+  "minutes": 8,
+  "views": 267104,
+  "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=vD0E3EUb8-8"
+ },
+ "prompt-engineering": {
+  "id": "_ZvnD73m40o",
+  "channel": "freeCodeCamp.org",
+  "minutes": 42,
+  "views": 2858022,
+  "title": "Prompt Engineering Tutorial – Master ChatGPT and LLM Responses",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=_ZvnD73m40o"
+ },
+ "few-shot": {
+  "id": "VqPmrYFvKf8",
+  "channel": "CodeEmporium",
+  "minutes": 10,
+  "views": 44658,
+  "title": "Few Shot Learning - EXPLAINED!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=VqPmrYFvKf8"
+ },
+ "chain-of-thought": {
+  "id": "1c9iyoVIwDs",
+  "channel": "IBM Technology",
+  "minutes": 13,
+  "views": 280818,
+  "title": "4 Methods of Prompt Engineering",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=1c9iyoVIwDs"
+ },
+ "extended-thinking": {
+  "id": "xCRvOUykOX0",
+  "channel": "Google for Developers",
+  "minutes": 13,
+  "views": 54563,
+  "title": "How do thinking and reasoning models work?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=xCRvOUykOX0"
+ },
+ "structured-outputs": {
+  "id": "fuMKrKlaku4",
+  "channel": "Dave Ebbelaar",
+  "minutes": 25,
+  "views": 65035,
+  "title": "OpenAI Structured Output - All You Need to Know",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=fuMKrKlaku4"
+ },
+ "streaming": {
+  "id": "xTTtqwGWemw",
+  "channel": "Irtiza Hafiz",
+  "minutes": 11,
+  "views": 11879,
+  "title": "Streaming LLM Responses with FastAPI",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=xTTtqwGWemw"
+ },
+ "conversation-memory": {
+  "id": "X550Zbz_ROE",
+  "channel": "Sam Witteveen",
+  "minutes": 20,
+  "views": 77869,
+  "title": "LangChain - Conversations with Memory (explanation & code walkthrough)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=X550Zbz_ROE"
+ },
+ "context-engineering": {
+  "id": "BwXremQ-i6I",
+  "channel": "IBM Technology",
+  "minutes": 10,
+  "views": 329035,
+  "title": "Context Engineering for AI Agents: 4 Failure Modes to Avoid",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=BwXremQ-i6I"
+ },
+ "prompt-caching": {
+  "id": "u57EnkQaUTY",
+  "channel": "IBM Technology",
+  "minutes": 9,
+  "views": 126772,
+  "title": "What is Prompt Caching? Optimize LLM Latency with AI Transformers",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=u57EnkQaUTY"
+ },
+ "batch-api": {
+  "id": "cXFxBygOlSs",
+  "channel": "That Average Tech Bro",
+  "minutes": 17,
+  "views": 4091,
+  "title": "OpenAI Batch API - A Complete guide to cut OpenAI bill by 50% 💸",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=cXFxBygOlSs"
+ },
+ "tool-use": {
+  "id": "h8gMhXYAv1k",
+  "channel": "IBM Technology",
+  "minutes": 5,
+  "views": 65134,
+  "title": "What is Tool Calling? Connecting LLMs to Your Data",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=h8gMhXYAv1k"
+ },
+ "vision-inputs": {
+  "id": "lOD_EE96jhM",
+  "channel": "IBM Technology",
+  "minutes": 10,
+  "views": 163115,
+  "title": "What Are Vision Language Models? How AI Sees & Understands Images",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=lOD_EE96jhM"
+ },
+ "local-llms": {
+  "id": "5RIOQuHOihY",
+  "channel": "IBM Technology",
+  "minutes": 7,
+  "views": 406089,
+  "title": "What is Ollama? Running Local LLMs Made Simple",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=5RIOQuHOihY"
+ },
+ "quantization": {
+  "id": "3EDI4akymhA",
+  "channel": "Adam Lucek",
+  "minutes": 26,
+  "views": 30826,
+  "title": "Quantizing LLMs - How & Why (8-Bit, 4-Bit, GGUF & More)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=3EDI4akymhA"
+ },
+ "llm-frameworks": {
+  "id": "1bUy-1hGZpI",
+  "channel": "IBM Technology",
+  "minutes": 8,
+  "views": 809202,
+  "title": "What is LangChain?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=1bUy-1hGZpI"
+ },
+ "chat-ui": {
+  "id": "lInrwVnZ83o",
+  "channel": "LangChain",
+  "minutes": 6,
+  "views": 97500,
+  "title": "Introducing Agent Chat UI",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=lInrwVnZ83o"
+ },
+ "speech-ai": {
+  "id": "uFOkMme19Zs",
+  "channel": "What's AI by Louis-François Bouchard",
+  "minutes": 5,
+  "views": 37510,
+  "title": "OpenAI's Whisper Model Explained",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=uFOkMme19Zs"
+ },
+ "image-generation": {
+  "id": "1CIpzeNxIhU",
+  "channel": "Computerphile",
+  "minutes": 18,
+  "views": 1075148,
+  "title": "How AI Image Generators Work (Stable Diffusion / Dall-E) - Computerphile",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=1CIpzeNxIhU"
+ },
+ "multimodal-models": {
+  "id": "J51oZYcNvP8",
+  "channel": "IBM Technology",
+  "minutes": 9,
+  "views": 55386,
+  "title": "What is Multimodal AI? How LLMs Process Text, Images, and More",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=J51oZYcNvP8"
+ },
+ "ai-coding-assistants": {
+  "id": "sbuwHi1Sz6k",
+  "channel": "Tech With Tim",
+  "minutes": 23,
+  "views": 193259,
+  "title": "Codex vs Claude - an Honest Comparison",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=sbuwHi1Sz6k"
+ },
+ "embeddings": {
+  "id": "Q6TBHDgWCDQ",
+  "channel": "Thu Vu",
+  "minutes": 20,
+  "views": 69581,
+  "title": "Learn Text Embeddings in 20 Minutes (full guide for beginners)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=Q6TBHDgWCDQ"
+ },
+ "semantic-search": {
+  "id": "gl1r1XV0SLw",
+  "channel": "IBM Technology",
+  "minutes": 10,
+  "views": 1020039,
+  "title": "What is a Vector Database? Powering Semantic Search & AI Applications",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=gl1r1XV0SLw"
+ },
+ "keyword-search-bm25": {
+  "id": "kT7nXO32L-Q",
+  "channel": "freeCodeCamp.org",
+  "minutes": 60,
+  "views": 93551,
+  "title": "PostgreSQL Hybrid Search Course – Keyword (BM25) + Vector Retrieval",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=kT7nXO32L-Q"
+ },
+ "vector-databases": {
+  "id": "klTvEwg3oJ4",
+  "channel": "Fireship",
+  "minutes": 3,
+  "views": 1135740,
+  "title": "Vector databases are so hot right now. WTF are they?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=klTvEwg3oJ4"
+ },
+ "ann-indexes": {
+  "id": "DRbjpuqOsjk",
+  "channel": "ritvikmath",
+  "minutes": 15,
+  "views": 40661,
+  "title": "Approximate Nearest Neighbors : Data Science Concepts",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=DRbjpuqOsjk"
+ },
+ "chunking": {
+  "id": "tLMViADvSNE",
+  "channel": "Cole Medin",
+  "minutes": 13,
+  "views": 158454,
+  "title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=tLMViADvSNE"
+ },
+ "rag-basics": {
+  "id": "T-D1OfcDW1M",
+  "channel": "IBM Technology",
+  "minutes": 7,
+  "views": 2093909,
+  "title": "What is Retrieval-Augmented Generation (RAG)?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=T-D1OfcDW1M"
+ },
+ "hybrid-search": {
+  "id": "r0Dciuq0knU",
+  "channel": "IBM Technology",
+  "minutes": 8,
+  "views": 49477,
+  "title": "Top 3 RAG Retrieval Strategies: Sparse, Dense, & Hybrid Explained",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=r0Dciuq0knU"
+ },
+ "reranking": {
+  "id": "K1F8BIgcoNk",
+  "channel": "vectorize",
+  "minutes": 14,
+  "views": 53460,
+  "title": "Rerank for better RAG (Explained)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=K1F8BIgcoNk"
+ },
+ "contextual-retrieval": {
+  "id": "tmiBae2goJM",
+  "channel": "Prompt Engineering",
+  "minutes": 16,
+  "views": 139491,
+  "title": "The Best RAG Technique Yet? Anthropic’s Contextual Retrieval Explained!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=tmiBae2goJM"
+ },
+ "query-rewriting": {
+  "id": "SaDzIVkYqyY",
+  "channel": "LangChain",
+  "minutes": 5,
+  "views": 27297,
+  "title": "RAG from scratch: Part 9 (Query Translation -- HyDE)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=SaDzIVkYqyY"
+ },
+ "citations-grounding": null,
+ "rag-evaluation": {
+  "id": "OUHWfsrLWzs",
+  "channel": "Simplilearn",
+  "minutes": 26,
+  "views": 5978,
+  "title": "RAG Evaluation Techniques Explained  | How to Evaluate RAG Systems  | Simplilearn",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=OUHWfsrLWzs"
+ },
+ "knowledge-graphs": {
+  "id": "y7sXDpffzQQ",
+  "channel": "IBM Technology",
+  "minutes": 6,
+  "views": 264138,
+  "title": "What is a Knowledge Graph?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=y7sXDpffzQQ"
+ },
+ "graphrag": {
+  "id": "Aw7iQjKAX2k",
+  "channel": "IBM Technology",
+  "minutes": 4,
+  "views": 228358,
+  "title": "GraphRAG vs. Traditional RAG: Higher Accuracy & Insight with LLM",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=Aw7iQjKAX2k"
+ },
+ "agentic-rag": {
+  "id": "0z9_MhcYvcY",
+  "channel": "IBM Technology",
+  "minutes": 6,
+  "views": 363106,
+  "title": "What is Agentic RAG?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=0z9_MhcYvcY"
+ },
+ "long-context-vs-rag": {
+  "id": "UabBYexBD4k",
+  "channel": "IBM Technology",
+  "minutes": 11,
+  "views": 1102307,
+  "title": "Is RAG Still Needed? Choosing the Best Approach for LLMs",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=UabBYexBD4k"
+ },
+ "what-is-an-agent": {
+  "id": "Qd6anWv0mv0",
+  "channel": "Google Cloud Tech",
+  "minutes": 6,
+  "views": 137941,
+  "title": "Agentic AI: Workflows vs. agents",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=Qd6anWv0mv0"
+ },
+ "workflow-patterns": {
+  "id": "D7_ipDqhtwk",
+  "channel": "AI Engineer",
+  "minutes": 15,
+  "views": 582149,
+  "title": "How We Build Effective Agents: Barry Zhang, Anthropic",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=D7_ipDqhtwk"
+ },
+ "agent-loop": {
+  "id": "vFdIrZyKEwQ",
+  "channel": "Akshay Pachaar",
+  "minutes": 6,
+  "views": 27470,
+  "title": "ReAct AI Agents, clearly explained!",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=vFdIrZyKEwQ"
+ },
+ "tool-design": null,
+ "mcp": {
+  "id": "eur8dUO9mvE",
+  "channel": "IBM Technology",
+  "minutes": 4,
+  "views": 798264,
+  "title": "What is MCP? Integrate AI Agents with Databases & APIs",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=eur8dUO9mvE"
+ },
+ "build-mcp-server": {
+  "id": "-8k9lGpGQ6g",
+  "channel": "Tech With Tim",
+  "minutes": 26,
+  "views": 252833,
+  "title": "Build Anything With a CUSTOM MCP Server - Python Tutorial",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=-8k9lGpGQ6g"
+ },
+ "agent-skills": {
+  "id": "Lg-meK5IU8Q",
+  "channel": "IBM Technology",
+  "minutes": 12,
+  "views": 561646,
+  "title": "What AI Agent Skills Are and How They Work",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=Lg-meK5IU8Q"
+ },
+ "agent-memory": {
+  "id": "X4FVEEegCbk",
+  "channel": "IBM Technology",
+  "minutes": 9,
+  "views": 270249,
+  "title": "Skills vs MCP vs RAG vs Memory: What AI Agents Need to Know",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=X4FVEEegCbk"
+ },
+ "planning": {
+  "id": "kPfJ2BrBCMY",
+  "channel": "Microsoft Developer",
+  "minutes": 5,
+  "views": 14670,
+  "title": "What Is the AI Agent Planning Design Pattern?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=kPfJ2BrBCMY"
+ },
+ "multi-agent": {
+  "id": "ZVPlLaehjLk",
+  "channel": "IBM Technology",
+  "minutes": 12,
+  "views": 134386,
+  "title": "Agentic AI Frameworks Explained: Workflows, Multi-Agent, & Production",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=ZVPlLaehjLk"
+ },
+ "agent-sdks": {
+  "id": "ZVPlLaehjLk",
+  "channel": "IBM Technology",
+  "minutes": 12,
+  "views": 134386,
+  "title": "Agentic AI Frameworks Explained: Workflows, Multi-Agent, & Production",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=ZVPlLaehjLk"
+ },
+ "langgraph": {
+  "id": "cUfLrn3TM3M",
+  "channel": "KodeKloud",
+  "minutes": 13,
+  "views": 251787,
+  "title": "LangGraph Explained for Beginners",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=cUfLrn3TM3M"
+ },
+ "computer-use": {
+  "id": "zGkVKix_CRU",
+  "channel": "Tech With Tim",
+  "minutes": 22,
+  "views": 187751,
+  "title": "Browser Use: This New AI Agent Can Do Anything (Full AI Scraping Tutorial)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=zGkVKix_CRU"
+ },
+ "coding-agents": {
+  "id": "mViFYTwWvcM",
+  "channel": "IBM Technology",
+  "minutes": 9,
+  "views": 570456,
+  "title": "Spec-Driven Development: AI Assisted Coding Explained",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=mViFYTwWvcM"
+ },
+ "human-in-the-loop": {
+  "id": "9iS-YYLIXiw",
+  "channel": "IBM Technology",
+  "minutes": 11,
+  "views": 50342,
+  "title": "What is Human In The Loop with AI? How HITL Shapes AI Systems",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=9iS-YYLIXiw"
+ },
+ "agent-evaluation": {
+  "id": "8fNP4N46RRo",
+  "channel": "Stanford Online",
+  "minutes": 109,
+  "views": 221581,
+  "title": "Stanford CME295 Transformers & LLMs | Autumn 2025 | Lecture 8 - LLM Evaluation",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=8fNP4N46RRo"
+ },
+ "a2a": {
+  "id": "BMDFPOyezH4",
+  "channel": "IBM Technology",
+  "minutes": 12,
+  "views": 164949,
+  "title": "A2A vs MCP: AI Agent Communication Explained",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=BMDFPOyezH4"
+ },
+ "when-to-fine-tune": {
+  "id": "00Q0G84kq3M",
+  "channel": "IBM Technology",
+  "minutes": 9,
+  "views": 465171,
+  "title": "RAG vs. Fine Tuning",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=00Q0G84kq3M"
+ },
+ "fine-tuning-datasets": {
+  "id": "IIvORO248Zs",
+  "channel": "codebasics",
+  "minutes": 54,
+  "views": 130392,
+  "title": "LLM Fine Tuning Crash Course | LLM Fine Tuning Tutorial",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=IIvORO248Zs"
+ },
+ "full-fine-tuning": {
+  "id": "Wx1oiBCmxjY",
+  "channel": "Aishwarya Srinivasan and The Gen Academy",
+  "minutes": 10,
+  "views": 69811,
+  "title": "LLM Fine-Tuning Explained: The Complete Guide",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=Wx1oiBCmxjY"
+ },
+ "lora": {
+  "id": "Us5ZFp16PaU",
+  "channel": "Sam Witteveen",
+  "minutes": 16,
+  "views": 194819,
+  "title": "Fine-tuning LLMs with PEFT and LoRA",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=Us5ZFp16PaU"
+ },
+ "qlora": {
+  "id": "l5a_uKnbEr4",
+  "channel": "Krish Naik",
+  "minutes": 23,
+  "views": 77989,
+  "title": "Part 2-LoRA,QLoRA Indepth Mathematical Intuition- Finetuning LLM Models",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=l5a_uKnbEr4"
+ },
+ "unsloth-colab": {
+  "id": "NRVaRXDoI3g",
+  "channel": "1littlecoder",
+  "minutes": 15,
+  "views": 64401,
+  "title": "Fine-Tune Large LLMs with QLoRA (Free Colab Tutorial)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=NRVaRXDoI3g"
+ },
+ "dpo": {
+  "id": "PmW_TMQ3l0I",
+  "channel": "Stanford Online",
+  "minutes": 108,
+  "views": 89967,
+  "title": "Stanford CME295 Transformers & LLMs | Autumn 2025 | Lecture 5 - LLM tuning",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=PmW_TMQ3l0I"
+ },
+ "rl-fine-tuning": {
+  "id": "xT4jxQUl0X8",
+  "channel": "Julia Turc",
+  "minutes": 23,
+  "views": 63353,
+  "title": "DeepSeek's GRPO (Group Relative Policy Optimization) | Reinforcement Learning for LLMs",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=xT4jxQUl0X8"
+ },
+ "distillation": {
+  "id": "jrJKRYAdh7I",
+  "channel": "Julia Turc",
+  "minutes": 16,
+  "views": 95531,
+  "title": "Knowledge Distillation: How LLMs train each other",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=jrJKRYAdh7I"
+ },
+ "embedding-fine-tuning": {
+  "id": "hOLBrIjRAj4",
+  "channel": "Shaw Talebi",
+  "minutes": 22,
+  "views": 24950,
+  "title": "Fine-Tuning Text Embeddings For Domain-specific Search (w/ Python)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=hOLBrIjRAj4"
+ },
+ "model-merging": {
+  "id": "XPEJg_6Cg6o",
+  "channel": "MIT OpenCourseWare",
+  "minutes": 50,
+  "views": 45364,
+  "title": "23. Model Merging, Cross-Modal Coupling, Course Summary",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=XPEJg_6Cg6o"
+ },
+ "evals-basics": {
+  "id": "a3SMraZWNNs",
+  "channel": "Dave Ebbelaar",
+  "minutes": 55,
+  "views": 131552,
+  "title": "How to Systematically Setup LLM Evals (Metrics, Unit Tests, LLM-as-a-Judge)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=a3SMraZWNNs"
+ },
+ "golden-datasets": {
+  "id": "NaCjm8rdxqk",
+  "channel": "Arize AI",
+  "minutes": 31,
+  "views": 5120,
+  "title": "Build Your First Eval: Creating a Custom LLM Evaluator with a Golden Dataset",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=NaCjm8rdxqk"
+ },
+ "error-analysis": {
+  "id": "e2i6JbU2R-s",
+  "channel": "Hamel Husain",
+  "minutes": 12,
+  "views": 9818,
+  "title": "Error Analysis: The Highest ROI Technique In AI Engineering",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=e2i6JbU2R-s"
+ },
+ "code-graded-evals": {
+  "id": "a3SMraZWNNs",
+  "channel": "Dave Ebbelaar",
+  "minutes": 55,
+  "views": 131549,
+  "title": "How to Systematically Setup LLM Evals (Metrics, Unit Tests, LLM-as-a-Judge)",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=a3SMraZWNNs"
+ },
+ "llm-as-judge": {
+  "id": "trfUBIDeI1Y",
+  "channel": "IBM Technology",
+  "minutes": 6,
+  "views": 60570,
+  "title": "LLM as a Judge: Scaling AI Evaluation Strategies",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=trfUBIDeI1Y"
+ },
+ "benchmarks": {
+  "id": "kDY4TodQwbg",
+  "channel": "IBM Technology",
+  "minutes": 6,
+  "views": 28623,
+  "title": "What are Large Language Model (LLM) Benchmarks?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=kDY4TodQwbg"
+ },
+ "eval-statistics": {
+  "id": "c5YaKCMraO8",
+  "channel": "Testing Theory",
+  "minutes": 11,
+  "views": 48574,
+  "title": "A/B Testing & Statistical Significance - 4 Steps to Know How to Call a Winning Test",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=c5YaKCMraO8"
+ },
+ "prompt-injection": {
+  "id": "jrHRe9lSqqA",
+  "channel": "IBM Technology",
+  "minutes": 11,
+  "views": 305303,
+  "title": "What Is a Prompt Injection Attack?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=jrHRe9lSqqA"
+ },
+ "jailbreaks-guardrails": {
+  "id": "ruiLq0OzjkI",
+  "channel": "Krish Naik",
+  "minutes": 38,
+  "views": 70719,
+  "title": "Guardrails with LangChain: A Complete Crash Course for Building Safe AI Agents",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=ruiLq0OzjkI"
+ },
+ "red-teaming": {
+  "id": "gUNXZMcd2jU",
+  "channel": "IBM Technology",
+  "minutes": 25,
+  "views": 344589,
+  "title": "OWASP's Top 10 Ways to Attack LLMs: AI Vulnerabilities Exposed",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=gUNXZMcd2jU"
+ },
+ "pii-privacy": {
+  "id": "oYJD_fE8a1U",
+  "channel": "Johannes Jolkkonen | Funktio AI",
+  "minutes": 6,
+  "views": 15153,
+  "title": "Everything You Need to Know About LLMs and Data Privacy in 6 Minutes",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=oYJD_fE8a1U"
+ },
+ "bias-fairness": {
+  "id": "og67qeTZPYs",
+  "channel": "IBM Technology",
+  "minutes": 9,
+  "views": 37572,
+  "title": "Algorithmic Bias in AI: What It Is and How to Fix It",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=og67qeTZPYs"
+ },
+ "ai-safety-alignment": {
+  "id": "IPmt8b-qLgk",
+  "channel": "Anthropic",
+  "minutes": 28,
+  "views": 52981,
+  "title": "How difficult is AI alignment? | Anthropic Research Salon",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=IPmt8b-qLgk"
+ },
+ "ai-regulation": {
+  "id": "s_rxOnCt3HQ",
+  "channel": "EU Made Simple",
+  "minutes": 5,
+  "views": 137642,
+  "title": "The EU's AI Act Explained",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=s_rxOnCt3HQ"
+ },
+ "deploy-web-app": {
+  "id": "8R-cetf_sZ4",
+  "channel": "Eric Roby",
+  "minutes": 6,
+  "views": 46606,
+  "title": "Deploy FastAPI on Vercel | Quick and Easy Tutorial",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=8R-cetf_sZ4"
+ },
+ "hf-spaces": {
+  "id": "3kRB2TXewus",
+  "channel": "Angel Poon",
+  "minutes": 8,
+  "views": 376419,
+  "title": "What Is Hugging Face and How To Use It",
+  "trusted": false,
+  "url": "https://www.youtube.com/watch?v=3kRB2TXewus"
+ },
+ "cloud-basics": {
+  "id": "M988_fsOSWo",
+  "channel": "Simplilearn",
+  "minutes": 6,
+  "views": 3153042,
+  "title": "Cloud Computing In 6 Minutes | What Is Cloud Computing? | Cloud Computing Explained | Simplilearn",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=M988_fsOSWo"
+ },
+ "model-serving": {
+  "id": "McLdlg5Gc9s",
+  "channel": "IBM Technology",
+  "minutes": 5,
+  "views": 118709,
+  "title": "What is vLLM? Efficient AI Inference for Large Language Models",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=McLdlg5Gc9s"
+ },
+ "latency-optimization": {
+  "id": "u57EnkQaUTY",
+  "channel": "IBM Technology",
+  "minutes": 9,
+  "views": 126772,
+  "title": "What is Prompt Caching? Optimize LLM Latency with AI Transformers",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=u57EnkQaUTY"
+ },
+ "model-routing": {
+  "id": "V_K6PCmdtRg",
+  "channel": "Sam Witteveen",
+  "minutes": 9,
+  "views": 37207,
+  "title": "What is an LLM Router?",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=V_K6PCmdtRg"
+ },
+ "retries-rate-limits": null,
+ "observability-tracing": {
+  "id": "2E8iTvGo9Hs",
+  "channel": "Langfuse",
+  "minutes": 10,
+  "views": 68917,
+  "title": "10 min Walkthrough of Langfuse – Open Source LLM Observability, Evaluation, and Prompt Management",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=2E8iTvGo9Hs"
+ },
+ "online-evals-feedback": {
+  "id": "hlgfW0IyREc",
+  "channel": "Langfuse",
+  "minutes": 15,
+  "views": 26767,
+  "title": "Langfuse Intro - Evaluations Deep Dive",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=hlgfW0IyREc"
+ },
+ "ci-cd": {
+  "id": "R8_veQiYBjI",
+  "channel": "TechWorld with Nana",
+  "minutes": 33,
+  "views": 2370064,
+  "title": "GitHub Actions Tutorial - Basic Concepts and CI/CD Pipeline with Docker",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=R8_veQiYBjI"
+ },
+ "mlops": {
+  "id": "6ngxBkx05Fs",
+  "channel": "codebasics",
+  "minutes": 51,
+  "views": 195950,
+  "title": "MLFlow Tutorial | ML Ops Tutorial",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=6ngxBkx05Fs"
+ },
+ "security-auth": {
+  "id": "4TQ_c72ffE4",
+  "channel": "Akamai Developers",
+  "minutes": 10,
+  "views": 197484,
+  "title": "Understanding The Fundamentals of API Security | How APIs are Attacked and How to Secure Them",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=4TQ_c72ffE4"
+ },
+ "portfolio-projects": {
+  "id": "IGEGgAKtA-4",
+  "channel": "Sundas Khalid",
+  "minutes": 13,
+  "views": 49360,
+  "title": "Stop Watching Tutorials - Build These 3 AI Projects to Get Hired in 2026",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=IGEGgAKtA-4"
+ },
+ "ml-system-design": {
+  "id": "XN2ymraj27g",
+  "channel": "MLEpath",
+  "minutes": 11,
+  "views": 110923,
+  "title": "How I Prepared for ML System Design Interviews at Meta",
+  "trusted": true,
+  "url": "https://www.youtube.com/watch?v=XN2ymraj27g"
+ }
+}

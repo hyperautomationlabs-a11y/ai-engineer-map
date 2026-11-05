@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The AI Engineer Map — Hyperautomation Labs University</title>
+<meta name="description" content="Every concept you need to become an AI engineer, mapped by prerequisite. Pick a goal, tick what you know, and see exactly what to learn next — with a free resource and a free video for each concept.">
+<meta property="og:title" content="The AI Engineer Map — free, by Hyperautomation Labs">
+<meta property="og:description" content="__COUNT__ concepts, every prerequisite mapped. Pick a goal, tick what you know, learn your next step free.">
+<link rel="canonical" href="https://hyperautomationlabs.co/university/ai-engineer-map">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.js"></script>
+<style>
+:root{
+  --bg:#FAFBFF;--surface:#FFFFFF;--surface-2:#F4F2FF;--ink:#1E1B4B;--body:#475569;--muted:#94A3B8;
+  --line:#E7E5F4;--brand:#6C3AED;--brand-2:#8B5CF6;--brand-soft:rgba(108,58,237,.08);
+  --amber:#F59E0B;--green:#10B981;--green-soft:#ECFDF5;--locked:#CBD5E1;
+  --shadow:0 1px 2px rgba(30,27,75,.04),0 8px 24px rgba(30,27,75,.06);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E0C1D;--surface:#17142B;--surface-2:#1F1B3A;--ink:#F1EFFF;--body:#B9B4D6;--muted:#7C7898;
+  --line:#2C2750;--brand:#9B7BFF;--brand-2:#B49CFF;--brand-soft:rgba(155,123,255,.12);
+  --green-soft:rgba(16,185,129,.12);--locked:#3A3560;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);}}
+:root[data-theme="dark"]{
+  --bg:#0E0C1D;--surface:#17142B;--surface-2:#1F1B3A;--ink:#F1EFFF;--body:#B9B4D6;--muted:#7C7898;
+  --line:#2C2750;--brand:#9B7BFF;--brand-2:#B49CFF;--brand-soft:rgba(155,123,255,.12);
+  --green-soft:rgba(16,185,129,.12);--locked:#3A3560;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--body);font:16px/1.6 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+h1,h2,h3,h4{color:var(--ink);margin:0;line-height:1.15;letter-spacing:-.02em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+button{font:inherit;cursor:pointer}
+
+/* Make Viral Reels strip (same as the main site's MvrTopBar) */
+.mvr-topbar{display:flex;align-items:center;justify-content:center;gap:12px;white-space:nowrap;overflow:hidden;height:40px;padding:0 16px;background:#1A0F0B;color:#F4EEE9;text-decoration:none!important;font-size:14px;line-height:1.4}
+.mvr-topbar b{color:#fff}
+.mvr-topbar-new{background:#D23D1A;color:#fff;font-size:11px;font-weight:900;letter-spacing:1.5px;padding:3px 8px;border-radius:999px}
+.mvr-topbar-go{color:#FFC21A;font-weight:800}
+.mvr-topbar:hover .mvr-topbar-go{text-decoration:underline;text-underline-offset:3px}
+@media (max-width:860px){.mvr-topbar-long{display:none}}
+@media (max-width:600px){.mvr-topbar{font-size:13px;gap:8px;padding:0 12px;height:36px}}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--ink)}
+.logo-icon{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#6C3AED,#3B82F6);color:#fff;display:grid;place-items:center;font:700 12px ui-monospace,monospace}
+.nav-links{display:flex;gap:20px;align-items:center;font-size:14px;font-weight:600}
+.nav-links a{color:var(--body)}.nav-links a.on{color:var(--amber)}
+@media (max-width:640px){.nav-links .hide-sm{display:none}}
+
+/* hero */
+.hero{position:relative;padding:72px 0 40px;text-align:center;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;border-radius:99px;background:var(--brand-soft);border:1px solid color-mix(in srgb,var(--brand) 25%,transparent);font-size:13px;font-weight:700;color:var(--brand);letter-spacing:.06em}
+.badge i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(16,185,129,.2)}
+.hero h1{font-size:clamp(34px,6vw,62px);font-weight:900;margin:22px auto 16px;max-width:900px}
+.hero h1 em{font-style:normal;background:linear-gradient(135deg,#6C3AED,#3B82F6 60%,#06B6D4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:clamp(16px,2.2vw,20px);max-width:680px;margin:0 auto 28px}
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:14px;font-weight:800;font-size:16px;border:0;text-decoration:none!important}
+.btn-primary{background:linear-gradient(135deg,#6C3AED,#8B5CF6);color:#fff;box-shadow:0 6px 24px rgba(108,58,237,.32)}
+.btn-ghost{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.stats{display:flex;justify-content:center;gap:clamp(16px,5vw,56px);margin-top:40px;flex-wrap:wrap}
+.stats b{display:block;font-size:clamp(26px,4vw,36px);font-weight:900;color:var(--ink);letter-spacing:-.03em}
+.stats span{font-size:13px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+
+/* value */
+section{padding:56px 0}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--brand);text-transform:uppercase;margin-bottom:10px}
+.section-head{text-align:center;max-width:720px;margin:0 auto 36px}
+.section-head h2{font-size:clamp(26px,4vw,40px);font-weight:900;margin-bottom:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:860px){.grid3{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow)}
+.card .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px;margin-bottom:14px}
+.card h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.card ul{margin:10px 0 0;padding-left:18px}.card li{margin:4px 0}
+.problem{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+@media (max-width:860px){.problem{grid-template-columns:1fr}}
+.vs{border-radius:20px;padding:24px;border:1px solid var(--line)}
+.vs.bad{background:var(--surface)}.vs.good{background:linear-gradient(135deg,var(--brand-soft),transparent);border-color:color-mix(in srgb,var(--brand) 30%,transparent)}
+.vs h4{font-size:15px;margin-bottom:10px;font-weight:800}
+.vs .row{display:flex;gap:10px;margin:8px 0;align-items:flex-start}.vs .row span:first-child{flex:none}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:860px){.steps{grid-template-columns:1fr}}
+.step{position:relative;padding:26px 24px 24px;border-radius:20px;background:var(--surface);border:1px solid var(--line)}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:-14px;left:22px;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:800;font-size:14px}
+.step h3{font-size:18px;margin-bottom:6px}
+
+/* planner */
+#planner{padding-top:24px}
+.goals{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:22px}
+.goal{display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;background:var(--surface);border:1.5px solid var(--line);color:var(--ink);font-weight:700;font-size:15px;transition:.15s}
+.goal:hover{border-color:var(--brand);transform:translateY(-1px)}
+.goal small{font-weight:600;color:var(--muted);font-size:12px}
+.goal.on{background:var(--brand);border-color:var(--brand);color:#fff}.goal.on small{color:rgba(255,255,255,.75)}
+.app{display:grid;grid-template-columns:400px 1fr;gap:18px;align-items:start}
+@media (max-width:980px){.app{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.progress{padding:18px 20px;border-bottom:1px solid var(--line)}
+.progress .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+.progress h3{font-size:16px;font-weight:800}
+.progress .pct{font-weight:900;color:var(--brand);font-size:22px}
+.bar{height:10px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#10B981,#6C3AED);border-radius:99px;transition:width .4s}
+.progress .meta{display:flex;gap:14px;margin-top:10px;font-size:13px;font-weight:600;flex-wrap:wrap}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.next{padding:16px 20px;background:linear-gradient(135deg,rgba(245,158,11,.10),transparent);border-bottom:1px solid var(--line)}
+.next h4{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin-bottom:8px;font-weight:800}
+.next .chip{display:inline-flex;margin:3px 4px 3px 0;padding:6px 12px;border-radius:99px;background:var(--surface);border:1.5px solid var(--amber);color:var(--ink);font-weight:700;font-size:13px}
+.list{max-height:640px;overflow:auto;padding:6px 0}
+.tgroup{padding:10px 20px 4px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:8px;position:sticky;top:0;background:var(--surface);z-index:1}
+.item{display:flex;align-items:center;gap:12px;padding:9px 20px;cursor:pointer;transition:background .1s}
+.item:hover,.item.sel{background:var(--surface-2)}
+.check{flex:none;width:22px;height:22px;border-radius:7px;border:2px solid var(--locked);display:grid;place-items:center;background:var(--surface);transition:.15s}
+.check svg{width:13px;height:13px;opacity:0}
+.item.known .check{background:var(--green);border-color:var(--green)}.item.known .check svg{opacity:1}
+.item.ready .check{border-color:var(--amber)}
+.item .t{flex:1;min-width:0;font-weight:600;color:var(--ink);font-size:14.5px}
+.item.locked .t{color:var(--muted)}
+.item.known .t{text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--muted) 60%,transparent);color:var(--body)}
+.tag{flex:none;font-size:11px;font-weight:800;padding:2px 8px;border-radius:99px}
+.tag.ready{background:rgba(245,158,11,.14);color:#B45309}
+:root[data-theme="dark"] .tag.ready{color:#FBBF24}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tag.ready{color:#FBBF24}}
+.tag.vid{background:rgba(239,68,68,.10);color:#DC2626}
+.graphbox{position:relative;height:760px}
+@media (max-width:980px){.graphbox{height:520px}}
+#cy{position:absolute;inset:0}
+.gtools{position:absolute;top:12px;left:12px;right:12px;display:flex;justify-content:space-between;gap:8px;z-index:2;pointer-events:none}
+.gtools>*{pointer-events:auto}
+.legend{display:flex;gap:12px;flex-wrap:wrap;background:color-mix(in srgb,var(--surface) 90%,transparent);border:1px solid var(--line);padding:7px 12px;border-radius:12px;font-size:12px;font-weight:600}
+.iconbtn{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:13px;font-weight:700;color:var(--ink)}
+
+/* drawer */
+#drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100vw);background:var(--surface);border-left:1px solid var(--line);box-shadow:-20px 0 60px rgba(30,27,75,.18);z-index:100;transform:translateX(105%);transition:transform .28s cubic-bezier(.2,.8,.2,1);overflow:auto}
+#drawer.open{transform:none}
+#drawer .in{padding:24px}
+.close{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:18px}
+.d-track{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+#drawer h2{font-size:26px;font-weight:900;margin:6px 40px 10px 0}
+.lv{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--surface-2);color:var(--body);margin-right:6px}
+.why{font-size:17px;color:var(--ink);margin:16px 0 20px;padding:14px 16px;border-radius:14px;background:var(--brand-soft);border-left:4px solid var(--brand)}
+.res{display:block;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:12px;color:var(--ink);text-decoration:none!important;transition:.15s}
+.res:hover{border-color:var(--brand)}
+.res .lbl{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.res .body{padding:12px 14px}
+.res .ttl{font-weight:700;margin-top:2px}
+.thumb{position:relative;aspect-ratio:16/9;background:#000 center/cover}
+.thumb .play{position:absolute;inset:0;display:grid;place-items:center}
+.thumb .play i{width:64px;height:44px;border-radius:12px;background:#FF0033;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.thumb .dur{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.8);color:#fff;font-size:12px;font-weight:700;padding:2px 6px;border-radius:6px}
+.thumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.rel h4{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin:20px 0 8px;color:var(--muted)}
+.pill{display:inline-flex;align-items:center;gap:6px;margin:3px 5px 3px 0;padding:6px 12px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:13px;font-weight:600}
+.pill:hover{border-color:var(--brand)}
+.knowbtn{width:100%;margin-top:18px;padding:14px;border-radius:14px;border:2px solid var(--green);background:var(--green-soft);color:#047857;font-weight:800;font-size:15px}
+.knowbtn.on{background:var(--green);color:#fff}
+#scrim{position:fixed;inset:0;background:rgba(14,12,29,.35);z-index:99;opacity:0;pointer-events:none;transition:.2s}
+#scrim.on{opacity:1;pointer-events:auto}
+
+/* tracks */
+.tracks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:980px){.tracks{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.tracks{grid-template-columns:1fr}}
+.trk{padding:18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid}
+.trk h4{font-size:16px;font-weight:800}.trk p{margin:4px 0 0;font-size:13px;color:var(--muted);font-weight:600}
+.final{text-align:center;border-radius:28px;padding:48px 24px;background:linear-gradient(135deg,#1E1B4B,#3B1F8F 60%,#6C3AED);color:#E9E5FF}
+.final h2{color:#fff;font-size:clamp(26px,4vw,38px);font-weight:900;margin-bottom:10px}
+.final .btn-ghost{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.25)}
+footer{padding:36px 0 48px;text-align:center;font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<a class="mvr-topbar" href="https://makeviralreels.com/?ref=hal-site-aem&utm_source=hyperautomationlabs&utm_medium=website&utm_campaign=aem-topbar" target="_blank" rel="noopener">
+  <span class="mvr-topbar-new">NEW</span>
+  <span class="mvr-topbar-text"><b>Make Viral Reels</b><span class="mvr-topbar-long"> turns any link into a ready-to-post reel.</span></span>
+  <span class="mvr-topbar-go">Try it free →</span>
+</a>
+<nav><div class="wrap">
+  <a class="logo" href="/"><span class="logo-icon">&gt;_</span><span>Hyperautomation Labs</span></a>
+  <div class="nav-links"><a class="hide-sm" href="/">Home</a><a class="hide-sm" href="/library">Free Library</a><a class="on" href="/university">University</a></div>
+</div></nav>
+
+<header class="hero">
+  <div class="orb" style="top:-120px;left:-180px;width:560px;height:560px;background:radial-gradient(circle,rgba(108,58,237,.16),transparent 70%)"></div>
+  <div class="orb" style="top:120px;right:-160px;width:480px;height:480px;background:radial-gradient(circle,rgba(59,130,246,.13),transparent 70%)"></div>
+  <div class="wrap" style="position:relative">
+    <span class="badge"><i></i>FREE · HYPERAUTOMATION LABS UNIVERSITY</span>
+    <h1>Stop guessing what to learn next.<br><em>The AI Engineer Map.</em></h1>
+    <p class="lead">Every concept you need to become an AI engineer, connected by what you must learn first. Pick a goal, tick what you already know, and the map shows your exact next step, with a free resource and a free video for each one.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#planner">Find my next step →</a>
+      <a class="btn btn-ghost" href="#how">How it works</a>
+    </div>
+    <div class="stats">
+      <div><b>__COUNT__</b><span>Concepts</span></div>
+      <div><b>__EDGES__</b><span>Prerequisite links</span></div>
+      <div><b>__VIDEOS__</b><span>Free videos</span></div>
+      <div><b>$0</b><span>Cost</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="who"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Who it's for</div><h2>Built for anyone moving into AI</h2><p>You don't need a degree or a $5,000 bootcamp. You need to know where you are and what's next.</p></div>
+  <div class="grid3">
+    <div class="card"><div class="ic" style="background:rgba(108,58,237,.1)">💼</div><h3>Career switchers</h3><p>IT, support, QA, analysts and testers who want an AI role.</p><ul><li>Start from what you already know</li><li>Skip what you don't need yet</li><li>Build a portfolio project that gets interviews</li></ul></div>
+    <div class="card"><div class="ic" style="background:rgba(59,130,246,.1)">⌨️</div><h3>Developers using AI</h3><p>You call ChatGPT or Claude from code but feel the gaps.</p><ul><li>Find the missing pieces: evals, RAG, agents</li><li>Understand what's under the API</li><li>Go from prompt tinkerer to AI engineer</li></ul></div>
+    <div class="card"><div class="ic" style="background:rgba(16,185,129,.1)">🎓</div><h3>Students & self-learners</h3><p>Preparing for your first AI job, on your own schedule.</p><ul><li>A clear order: no more tutorial hell</li><li>Free, trusted resources only</li><li>Your progress saves in your browser</li></ul></div>
+  </div>
+  <div class="problem">
+    <div class="vs bad"><h4>😵 Why most people stall</h4>
+      <div class="row"><span>✕</span><span>Roadmaps are flat lists. They don't say what depends on what.</span></div>
+      <div class="row"><span>✕</span><span>You start transformers before Python, hit a wall and quit.</span></div>
+      <div class="row"><span>✕</span><span>Everyone gets the same list, but everyone starts from a different place.</span></div>
+      <div class="row"><span>✕</span><span>Hundreds of paid courses, no idea which one teaches the thing you need now.</span></div></div>
+    <div class="vs good"><h4>✅ What the map does instead</h4>
+      <div class="row"><span>✓</span><span>Every concept is linked to the concepts it needs first.</span></div>
+      <div class="row"><span>✓</span><span>Tick what you know and it shows only what you're ready for now.</span></div>
+      <div class="row"><span>✓</span><span>Pick a goal: "build an AI agent" is <span id="agentN">28</span> concepts, not all __COUNT__.</span></div>
+      <div class="row"><span>✓</span><span>One free resource and one free video for each concept. Learn it, tick it, move on.</span></div></div>
+  </div>
+</div></section>
+
+<section id="how" style="padding-top:8px"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">How it works</div><h2>Three steps. Then just keep going.</h2></div>
+  <div class="steps">
+    <div class="step"><h3>Pick your goal</h3><p>Build a RAG chatbot, an AI agent, an MCP server, fine-tune a model, or get hired. The map trims itself to only what that goal needs.</p></div>
+    <div class="step"><h3>Tick what you know</h3><p>Already know Python and SQL? Tick them. Your progress bar fills and saves in your browser.</p></div>
+    <div class="step"><h3>Learn what's glowing</h3><p>Concepts marked <b style="color:var(--amber)">Ready</b> are the ones you can learn right now. Open one: why it matters, a free read, a free video.</p></div>
+  </div>
+</div></section>
+
+<section id="planner"><div class="wrap">
+  <div class="section-head" style="margin-bottom:22px"><div class="eyebrow">Your map</div><h2>What do you want to build?</h2></div>
+  <div class="goals" id="goals"></div>
+  <div class="app">
+    <div class="panel">
+      <div class="progress"><div class="top"><h3 id="goalName">Full map</h3><span class="pct" id="pct">0%</span></div>
+        <div class="bar"><i id="barFill"></i></div>
+        <div class="meta"><span><i class="dot" style="background:var(--green)"></i><b id="nKnown">0</b> known</span><span><i class="dot" style="background:var(--amber)"></i><b id="nReady">0</b> ready now</span><span><i class="dot" style="background:var(--locked)"></i><b id="nLocked">0</b> locked</span></div></div>
+      <div class="next"><h4>⚡ Learn next</h4><div id="nextChips"></div></div>
+      <div class="list" id="list"></div>
+    </div>
+    <div class="panel graphbox">
+      <div class="gtools"><div class="legend"><span><i class="dot" style="background:var(--green)"></i>Known</span><span><i class="dot" style="background:var(--amber)"></i>Ready now</span><span><i class="dot" style="background:var(--locked)"></i>Locked</span></div>
+        <div style="display:flex;gap:6px"><button class="iconbtn" id="fit">Fit</button><button class="iconbtn" id="reset" title="Clear my ticks">Reset</button></div></div>
+      <div id="cy"></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="tracks" style="padding-top:24px"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">What's inside</div><h2>12 tracks, from first line of Python to production</h2></div>
+  <div class="tracks" id="trackGrid"></div>
+</div></section>
+
+<section><div class="wrap"><div class="final">
+  <h2>Learning AI on your own? Don't do it alone.</h2>
+  <p style="max-width:620px;margin:0 auto 22px">Join the Hyperautomation Labs University waitlist and get one practical AI email a week, plus new tracks on this map as they land.</p>
+  <div class="cta-row"><a class="btn btn-primary" href="/university">Join the University waitlist</a><a class="btn btn-ghost" href="/library">Browse the free library</a></div>
+</div></div></section>
+
+<footer><div class="wrap">The AI Engineer Map · Hyperautomation Labs University · Resources link to their original free sources; videos belong to their creators.</div></footer>
+
+<div id="scrim"></div>
+<aside id="drawer" aria-label="Concept details"><button class="close" id="closeD" aria-label="Close">✕</button><div class="in" id="dIn"></div></aside>
+
+<script>
+const DATA = /*DATA*/;
+const GOALS = [
+  { id:"all", label:"Full map", icon:"🗺️", targets:null },
+  { id:"agent", label:"Build an AI agent", icon:"🤖", targets:["agent-loop","tool-design","human-in-the-loop"] },
+  { id:"rag", label:"Build a RAG chatbot", icon:"📚", targets:["rag-basics","reranking","citations-grounding"] },
+  { id:"mcp", label:"Build an MCP server", icon:"🔌", targets:["build-mcp-server"] },
+  { id:"ft", label:"Fine-tune a model", icon:"🎛️", targets:["lora","unsloth-colab"] },
+  { id:"gpt", label:"Understand how GPT works", icon:"🧠", targets:["build-gpt-from-scratch"] },
+  { id:"hired", label:"Get hired as an AI engineer", icon:"💼", targets:["portfolio-projects","ml-system-design"] },
+];
+const T = Object.fromEntries(DATA.tracks.map(t=>[t.id,t]));
+const N = Object.fromEntries(DATA.nodes.map(n=>[n.id,n]));
+const ORDER = DATA.tracks.map(t=>t.id);
+const unlocks = {}; DATA.edges.forEach(e=>(unlocks[e.from] ??= []).push(e.to));
+const LV = ["","Beginner","Intermediate","Advanced"];
+const esc = s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store = { get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch{return d}}, set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}} };
+let known = new Set(store.get("aem-known",[]));
+let goal = store.get("aem-goal","agent");
+if(!GOALS.find(g=>g.id===goal)) goal="agent";
+
+function ancestors(ids){const s=new Set();const go=i=>{if(s.has(i))return;s.add(i);N[i].requires.forEach(go)};ids.forEach(go);return s}
+const goalSet = g => g.targets ? ancestors(g.targets) : new Set(Object.keys(N));
+const state = id => known.has(id) ? "known" : N[id].requires.every(r=>known.has(r)) ? "ready" : "locked";
+const fmtMin = m => m>=60 ? `${Math.floor(m/60)}h ${m%60}m` : `${m} min`;
+
+// goals
+document.getElementById("goals").innerHTML = GOALS.map(g=>`<button class="goal" data-goal="${g.id}"><span>${g.icon}</span><span>${g.label}<br><small>${goalSet(g).size} concepts</small></span></button>`).join("");
+document.getElementById("goals").addEventListener("click",e=>{const b=e.target.closest("[data-goal]");if(!b)return;goal=b.dataset.goal;store.set("aem-goal",goal);renderAll(true)});
+
+// tracks grid
+document.getElementById("trackGrid").innerHTML = DATA.tracks.map(t=>{const ns=DATA.nodes.filter(n=>n.track===t.id);const v=ns.filter(n=>n.watch).length;
+  return `<div class="trk" style="border-top-color:${t.color}"><h4>${esc(t.title)}</h4><p>${ns.length} concepts${v?` · ${v} videos`:""}</p></div>`}).join("");
+
+let cy, currentSet;
+function renderList(){
+  const set=currentSet, ids=[...set];
+  const k=ids.filter(i=>known.has(i)).length, r=ids.filter(i=>state(i)==="ready").length;
+  document.getElementById("goalName").textContent = GOALS.find(g=>g.id===goal).label;
+  document.getElementById("pct").textContent = Math.round(100*k/ids.length)+"%";
+  document.getElementById("barFill").style.width = (100*k/ids.length)+"%";
+  document.getElementById("nKnown").textContent=k;document.getElementById("nReady").textContent=r;document.getElementById("nLocked").textContent=ids.length-k-r;
+  const ready=ids.filter(i=>state(i)==="ready").sort((a,b)=>N[a].depth-N[b].depth||ORDER.indexOf(N[a].track)-ORDER.indexOf(N[b].track));
+  document.getElementById("nextChips").innerHTML = ready.length ? ready.slice(0,6).map(i=>`<button class="chip" data-open="${i}">${esc(N[i].title)}</button>`).join("")+(ready.length>6?`<span style="font-size:13px;font-weight:600;color:var(--muted)"> +${ready.length-6} more</span>`:"") : `<span style="font-weight:700;color:var(--green)">🎉 You've completed this goal.</span>`;
+  const check='<svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg>';
+  document.getElementById("list").innerHTML = ORDER.map(tid=>{
+    const ns=ids.filter(i=>N[i].track===tid).sort((a,b)=>N[a].depth-N[b].depth);
+    if(!ns.length) return "";
+    return `<div class="tgroup" style="color:${T[tid].color}"><i class="dot" style="background:${T[tid].color}"></i>${esc(T[tid].title)} · ${ns.filter(i=>known.has(i)).length}/${ns.length}</div>`+
+      ns.map(i=>{const s=state(i);return `<div class="item ${s}" data-open="${i}"><button class="check" data-toggle="${i}" aria-label="Mark ${esc(N[i].title)} as known">${check}</button><span class="t">${esc(N[i].title)}</span>${s==="ready"?'<span class="tag ready">Ready</span>':""}${N[i].watch?'<span class="tag vid">▶</span>':""}</div>`}).join("");
+  }).join("");
+}
+// Full-map "metro" layout: columns = prerequisite depth, horizontal bands = the 12 tracks (same layout as the video).
+let _metro;
+function metroPos(){
+  if(_metro) return _metro;
+  const maxD=Math.max(...DATA.nodes.map(n=>n.depth)), cells={};
+  DATA.nodes.forEach(n=>(cells[n.depth+"|"+n.track]??=[]).push(n));
+  // tracks = columns (left→right), prerequisite depth = rows (top→bottom): fills a square panel
+  const colW=120,rowH=62,P={};
+  for(const [k,ns] of Object.entries(cells)){const [d,tr]=k.split("|");const cx=(ORDER.indexOf(tr)+.5)*colW,cy=Number(d)*rowH;
+    const cols=Math.min(3,ns.length),rows=Math.ceil(ns.length/cols);
+    ns.forEach((n,i)=>{const c=i%cols,r=Math.floor(i/cols);P[n.id]={x:cx+(c-(cols-1)/2)*32,y:cy+(r-(rows-1)/2)*24}})}
+  return _metro=P;
+}
+function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}
+function renderGraph(relayout){
+  const set=currentSet;
+  const colors={known:"#10B981",ready:"#F59E0B",locked:css("--locked")};
+  if(relayout||!cy){
+    cy?.destroy();
+    const els=[...set].map(id=>({data:{id,label:N[id].title,tc:T[N[id].track].color}})).concat(DATA.edges.filter(e=>set.has(e.from)&&set.has(e.to)).map(e=>({data:{id:e.from+">"+e.to,source:e.from,target:e.to}})));
+    cy=cytoscape({container:document.getElementById("cy"),elements:els,wheelSensitivity:.25,minZoom:.15,maxZoom:2.5,
+      layout:set.size>100?{name:"preset",positions:metroPos(),fit:true,padding:30}:{name:"dagre",rankDir:"TB",nodeSep:110,rankSep:52,padding:30},
+      style:[
+        {selector:"node",style:{"label":set.size>100?"":"data(label)","width":18,"height":18,"background-color":"data(bg)","border-width":3,"border-color":"data(tc)","color":css("--ink"),"font-family":"Inter, system-ui, -apple-system, sans-serif","font-size":13,"min-zoomed-font-size":7,"font-weight":600,"text-valign":"bottom","text-margin-y":4,"text-wrap":"wrap","text-max-width":150,"text-background-color":css("--surface"),"text-background-opacity":.85,"text-background-padding":2,"text-background-shape":"roundrectangle"}},
+        {selector:"node.ready",style:{"width":24,"height":24,"border-color":"#F59E0B","border-width":4,"underlay-color":"#F59E0B","underlay-opacity":.18,"underlay-padding":8,"underlay-shape":"ellipse","font-weight":800}},
+        {selector:"node.known",style:{"border-color":"#10B981"}},
+        {selector:"node.target",style:{"shape":"star","width":30,"height":30}},
+        {selector:"edge",style:{"width":1.4,"line-color":css("--line"),"target-arrow-color":css("--line"),"target-arrow-shape":"triangle","arrow-scale":.7,"curve-style":"bezier"}},
+        {selector:"edge.done",style:{"line-color":"#10B98166","target-arrow-color":"#10B98166"}},
+        {selector:".faded",style:{"opacity":.12}},
+        {selector:"edge.hl",style:{"line-color":css("--brand"),"target-arrow-color":css("--brand"),"width":2.5,"opacity":1}},
+        {selector:"node.hl",style:{"opacity":1,"label":"data(label)"}},
+      ]});
+    cy.on("tap","node",e=>openD(e.target.id()));
+    cy.on("mouseover","node",e=>{const nb=e.target.closedNeighborhood();cy.elements().not(nb).addClass("faded");nb.addClass("hl")});
+    cy.on("mouseout","node",()=>cy.elements().removeClass("faded hl"));
+  }
+  const g=GOALS.find(x=>x.id===goal);
+  cy.batch(()=>{cy.nodes().forEach(n=>{const s=state(n.id());n.data("bg",colors[s]);n.removeClass("known ready locked target").addClass(s);if(g.targets?.includes(n.id()))n.addClass("target")});
+    cy.edges().forEach(e=>e.toggleClass("done",known.has(e.data("source"))))});
+}
+function renderAll(relayout){
+  currentSet=goalSet(GOALS.find(g=>g.id===goal));
+  document.querySelectorAll(".goal").forEach(b=>b.classList.toggle("on",b.dataset.goal===goal));
+  renderList();renderGraph(relayout);
+  if(openId) openD(openId,true);
+}
+function toggle(id){known.has(id)?known.delete(id):known.add(id);store.set("aem-known",[...known]);renderAll(false)}
+
+let openId=null;
+function openD(id,keep){
+  openId=id;const n=N[id],t=T[n.track],s=state(id);
+  const w=n.watch;
+  document.getElementById("dIn").innerHTML=`
+    <div class="d-track" style="color:${t.color}">${esc(t.title)}</div>
+    <h2>${esc(n.title)}</h2>
+    <span class="lv">${LV[n.level]}</span><span class="lv">${s==="known"?"✅ Known":s==="ready"?"⚡ Ready to learn":"🔒 Learn the prerequisites first"}</span>
+    <div class="why">${esc(n.why)}</div>
+    ${w?`<div class="res"><div class="thumb" id="th" style="background-image:url(https://i.ytimg.com/vi/${w.id}/hqdefault.jpg)"><button class="play" id="playBtn" aria-label="Play video" style="border:0;background:transparent;width:100%;height:100%"><i><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></i></button><span class="dur">${fmtMin(w.minutes)}</span></div>
+      <div class="body"><div class="lbl">▶ Free video · ${esc(w.channel)}</div><div class="ttl">${esc(w.title)}</div><a href="${w.url}" target="_blank" rel="noopener" style="font-size:13px;font-weight:600">Open on YouTube ↗</a></div></div>`:""}
+    <a class="res" href="${n.learn.url}" target="_blank" rel="noopener"><div class="body"><div class="lbl">📖 Free resource</div><div class="ttl">${esc(n.learn.title)} ↗</div></div></a>
+    <div class="rel"><h4>Learn these first (${n.requires.length})</h4>${n.requires.map(r=>`<button class="pill" data-open="${r}"><i class="dot" style="background:${known.has(r)?"#10B981":T[N[r].track].color}"></i>${esc(N[r].title)}</button>`).join("")||'<span style="font-size:14px">Nothing. This is a starting point. 🚀</span>'}
+    <h4>This unlocks (${(unlocks[id]||[]).length})</h4>${(unlocks[id]||[]).map(r=>`<button class="pill" data-open="${r}"><i class="dot" style="background:${T[N[r].track].color}"></i>${esc(N[r].title)}</button>`).join("")||'<span style="font-size:14px">A finishing skill.</span>'}</div>
+    <button class="knowbtn ${known.has(id)?"on":""}" data-toggle="${id}">${known.has(id)?"✓ I know this":"Mark as known"}</button>`;
+  document.getElementById("playBtn")?.addEventListener("click",()=>{document.getElementById("th").innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${w.id}?autoplay=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="${esc(w.title)}"></iframe>`});
+  if(!keep){document.getElementById("drawer").classList.add("open");document.getElementById("scrim").classList.add("on");}
+  document.querySelectorAll(".item").forEach(el=>el.classList.toggle("sel",el.dataset.open===id));
+}
+function closeD(){openId=null;document.getElementById("drawer").classList.remove("open");document.getElementById("scrim").classList.remove("on");document.querySelectorAll(".item.sel").forEach(e=>e.classList.remove("sel"))}
+document.addEventListener("click",e=>{
+  const tg=e.target.closest("[data-toggle]"); if(tg){e.stopPropagation();toggle(tg.dataset.toggle);return}
+  const op=e.target.closest("[data-open]"); if(op){openD(op.dataset.open);return}
+});
+document.getElementById("closeD").onclick=closeD;document.getElementById("scrim").onclick=closeD;
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeD()});
+document.getElementById("fit").onclick=()=>cy.fit(undefined,40);
+document.getElementById("reset").onclick=()=>{known=new Set();store.set("aem-known",[]);renderAll(false)};
+document.fonts?.ready.then(()=>cy&&cy.style().update());
+document.getElementById("agentN").textContent=goalSet(GOALS[1]).size;
+renderAll(true);
+</script>
+</body>
+</html>

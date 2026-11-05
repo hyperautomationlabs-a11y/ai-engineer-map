@@ -1,0 +1,101 @@
+track: evals-safety
+title: Evals, Safety and Responsible AI
+color: "#DB2777"
+concepts:
+  - id: evals-basics
+    title: "Evals: tests for AI"
+    level: 1
+    requires: [testing-pytest, llm-api-basics]
+    why: The skill that separates AI engineers from prompt tinkerers.
+    learn: { title: "Claude docs: Define success and build evals", url: "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests" }
+
+  - id: golden-datasets
+    title: Golden test sets
+    level: 2
+    requires: [evals-basics, data-labeling]
+    why: 50 hand-checked examples you run after every change.
+    learn: { title: "Hamel Husain: Your AI product needs evals", url: "https://hamel.dev/blog/posts/evals/" }
+
+  - id: error-analysis
+    title: Error analysis
+    level: 2
+    requires: [golden-datasets]
+    why: Read the failures, group them, fix the biggest group first.
+    learn: { title: "Hamel Husain: A field guide to rapidly improving AI products", url: "https://hamel.dev/blog/posts/field-guide/" }
+
+  - id: code-graded-evals
+    title: Code-graded evals
+    level: 2
+    requires: [evals-basics, structured-outputs]
+    why: "Exact match, regex, schema checks: cheap and reliable."
+    learn: { title: "Anthropic courses: Prompt evaluations", url: "https://github.com/anthropics/courses/tree/master/prompt_evaluations" }
+
+  - id: llm-as-judge
+    title: LLM-as-a-judge
+    level: 2
+    requires: [evals-basics, prompt-engineering]
+    why: Grade open-ended answers at scale; calibrate it against humans.
+    learn: { title: "Hugging Face cookbook: LLM-as-a-judge", url: "https://huggingface.co/learn/cookbook/en/llm_judge" }
+
+  - id: benchmarks
+    title: Public benchmarks (MMLU, SWE-bench, ...)
+    level: 2
+    requires: [evals-basics]
+    why: Read leaderboards critically; your task is not the benchmark.
+    learn: { title: "Stanford HELM", url: "https://crfm.stanford.edu/helm/" }
+
+  - id: eval-statistics
+    title: Statistics for evals
+    level: 3
+    requires: [golden-datasets, hypothesis-testing]
+    why: Is a 2-point gain real or noise? Error bars on evals.
+    learn: { title: "Anthropic: Adding error bars to evals", url: "https://www.anthropic.com/research/statistical-approach-to-model-evals" }
+
+  - id: prompt-injection
+    title: Prompt injection
+    level: 2
+    requires: [tool-use, rag-basics]
+    why: "A web page or email can hijack your agent. The #1 LLM security risk."
+    learn: { title: "OWASP Top 10 for LLM Applications", url: "https://genai.owasp.org/llm-top-10/" }
+
+  - id: jailbreaks-guardrails
+    title: Jailbreaks and guardrails
+    level: 2
+    requires: [prompt-injection]
+    why: Input/output filters and policies that keep the app safe.
+    learn: { title: "Claude docs: Mitigate jailbreaks", url: "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks" }
+
+  - id: red-teaming
+    title: Red teaming
+    level: 3
+    requires: [jailbreaks-guardrails, golden-datasets]
+    why: Attack your own app before users do.
+    learn: { title: "promptfoo: Red teaming docs", url: "https://www.promptfoo.dev/docs/red-team/" }
+
+  - id: pii-privacy
+    title: PII and data privacy
+    level: 2
+    requires: [llm-api-basics]
+    why: Know what you may send to a third-party model, and what you may not.
+    learn: { title: "Microsoft Presidio (PII detection)", url: "https://microsoft.github.io/presidio/" }
+
+  - id: bias-fairness
+    title: Bias and fairness
+    level: 2
+    requires: [classification-metrics]
+    why: Models copy the biases in their data; measure it.
+    learn: { title: "Google MLCC: Fairness", url: "https://developers.google.com/machine-learning/crash-course/fairness" }
+
+  - id: ai-safety-alignment
+    title: AI safety and alignment
+    level: 3
+    requires: [rlhf]
+    why: Why the labs care so much about models doing what we actually intend.
+    learn: { title: "BlueDot Impact: AI Safety Fundamentals", url: "https://bluedot.org/" }
+
+  - id: ai-regulation
+    title: AI regulation (EU AI Act and others)
+    level: 2
+    requires: [pii-privacy]
+    why: Rules on what you can deploy, and where.
+    learn: { title: "EU AI Act explorer", url: "https://artificialintelligenceact.eu/" }

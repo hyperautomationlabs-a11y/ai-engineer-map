@@ -1,0 +1,5042 @@
+{
+ "tracks": [
+  {
+   "id": "programming",
+   "title": "Programming Foundations",
+   "color": "#4C8BF5"
+  },
+  {
+   "id": "math",
+   "title": "Math for AI",
+   "color": "#9C6ADE"
+  },
+  {
+   "id": "data",
+   "title": "Working With Data",
+   "color": "#2BB673"
+  },
+  {
+   "id": "classical-ml",
+   "title": "Classical Machine Learning",
+   "color": "#F5A623"
+  },
+  {
+   "id": "deep-learning",
+   "title": "Deep Learning",
+   "color": "#E8505B"
+  },
+  {
+   "id": "transformers",
+   "title": "NLP and Transformers",
+   "color": "#00A6C8"
+  },
+  {
+   "id": "llm-apps",
+   "title": "Building With LLMs",
+   "color": "#D97757"
+  },
+  {
+   "id": "rag",
+   "title": "Retrieval and RAG",
+   "color": "#1F9E89"
+  },
+  {
+   "id": "agents",
+   "title": "AI Agents",
+   "color": "#C2410C"
+  },
+  {
+   "id": "fine-tuning",
+   "title": "Fine-tuning and Training",
+   "color": "#7C3AED"
+  },
+  {
+   "id": "evals-safety",
+   "title": "Evals, Safety and Responsible AI",
+   "color": "#DB2777"
+  },
+  {
+   "id": "production",
+   "title": "Shipping to Production",
+   "color": "#475569"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "python-basics",
+   "title": "Python basics",
+   "level": 1,
+   "requires": [],
+   "why": "Almost every AI library, notebook and API example is written in Python.",
+   "learn": {
+    "title": "The Python Tutorial (official)",
+    "url": "https://docs.python.org/3/tutorial/"
+   },
+   "track": "programming",
+   "depth": 0
+  },
+  {
+   "id": "python-data-structures",
+   "title": "Lists, dicts, sets, tuples",
+   "level": 1,
+   "requires": [
+    "python-basics"
+   ],
+   "why": "Every dataset, API response and prompt template is built from these.",
+   "learn": {
+    "title": "Python Tutorial: Data Structures",
+    "url": "https://docs.python.org/3/tutorial/datastructures.html"
+   },
+   "track": "programming",
+   "depth": 1
+  },
+  {
+   "id": "python-functions-modules",
+   "title": "Functions, modules, packages",
+   "level": 1,
+   "requires": [
+    "python-basics"
+   ],
+   "why": "Turns notebook scribbles into reusable code you can ship.",
+   "learn": {
+    "title": "Python Tutorial: Modules",
+    "url": "https://docs.python.org/3/tutorial/modules.html"
+   },
+   "track": "programming",
+   "depth": 1
+  },
+  {
+   "id": "python-oop",
+   "title": "Classes and objects",
+   "level": 2,
+   "requires": [
+    "python-functions-modules"
+   ],
+   "why": "PyTorch models, agents and SDK clients are all classes.",
+   "learn": {
+    "title": "Python Tutorial: Classes",
+    "url": "https://docs.python.org/3/tutorial/classes.html"
+   },
+   "track": "programming",
+   "depth": 2
+  },
+  {
+   "id": "python-errors",
+   "title": "Exceptions and error handling",
+   "level": 1,
+   "requires": [
+    "python-basics"
+   ],
+   "why": "LLM APIs time out and rate-limit; your code has to survive it.",
+   "learn": {
+    "title": "Python Tutorial: Errors and Exceptions",
+    "url": "https://docs.python.org/3/tutorial/errors.html"
+   },
+   "track": "programming",
+   "depth": 1
+  },
+  {
+   "id": "python-files-io",
+   "title": "Reading and writing files",
+   "level": 1,
+   "requires": [
+    "python-basics"
+   ],
+   "why": "Loading datasets, saving results, parsing PDFs all start here.",
+   "learn": {
+    "title": "Python Tutorial: Input and Output",
+    "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+   },
+   "track": "programming",
+   "depth": 1
+  },
+  {
+   "id": "python-venv-pip",
+   "title": "Virtual environments and pip",
+   "level": 1,
+   "requires": [
+    "python-functions-modules"
+   ],
+   "why": "Stops \"works on my machine\" before it starts.",
+   "learn": {
+    "title": "Python Tutorial: Virtual Environments",
+    "url": "https://docs.python.org/3/tutorial/venv.html"
+   },
+   "track": "programming",
+   "depth": 2
+  },
+  {
+   "id": "python-typing",
+   "title": "Type hints",
+   "level": 2,
+   "requires": [
+    "python-functions-modules"
+   ],
+   "why": "Pydantic schemas and tool definitions are built on type hints.",
+   "learn": {
+    "title": "typing (official docs)",
+    "url": "https://docs.python.org/3/library/typing.html"
+   },
+   "track": "programming",
+   "depth": 2
+  },
+  {
+   "id": "python-async",
+   "title": "Async and concurrency",
+   "level": 3,
+   "requires": [
+    "python-functions-modules",
+    "python-errors"
+   ],
+   "why": "Calling an LLM 1,000 times in parallel instead of one by one.",
+   "learn": {
+    "title": "asyncio (official docs)",
+    "url": "https://docs.python.org/3/library/asyncio.html"
+   },
+   "track": "programming",
+   "depth": 2
+  },
+  {
+   "id": "command-line",
+   "title": "The command line",
+   "level": 1,
+   "requires": [],
+   "why": "Servers, GPUs, Claude Code and every deploy live in a terminal.",
+   "learn": {
+    "title": "MIT Missing Semester: The Shell",
+    "url": "https://missing.csail.mit.edu/2020/course-shell/"
+   },
+   "track": "programming",
+   "depth": 0
+  },
+  {
+   "id": "git-basics",
+   "title": "Git basics",
+   "level": 1,
+   "requires": [
+    "command-line"
+   ],
+   "why": "Version control for code, prompts and experiments.",
+   "learn": {
+    "title": "Pro Git book (free)",
+    "url": "https://git-scm.com/book/en/v2"
+   },
+   "track": "programming",
+   "depth": 1
+  },
+  {
+   "id": "github-collab",
+   "title": "GitHub, branches and pull requests",
+   "level": 1,
+   "requires": [
+    "git-basics"
+   ],
+   "why": "Your portfolio and every open-source model live on GitHub.",
+   "learn": {
+    "title": "GitHub Skills (free courses)",
+    "url": "https://skills.github.com/"
+   },
+   "track": "programming",
+   "depth": 2
+  },
+  {
+   "id": "jupyter",
+   "title": "Jupyter notebooks and Colab",
+   "level": 1,
+   "requires": [
+    "python-basics"
+   ],
+   "why": "Where you explore data and run free GPU experiments.",
+   "learn": {
+    "title": "Google Colab intro notebook",
+    "url": "https://colab.research.google.com/notebooks/intro.ipynb"
+   },
+   "track": "programming",
+   "depth": 1
+  },
+  {
+   "id": "json-yaml",
+   "title": "JSON and YAML",
+   "level": 1,
+   "requires": [
+    "python-data-structures"
+   ],
+   "why": "Every API request, config file and structured LLM output is JSON.",
+   "learn": {
+    "title": "json module (official docs)",
+    "url": "https://docs.python.org/3/library/json.html"
+   },
+   "track": "programming",
+   "depth": 2
+  },
+  {
+   "id": "http-rest",
+   "title": "HTTP and REST APIs",
+   "level": 1,
+   "requires": [
+    "json-yaml"
+   ],
+   "why": "Every model you will ever call is behind an HTTP API.",
+   "learn": {
+    "title": "MDN: An overview of HTTP",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview"
+   },
+   "track": "programming",
+   "depth": 3
+  },
+  {
+   "id": "python-requests",
+   "title": "Calling APIs from Python",
+   "level": 1,
+   "requires": [
+    "http-rest",
+    "python-errors"
+   ],
+   "why": "The first step before any SDK: send a request, read the response.",
+   "learn": {
+    "title": "Requests quickstart",
+    "url": "https://requests.readthedocs.io/en/latest/user/quickstart/"
+   },
+   "track": "programming",
+   "depth": 4
+  },
+  {
+   "id": "env-secrets",
+   "title": "Environment variables and API keys",
+   "level": 1,
+   "requires": [
+    "command-line"
+   ],
+   "why": "Leaked API keys are the #1 beginner mistake (and bill).",
+   "learn": {
+    "title": "The Twelve-Factor App: Config",
+    "url": "https://12factor.net/config"
+   },
+   "track": "programming",
+   "depth": 1
+  },
+  {
+   "id": "sql-basics",
+   "title": "SQL basics",
+   "level": 1,
+   "requires": [],
+   "why": "Most company data lives in SQL databases, and agents query them.",
+   "learn": {
+    "title": "Kaggle Learn: Intro to SQL",
+    "url": "https://www.kaggle.com/learn/intro-to-sql"
+   },
+   "track": "programming",
+   "depth": 0
+  },
+  {
+   "id": "data-structures-algorithms",
+   "title": "Data structures and Big-O",
+   "level": 2,
+   "requires": [
+    "python-data-structures"
+   ],
+   "why": "Interview staple, and why your retrieval code is slow.",
+   "learn": {
+    "title": "MIT 6.006 Introduction to Algorithms (OCW)",
+    "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+   },
+   "track": "programming",
+   "depth": 2
+  },
+  {
+   "id": "testing-pytest",
+   "title": "Testing with pytest",
+   "level": 2,
+   "requires": [
+    "python-functions-modules"
+   ],
+   "why": "Evals are tests for AI; learn normal tests first.",
+   "learn": {
+    "title": "pytest: Get started",
+    "url": "https://docs.pytest.org/en/stable/getting-started.html"
+   },
+   "track": "programming",
+   "depth": 2
+  },
+  {
+   "id": "linux-servers",
+   "title": "Linux servers and SSH",
+   "level": 2,
+   "requires": [
+    "command-line"
+   ],
+   "why": "Renting a GPU means SSH-ing into a Linux box.",
+   "learn": {
+    "title": "DigitalOcean: SSH Essentials",
+    "url": "https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys"
+   },
+   "track": "programming",
+   "depth": 1
+  },
+  {
+   "id": "docker",
+   "title": "Docker containers",
+   "level": 2,
+   "requires": [
+    "linux-servers"
+   ],
+   "why": "Ship your model or app the same way everywhere.",
+   "learn": {
+    "title": "Docker: Get started",
+    "url": "https://docs.docker.com/get-started/"
+   },
+   "track": "programming",
+   "depth": 2
+  },
+  {
+   "id": "web-backend",
+   "title": "Building an API backend (FastAPI)",
+   "level": 2,
+   "requires": [
+    "http-rest",
+    "python-typing"
+   ],
+   "why": "Wrap your AI feature in an endpoint other apps can call.",
+   "learn": {
+    "title": "FastAPI tutorial",
+    "url": "https://fastapi.tiangolo.com/tutorial/"
+   },
+   "track": "programming",
+   "depth": 4
+  },
+  {
+   "id": "web-frontend-basics",
+   "title": "HTML, CSS and JavaScript basics",
+   "level": 1,
+   "requires": [],
+   "why": "Put a face on your AI project so people can actually use it.",
+   "learn": {
+    "title": "MDN: Learn web development",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+   },
+   "track": "programming",
+   "depth": 0
+  },
+  {
+   "id": "vectors",
+   "title": "Vectors",
+   "level": 1,
+   "requires": [],
+   "why": "Every word, image and user becomes a vector inside a model.",
+   "learn": {
+    "title": "3Blue1Brown: Essence of Linear Algebra",
+    "url": "https://www.3blue1brown.com/topics/linear-algebra"
+   },
+   "track": "math",
+   "depth": 0
+  },
+  {
+   "id": "dot-product",
+   "title": "Dot product and cosine similarity",
+   "level": 1,
+   "requires": [
+    "vectors"
+   ],
+   "why": "The math behind \"find similar documents\" and attention.",
+   "learn": {
+    "title": "Khan Academy: Vector dot and cross products",
+    "url": "https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/vector-dot-product-and-vector-length"
+   },
+   "track": "math",
+   "depth": 1
+  },
+  {
+   "id": "matrices",
+   "title": "Matrices and matrix multiplication",
+   "level": 1,
+   "requires": [
+    "vectors"
+   ],
+   "why": "A neural network layer is a matrix multiply.",
+   "learn": {
+    "title": "Khan Academy: Matrices",
+    "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:matrices"
+   },
+   "track": "math",
+   "depth": 1
+  },
+  {
+   "id": "linear-transformations",
+   "title": "Linear transformations",
+   "level": 2,
+   "requires": [
+    "matrices"
+   ],
+   "why": "How layers stretch and rotate data into useful shapes.",
+   "learn": {
+    "title": "3Blue1Brown: Linear transformations",
+    "url": "https://www.3blue1brown.com/lessons/linear-transformations"
+   },
+   "track": "math",
+   "depth": 2
+  },
+  {
+   "id": "eigen",
+   "title": "Eigenvectors and eigenvalues",
+   "level": 3,
+   "requires": [
+    "linear-transformations"
+   ],
+   "why": "The idea under PCA and many stability tricks.",
+   "learn": {
+    "title": "3Blue1Brown: Eigenvectors and eigenvalues",
+    "url": "https://www.3blue1brown.com/lessons/eigenvalues"
+   },
+   "track": "math",
+   "depth": 3
+  },
+  {
+   "id": "svd",
+   "title": "Singular value decomposition",
+   "level": 3,
+   "requires": [
+    "eigen"
+   ],
+   "why": "Compression, recommendation and the intuition behind LoRA.",
+   "learn": {
+    "title": "MIT 18.06 Linear Algebra (OCW)",
+    "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+   },
+   "track": "math",
+   "depth": 4
+  },
+  {
+   "id": "tensors",
+   "title": "Tensors and shapes",
+   "level": 1,
+   "requires": [
+    "matrices"
+   ],
+   "why": "90% of deep learning bugs are shape mismatches.",
+   "learn": {
+    "title": "PyTorch: Tensors tutorial",
+    "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+   },
+   "track": "math",
+   "depth": 2
+  },
+  {
+   "id": "functions-graphs",
+   "title": "Functions and graphs",
+   "level": 1,
+   "requires": [],
+   "why": "A model is just a function from input to output.",
+   "learn": {
+    "title": "Khan Academy: Functions",
+    "url": "https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions"
+   },
+   "track": "math",
+   "depth": 0
+  },
+  {
+   "id": "exp-log",
+   "title": "Exponents and logarithms",
+   "level": 1,
+   "requires": [
+    "functions-graphs"
+   ],
+   "why": "Softmax, log-loss and perplexity are all exp and log.",
+   "learn": {
+    "title": "Khan Academy: Logarithms",
+    "url": "https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs"
+   },
+   "track": "math",
+   "depth": 1
+  },
+  {
+   "id": "derivatives",
+   "title": "Derivatives",
+   "level": 1,
+   "requires": [
+    "functions-graphs"
+   ],
+   "why": "How a model knows which way to nudge its weights.",
+   "learn": {
+    "title": "3Blue1Brown: Essence of Calculus",
+    "url": "https://www.3blue1brown.com/topics/calculus"
+   },
+   "track": "math",
+   "depth": 1
+  },
+  {
+   "id": "chain-rule",
+   "title": "The chain rule",
+   "level": 2,
+   "requires": [
+    "derivatives"
+   ],
+   "why": "Backpropagation is the chain rule, applied a billion times.",
+   "learn": {
+    "title": "Khan Academy: Chain rule",
+    "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1a/v/chain-rule-introduction"
+   },
+   "track": "math",
+   "depth": 2
+  },
+  {
+   "id": "partial-derivatives-gradients",
+   "title": "Partial derivatives and gradients",
+   "level": 2,
+   "requires": [
+    "derivatives",
+    "vectors"
+   ],
+   "why": "The gradient tells every weight how to change at once.",
+   "learn": {
+    "title": "Khan Academy: Multivariable calculus",
+    "url": "https://www.khanacademy.org/math/multivariable-calculus"
+   },
+   "track": "math",
+   "depth": 2
+  },
+  {
+   "id": "gradient-descent",
+   "title": "Gradient descent",
+   "level": 2,
+   "requires": [
+    "partial-derivatives-gradients"
+   ],
+   "why": "The single algorithm that trains almost every AI model.",
+   "learn": {
+    "title": "Google ML Crash Course: Gradient descent",
+    "url": "https://developers.google.com/machine-learning/crash-course/linear-regression/gradient-descent"
+   },
+   "track": "math",
+   "depth": 3
+  },
+  {
+   "id": "probability-basics",
+   "title": "Probability basics",
+   "level": 1,
+   "requires": [],
+   "why": "An LLM is a machine that outputs probabilities for the next token.",
+   "learn": {
+    "title": "Khan Academy: Statistics and probability",
+    "url": "https://www.khanacademy.org/math/statistics-probability"
+   },
+   "track": "math",
+   "depth": 0
+  },
+  {
+   "id": "conditional-probability-bayes",
+   "title": "Conditional probability and Bayes",
+   "level": 2,
+   "requires": [
+    "probability-basics"
+   ],
+   "why": "Given what I have seen, what is likely next?",
+   "learn": {
+    "title": "3Blue1Brown: Bayes theorem",
+    "url": "https://www.3blue1brown.com/lessons/bayes-theorem"
+   },
+   "track": "math",
+   "depth": 1
+  },
+  {
+   "id": "distributions",
+   "title": "Probability distributions",
+   "level": 2,
+   "requires": [
+    "probability-basics"
+   ],
+   "why": "Sampling, temperature and noise all come from distributions.",
+   "learn": {
+    "title": "Seeing Theory (Brown University)",
+    "url": "https://seeing-theory.brown.edu/"
+   },
+   "track": "math",
+   "depth": 1
+  },
+  {
+   "id": "descriptive-stats",
+   "title": "Mean, variance, standard deviation",
+   "level": 1,
+   "requires": [
+    "probability-basics"
+   ],
+   "why": "Needed to normalize data and read any eval chart honestly.",
+   "learn": {
+    "title": "Khan Academy: Summarizing quantitative data",
+    "url": "https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data"
+   },
+   "track": "math",
+   "depth": 1
+  },
+  {
+   "id": "hypothesis-testing",
+   "title": "Hypothesis tests and confidence intervals",
+   "level": 2,
+   "requires": [
+    "descriptive-stats",
+    "distributions"
+   ],
+   "why": "Is prompt B really better than prompt A, or just lucky?",
+   "learn": {
+    "title": "OpenIntro Statistics (free book)",
+    "url": "https://www.openintro.org/book/os/"
+   },
+   "track": "math",
+   "depth": 2
+  },
+  {
+   "id": "maximum-likelihood",
+   "title": "Maximum likelihood",
+   "level": 3,
+   "requires": [
+    "distributions",
+    "exp-log"
+   ],
+   "why": "The principle behind the loss every language model minimizes.",
+   "learn": {
+    "title": "StatQuest: Maximum Likelihood",
+    "url": "https://www.youtube.com/watch?v=XepXtl9YKwc"
+   },
+   "track": "math",
+   "depth": 2
+  },
+  {
+   "id": "entropy-cross-entropy",
+   "title": "Entropy and cross-entropy",
+   "level": 2,
+   "requires": [
+    "exp-log",
+    "probability-basics"
+   ],
+   "why": "Cross-entropy is THE loss function of language models.",
+   "learn": {
+    "title": "Chris Olah: Visual Information Theory",
+    "url": "https://colah.github.io/posts/2015-09-Visual-Information/"
+   },
+   "track": "math",
+   "depth": 2
+  },
+  {
+   "id": "kl-divergence",
+   "title": "KL divergence",
+   "level": 3,
+   "requires": [
+    "entropy-cross-entropy"
+   ],
+   "why": "Keeps RLHF and distillation from drifting too far.",
+   "learn": {
+    "title": "Chris Olah: Visual Information Theory",
+    "url": "https://colah.github.io/posts/2015-09-Visual-Information/"
+   },
+   "track": "math",
+   "depth": 3
+  },
+  {
+   "id": "optimization-basics",
+   "title": "Optimization and convexity",
+   "level": 3,
+   "requires": [
+    "gradient-descent"
+   ],
+   "why": "Why some problems train easily and others get stuck.",
+   "learn": {
+    "title": "Stanford EE364A Convex Optimization (Boyd)",
+    "url": "https://web.stanford.edu/~boyd/cvxbook/"
+   },
+   "track": "math",
+   "depth": 4
+  },
+  {
+   "id": "numpy",
+   "title": "NumPy arrays",
+   "level": 1,
+   "requires": [
+    "python-data-structures",
+    "tensors"
+   ],
+   "why": "The array library under pandas, scikit-learn and PyTorch.",
+   "learn": {
+    "title": "NumPy: absolute beginners guide",
+    "url": "https://numpy.org/doc/stable/user/absolute_beginners.html"
+   },
+   "track": "data",
+   "depth": 3
+  },
+  {
+   "id": "pandas",
+   "title": "pandas DataFrames",
+   "level": 1,
+   "requires": [
+    "numpy"
+   ],
+   "why": "Load, clean and inspect any table of data in a few lines.",
+   "learn": {
+    "title": "Kaggle Learn: Pandas",
+    "url": "https://www.kaggle.com/learn/pandas"
+   },
+   "track": "data",
+   "depth": 4
+  },
+  {
+   "id": "data-visualization",
+   "title": "Data visualization",
+   "level": 1,
+   "requires": [
+    "pandas"
+   ],
+   "why": "You cannot fix data you have not looked at.",
+   "learn": {
+    "title": "Kaggle Learn: Data Visualization",
+    "url": "https://www.kaggle.com/learn/data-visualization"
+   },
+   "track": "data",
+   "depth": 5
+  },
+  {
+   "id": "data-cleaning",
+   "title": "Data cleaning",
+   "level": 1,
+   "requires": [
+    "pandas"
+   ],
+   "why": "Real data is messy; garbage in, garbage out.",
+   "learn": {
+    "title": "Kaggle Learn: Data Cleaning",
+    "url": "https://www.kaggle.com/learn/data-cleaning"
+   },
+   "track": "data",
+   "depth": 5
+  },
+  {
+   "id": "eda",
+   "title": "Exploratory data analysis",
+   "level": 2,
+   "requires": [
+    "data-visualization",
+    "data-cleaning",
+    "descriptive-stats"
+   ],
+   "why": "Find the patterns and problems before you model anything.",
+   "learn": {
+    "title": "Python Data Science Handbook (free)",
+    "url": "https://jakevdp.github.io/PythonDataScienceHandbook/"
+   },
+   "track": "data",
+   "depth": 6
+  },
+  {
+   "id": "feature-engineering",
+   "title": "Feature engineering",
+   "level": 2,
+   "requires": [
+    "eda"
+   ],
+   "why": "Often beats a fancier model on tabular problems.",
+   "learn": {
+    "title": "Kaggle Learn: Feature Engineering",
+    "url": "https://www.kaggle.com/learn/feature-engineering"
+   },
+   "track": "data",
+   "depth": 7
+  },
+  {
+   "id": "train-test-split",
+   "title": "Train, validation and test splits",
+   "level": 1,
+   "requires": [
+    "pandas"
+   ],
+   "why": "The only honest way to know if a model works on new data.",
+   "learn": {
+    "title": "Google ML Crash Course: Datasets",
+    "url": "https://developers.google.com/machine-learning/crash-course/overfitting"
+   },
+   "track": "data",
+   "depth": 5
+  },
+  {
+   "id": "data-leakage",
+   "title": "Data leakage",
+   "level": 2,
+   "requires": [
+    "train-test-split"
+   ],
+   "why": "The silent bug that makes 99% accuracy fake.",
+   "learn": {
+    "title": "Kaggle Learn: Data Leakage",
+    "url": "https://www.kaggle.com/code/alexisbcook/data-leakage"
+   },
+   "track": "data",
+   "depth": 6
+  },
+  {
+   "id": "text-data",
+   "title": "Working with text data",
+   "level": 1,
+   "requires": [
+    "pandas"
+   ],
+   "why": "LLM work is mostly text wrangling: splitting, cleaning, encoding.",
+   "learn": {
+    "title": "Hugging Face: Datasets library",
+    "url": "https://huggingface.co/docs/datasets/"
+   },
+   "track": "data",
+   "depth": 5
+  },
+  {
+   "id": "document-parsing",
+   "title": "Parsing PDFs, HTML and docs",
+   "level": 2,
+   "requires": [
+    "text-data",
+    "python-files-io"
+   ],
+   "why": "Company knowledge is stuck in PDFs; RAG starts by getting it out.",
+   "learn": {
+    "title": "Unstructured: open-source docs",
+    "url": "https://docs.unstructured.io/open-source/introduction/overview"
+   },
+   "track": "data",
+   "depth": 6
+  },
+  {
+   "id": "web-scraping",
+   "title": "Web scraping",
+   "level": 2,
+   "requires": [
+    "python-requests"
+   ],
+   "why": "Building your own dataset when none exists.",
+   "learn": {
+    "title": "Beautiful Soup documentation",
+    "url": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/"
+   },
+   "track": "data",
+   "depth": 5
+  },
+  {
+   "id": "data-labeling",
+   "title": "Data labeling and annotation",
+   "level": 2,
+   "requires": [
+    "eda"
+   ],
+   "why": "Good labels beat more data; also how you build eval sets.",
+   "learn": {
+    "title": "Label Studio docs",
+    "url": "https://labelstud.io/guide/"
+   },
+   "track": "data",
+   "depth": 7
+  },
+  {
+   "id": "synthetic-data",
+   "title": "Synthetic data with LLMs",
+   "level": 3,
+   "requires": [
+    "data-labeling",
+    "structured-outputs"
+   ],
+   "why": "Generate training and test data when real data is scarce.",
+   "learn": {
+    "title": "Hugging Face: Synthetic data for cheaper models",
+    "url": "https://huggingface.co/blog/synthetic-data-save-costs"
+   },
+   "track": "data",
+   "depth": 13
+  },
+  {
+   "id": "data-pipelines",
+   "title": "Data pipelines and ETL",
+   "level": 3,
+   "requires": [
+    "sql-basics",
+    "data-cleaning"
+   ],
+   "why": "Keeps your RAG index and training data fresh automatically.",
+   "learn": {
+    "title": "DataTalksClub Data Engineering Zoomcamp",
+    "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp"
+   },
+   "track": "data",
+   "depth": 6
+  },
+  {
+   "id": "what-is-ml",
+   "title": "What machine learning is",
+   "level": 1,
+   "requires": [
+    "functions-graphs"
+   ],
+   "why": "Learning patterns from examples instead of writing rules.",
+   "learn": {
+    "title": "Google ML Crash Course",
+    "url": "https://developers.google.com/machine-learning/crash-course"
+   },
+   "track": "classical-ml",
+   "depth": 1
+  },
+  {
+   "id": "supervised-learning",
+   "title": "Supervised learning",
+   "level": 1,
+   "requires": [
+    "what-is-ml"
+   ],
+   "why": "Inputs plus correct answers in, a predictor out.",
+   "learn": {
+    "title": "Andrew Ng: Machine Learning Specialization (audit free)",
+    "url": "https://www.coursera.org/specializations/machine-learning-introduction"
+   },
+   "track": "classical-ml",
+   "depth": 2
+  },
+  {
+   "id": "unsupervised-learning",
+   "title": "Unsupervised learning",
+   "level": 2,
+   "requires": [
+    "what-is-ml"
+   ],
+   "why": "Finding structure with no labels: clusters, topics, anomalies.",
+   "learn": {
+    "title": "scikit-learn: Unsupervised learning",
+    "url": "https://scikit-learn.org/stable/unsupervised_learning.html"
+   },
+   "track": "classical-ml",
+   "depth": 2
+  },
+  {
+   "id": "linear-regression",
+   "title": "Linear regression",
+   "level": 1,
+   "requires": [
+    "supervised-learning",
+    "gradient-descent"
+   ],
+   "why": "The \"hello world\" model; a neuron is linear regression plus a twist.",
+   "learn": {
+    "title": "Google MLCC: Linear regression",
+    "url": "https://developers.google.com/machine-learning/crash-course/linear-regression"
+   },
+   "track": "classical-ml",
+   "depth": 4
+  },
+  {
+   "id": "loss-functions",
+   "title": "Loss functions",
+   "level": 1,
+   "requires": [
+    "linear-regression"
+   ],
+   "why": "The number training is trying to push down.",
+   "learn": {
+    "title": "Google MLCC: Loss",
+    "url": "https://developers.google.com/machine-learning/crash-course/linear-regression/loss"
+   },
+   "track": "classical-ml",
+   "depth": 5
+  },
+  {
+   "id": "logistic-regression",
+   "title": "Logistic regression and classification",
+   "level": 2,
+   "requires": [
+    "linear-regression",
+    "exp-log"
+   ],
+   "why": "Yes/no predictions, and the sigmoid every network uses.",
+   "learn": {
+    "title": "Google MLCC: Logistic regression",
+    "url": "https://developers.google.com/machine-learning/crash-course/logistic-regression"
+   },
+   "track": "classical-ml",
+   "depth": 5
+  },
+  {
+   "id": "overfitting",
+   "title": "Overfitting and underfitting",
+   "level": 1,
+   "requires": [
+    "loss-functions",
+    "train-test-split"
+   ],
+   "why": "Memorizing the training set is not learning.",
+   "learn": {
+    "title": "Google MLCC: Overfitting",
+    "url": "https://developers.google.com/machine-learning/crash-course/overfitting"
+   },
+   "track": "classical-ml",
+   "depth": 6
+  },
+  {
+   "id": "bias-variance",
+   "title": "Bias-variance tradeoff",
+   "level": 2,
+   "requires": [
+    "overfitting"
+   ],
+   "why": "The mental model for \"more data, or bigger model?\"",
+   "learn": {
+    "title": "StatQuest: Bias and Variance",
+    "url": "https://www.youtube.com/watch?v=EuBBz3bI-aA"
+   },
+   "track": "classical-ml",
+   "depth": 7
+  },
+  {
+   "id": "regularization",
+   "title": "Regularization (L1, L2)",
+   "level": 2,
+   "requires": [
+    "bias-variance"
+   ],
+   "why": "The standard cure for overfitting.",
+   "learn": {
+    "title": "Google MLCC: Regularization",
+    "url": "https://developers.google.com/machine-learning/crash-course/overfitting/regularization"
+   },
+   "track": "classical-ml",
+   "depth": 8
+  },
+  {
+   "id": "classification-metrics",
+   "title": "Accuracy, precision, recall, F1",
+   "level": 1,
+   "requires": [
+    "logistic-regression"
+   ],
+   "why": "99% accuracy can still be useless; know which number matters.",
+   "learn": {
+    "title": "Google MLCC: Classification metrics",
+    "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall"
+   },
+   "track": "classical-ml",
+   "depth": 6
+  },
+  {
+   "id": "roc-auc",
+   "title": "ROC curves and AUC",
+   "level": 2,
+   "requires": [
+    "classification-metrics"
+   ],
+   "why": "Compare classifiers across every threshold at once.",
+   "learn": {
+    "title": "Google MLCC: ROC and AUC",
+    "url": "https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc"
+   },
+   "track": "classical-ml",
+   "depth": 7
+  },
+  {
+   "id": "cross-validation",
+   "title": "Cross-validation",
+   "level": 2,
+   "requires": [
+    "overfitting"
+   ],
+   "why": "Reliable scores on small datasets.",
+   "learn": {
+    "title": "scikit-learn: Cross-validation",
+    "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+   },
+   "track": "classical-ml",
+   "depth": 7
+  },
+  {
+   "id": "hyperparameter-tuning",
+   "title": "Hyperparameter tuning",
+   "level": 2,
+   "requires": [
+    "cross-validation"
+   ],
+   "why": "Learning rate, depth, batch size: knobs that make or break models.",
+   "learn": {
+    "title": "scikit-learn: Tuning hyperparameters",
+    "url": "https://scikit-learn.org/stable/modules/grid_search.html"
+   },
+   "track": "classical-ml",
+   "depth": 8
+  },
+  {
+   "id": "scikit-learn",
+   "title": "scikit-learn workflow",
+   "level": 1,
+   "requires": [
+    "pandas",
+    "supervised-learning"
+   ],
+   "why": "Fit, predict, score: the standard API for classical ML.",
+   "learn": {
+    "title": "Kaggle Learn: Intro to Machine Learning",
+    "url": "https://www.kaggle.com/learn/intro-to-machine-learning"
+   },
+   "track": "classical-ml",
+   "depth": 5
+  },
+  {
+   "id": "knn",
+   "title": "k-nearest neighbors",
+   "level": 1,
+   "requires": [
+    "supervised-learning",
+    "dot-product"
+   ],
+   "why": "The ancestor of vector search: similar inputs, similar outputs.",
+   "learn": {
+    "title": "scikit-learn: Nearest Neighbors",
+    "url": "https://scikit-learn.org/stable/modules/neighbors.html"
+   },
+   "track": "classical-ml",
+   "depth": 3
+  },
+  {
+   "id": "decision-trees",
+   "title": "Decision trees",
+   "level": 1,
+   "requires": [
+    "supervised-learning"
+   ],
+   "why": "Readable models made of if/else splits.",
+   "learn": {
+    "title": "StatQuest: Decision Trees",
+    "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y"
+   },
+   "track": "classical-ml",
+   "depth": 3
+  },
+  {
+   "id": "random-forests",
+   "title": "Random forests",
+   "level": 2,
+   "requires": [
+    "decision-trees"
+   ],
+   "why": "Many trees voting; a robust default for tabular data.",
+   "learn": {
+    "title": "Kaggle Learn: Random Forests",
+    "url": "https://www.kaggle.com/code/dansbecker/random-forests"
+   },
+   "track": "classical-ml",
+   "depth": 4
+  },
+  {
+   "id": "gradient-boosting",
+   "title": "Gradient boosting (XGBoost, LightGBM)",
+   "level": 2,
+   "requires": [
+    "decision-trees",
+    "gradient-descent"
+   ],
+   "why": "Still wins most tabular competitions and business problems.",
+   "learn": {
+    "title": "Kaggle Learn: XGBoost",
+    "url": "https://www.kaggle.com/code/alexisbcook/xgboost"
+   },
+   "track": "classical-ml",
+   "depth": 4
+  },
+  {
+   "id": "svm",
+   "title": "Support vector machines",
+   "level": 3,
+   "requires": [
+    "logistic-regression",
+    "dot-product"
+   ],
+   "why": "Classic margin-based classifier; shows up in interviews.",
+   "learn": {
+    "title": "scikit-learn: SVM",
+    "url": "https://scikit-learn.org/stable/modules/svm.html"
+   },
+   "track": "classical-ml",
+   "depth": 6
+  },
+  {
+   "id": "naive-bayes",
+   "title": "Naive Bayes",
+   "level": 2,
+   "requires": [
+    "conditional-probability-bayes",
+    "supervised-learning"
+   ],
+   "why": "Fast text classifier; spam filters ran on it.",
+   "learn": {
+    "title": "scikit-learn: Naive Bayes",
+    "url": "https://scikit-learn.org/stable/modules/naive_bayes.html"
+   },
+   "track": "classical-ml",
+   "depth": 3
+  },
+  {
+   "id": "k-means",
+   "title": "k-means clustering",
+   "level": 1,
+   "requires": [
+    "unsupervised-learning",
+    "dot-product"
+   ],
+   "why": "Group similar items; used to explore embeddings.",
+   "learn": {
+    "title": "scikit-learn: Clustering",
+    "url": "https://scikit-learn.org/stable/modules/clustering.html"
+   },
+   "track": "classical-ml",
+   "depth": 3
+  },
+  {
+   "id": "pca",
+   "title": "PCA and dimensionality reduction",
+   "level": 2,
+   "requires": [
+    "unsupervised-learning",
+    "eigen"
+   ],
+   "why": "Squash 1,536-dimension embeddings to 2D so you can see them.",
+   "learn": {
+    "title": "StatQuest: PCA",
+    "url": "https://www.youtube.com/watch?v=FgakZw6K1QQ"
+   },
+   "track": "classical-ml",
+   "depth": 4
+  },
+  {
+   "id": "anomaly-detection",
+   "title": "Anomaly detection",
+   "level": 3,
+   "requires": [
+    "unsupervised-learning",
+    "descriptive-stats"
+   ],
+   "why": "Fraud, outages, bad data: find the weird ones.",
+   "learn": {
+    "title": "scikit-learn: Outlier detection",
+    "url": "https://scikit-learn.org/stable/modules/outlier_detection.html"
+   },
+   "track": "classical-ml",
+   "depth": 3
+  },
+  {
+   "id": "recommender-systems",
+   "title": "Recommender systems",
+   "level": 3,
+   "requires": [
+    "knn",
+    "svd"
+   ],
+   "why": "The AI that runs YouTube, Netflix and Amazon.",
+   "learn": {
+    "title": "Google: Recommendation Systems course",
+    "url": "https://developers.google.com/machine-learning/recommendation"
+   },
+   "track": "classical-ml",
+   "depth": 5
+  },
+  {
+   "id": "time-series",
+   "title": "Time series forecasting",
+   "level": 3,
+   "requires": [
+    "linear-regression",
+    "eda"
+   ],
+   "why": "Sales, traffic, stock and sensor prediction.",
+   "learn": {
+    "title": "Kaggle Learn: Time Series",
+    "url": "https://www.kaggle.com/learn/time-series"
+   },
+   "track": "classical-ml",
+   "depth": 7
+  },
+  {
+   "id": "perceptron-neuron",
+   "title": "The artificial neuron",
+   "level": 1,
+   "requires": [
+    "logistic-regression"
+   ],
+   "why": "Weighted sum plus activation: the Lego brick of all networks.",
+   "learn": {
+    "title": "3Blue1Brown: But what is a neural network?",
+    "url": "https://www.3blue1brown.com/lessons/neural-networks"
+   },
+   "track": "deep-learning",
+   "depth": 6
+  },
+  {
+   "id": "activation-functions",
+   "title": "Activation functions (ReLU, GELU, sigmoid)",
+   "level": 1,
+   "requires": [
+    "perceptron-neuron"
+   ],
+   "why": "Without them a 100-layer network is just one linear layer.",
+   "learn": {
+    "title": "Dive into Deep Learning: MLPs",
+    "url": "https://d2l.ai/chapter_multilayer-perceptrons/mlp.html"
+   },
+   "track": "deep-learning",
+   "depth": 7
+  },
+  {
+   "id": "mlp",
+   "title": "Multi-layer perceptrons",
+   "level": 1,
+   "requires": [
+    "activation-functions",
+    "matrices"
+   ],
+   "why": "Stacked layers that can approximate almost any function.",
+   "learn": {
+    "title": "Dive into Deep Learning: MLPs",
+    "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+   },
+   "track": "deep-learning",
+   "depth": 8
+  },
+  {
+   "id": "backpropagation",
+   "title": "Backpropagation",
+   "level": 2,
+   "requires": [
+    "mlp",
+    "chain-rule"
+   ],
+   "why": "How every weight learns its share of the blame.",
+   "learn": {
+    "title": "Karpathy: micrograd (Zero to Hero #1)",
+    "url": "https://karpathy.ai/zero-to-hero.html"
+   },
+   "track": "deep-learning",
+   "depth": 9
+  },
+  {
+   "id": "softmax",
+   "title": "Softmax",
+   "level": 1,
+   "requires": [
+    "exp-log",
+    "mlp"
+   ],
+   "why": "Turns raw scores into probabilities; picks the next token.",
+   "learn": {
+    "title": "Dive into Deep Learning: Softmax regression",
+    "url": "https://d2l.ai/chapter_linear-classification/softmax-regression.html"
+   },
+   "track": "deep-learning",
+   "depth": 9
+  },
+  {
+   "id": "pytorch-basics",
+   "title": "PyTorch basics",
+   "level": 1,
+   "requires": [
+    "numpy",
+    "python-oop"
+   ],
+   "why": "The framework almost all modern AI research and open models use.",
+   "learn": {
+    "title": "PyTorch: Learn the Basics",
+    "url": "https://docs.pytorch.org/tutorials/beginner/basics/intro.html"
+   },
+   "track": "deep-learning",
+   "depth": 4
+  },
+  {
+   "id": "training-loop",
+   "title": "The training loop",
+   "level": 2,
+   "requires": [
+    "pytorch-basics",
+    "backpropagation",
+    "loss-functions"
+   ],
+   "why": "Forward, loss, backward, step: the four lines that train everything.",
+   "learn": {
+    "title": "PyTorch: Optimizing model parameters",
+    "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+   },
+   "track": "deep-learning",
+   "depth": 10
+  },
+  {
+   "id": "optimizers",
+   "title": "Optimizers (SGD, Adam, AdamW)",
+   "level": 2,
+   "requires": [
+    "training-loop"
+   ],
+   "why": "Smarter ways to walk downhill than plain gradient descent.",
+   "learn": {
+    "title": "Dive into Deep Learning: Optimization",
+    "url": "https://d2l.ai/chapter_optimization/index.html"
+   },
+   "track": "deep-learning",
+   "depth": 11
+  },
+  {
+   "id": "learning-rate-schedules",
+   "title": "Learning rates and schedules",
+   "level": 2,
+   "requires": [
+    "optimizers"
+   ],
+   "why": "The most important hyperparameter in deep learning.",
+   "learn": {
+    "title": "Dive into Deep Learning: LR scheduling",
+    "url": "https://d2l.ai/chapter_optimization/lr-scheduler.html"
+   },
+   "track": "deep-learning",
+   "depth": 12
+  },
+  {
+   "id": "batching",
+   "title": "Batches, epochs and data loaders",
+   "level": 1,
+   "requires": [
+    "training-loop"
+   ],
+   "why": "How to feed data that does not fit in memory.",
+   "learn": {
+    "title": "PyTorch: Datasets and DataLoaders",
+    "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html"
+   },
+   "track": "deep-learning",
+   "depth": 11
+  },
+  {
+   "id": "normalization-layers",
+   "title": "BatchNorm and LayerNorm",
+   "level": 2,
+   "requires": [
+    "mlp",
+    "descriptive-stats"
+   ],
+   "why": "Keeps deep networks trainable; LayerNorm is in every transformer.",
+   "learn": {
+    "title": "Dive into Deep Learning: Batch normalization",
+    "url": "https://d2l.ai/chapter_convolutional-modern/batch-norm.html"
+   },
+   "track": "deep-learning",
+   "depth": 9
+  },
+  {
+   "id": "dropout",
+   "title": "Dropout",
+   "level": 2,
+   "requires": [
+    "regularization",
+    "mlp"
+   ],
+   "why": "Randomly switch neurons off so the network cannot memorize.",
+   "learn": {
+    "title": "Dive into Deep Learning: Dropout",
+    "url": "https://d2l.ai/chapter_multilayer-perceptrons/dropout.html"
+   },
+   "track": "deep-learning",
+   "depth": 9
+  },
+  {
+   "id": "weight-init",
+   "title": "Weight initialization",
+   "level": 3,
+   "requires": [
+    "mlp",
+    "distributions"
+   ],
+   "why": "Bad starting weights mean a network that never learns.",
+   "learn": {
+    "title": "Dive into Deep Learning: Numerical stability",
+    "url": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html"
+   },
+   "track": "deep-learning",
+   "depth": 9
+  },
+  {
+   "id": "vanishing-gradients",
+   "title": "Vanishing and exploding gradients",
+   "level": 2,
+   "requires": [
+    "backpropagation"
+   ],
+   "why": "Why deep networks were hard to train until ~2015.",
+   "learn": {
+    "title": "Dive into Deep Learning: Numerical stability",
+    "url": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html"
+   },
+   "track": "deep-learning",
+   "depth": 10
+  },
+  {
+   "id": "residual-connections",
+   "title": "Residual connections",
+   "level": 2,
+   "requires": [
+    "vanishing-gradients"
+   ],
+   "why": "The shortcut that lets transformers be 100+ layers deep.",
+   "learn": {
+    "title": "Dive into Deep Learning: ResNet",
+    "url": "https://d2l.ai/chapter_convolutional-modern/resnet.html"
+   },
+   "track": "deep-learning",
+   "depth": 11
+  },
+  {
+   "id": "cnn",
+   "title": "Convolutional neural networks",
+   "level": 2,
+   "requires": [
+    "mlp"
+   ],
+   "why": "The architecture that made computers see.",
+   "learn": {
+    "title": "Stanford CS231n notes",
+    "url": "https://cs231n.github.io/convolutional-networks/"
+   },
+   "track": "deep-learning",
+   "depth": 9
+  },
+  {
+   "id": "rnn-lstm",
+   "title": "RNNs and LSTMs",
+   "level": 2,
+   "requires": [
+    "mlp",
+    "vanishing-gradients"
+   ],
+   "why": "Sequence models before transformers; explains why attention won.",
+   "learn": {
+    "title": "Chris Olah: Understanding LSTMs",
+    "url": "https://colah.github.io/posts/2015-08-Understanding-LSTMs/"
+   },
+   "track": "deep-learning",
+   "depth": 11
+  },
+  {
+   "id": "autoencoders",
+   "title": "Autoencoders",
+   "level": 3,
+   "requires": [
+    "mlp",
+    "pca"
+   ],
+   "why": "Compress-then-rebuild; the idea under latent diffusion.",
+   "learn": {
+    "title": "Dive into Deep Learning (free book)",
+    "url": "https://d2l.ai/"
+   },
+   "track": "deep-learning",
+   "depth": 9
+  },
+  {
+   "id": "transfer-learning",
+   "title": "Transfer learning",
+   "level": 2,
+   "requires": [
+    "training-loop"
+   ],
+   "why": "Reuse a model trained on billions of examples for your small task.",
+   "learn": {
+    "title": "fast.ai: Practical Deep Learning for Coders",
+    "url": "https://course.fast.ai/"
+   },
+   "track": "deep-learning",
+   "depth": 11
+  },
+  {
+   "id": "gpu-basics",
+   "title": "GPUs and CUDA basics",
+   "level": 2,
+   "requires": [
+    "tensors",
+    "pytorch-basics"
+   ],
+   "why": "Why AI runs on NVIDIA, and how to not run out of VRAM.",
+   "learn": {
+    "title": "PyTorch: CUDA semantics",
+    "url": "https://docs.pytorch.org/docs/stable/notes/cuda.html"
+   },
+   "track": "deep-learning",
+   "depth": 5
+  },
+  {
+   "id": "mixed-precision",
+   "title": "Mixed precision (fp16, bf16)",
+   "level": 3,
+   "requires": [
+    "gpu-basics"
+   ],
+   "why": "Train twice as fast in half the memory.",
+   "learn": {
+    "title": "PyTorch: Automatic mixed precision",
+    "url": "https://docs.pytorch.org/tutorials/recipes/recipes/amp_recipe.html"
+   },
+   "track": "deep-learning",
+   "depth": 6
+  },
+  {
+   "id": "distributed-training",
+   "title": "Distributed training (DDP, FSDP)",
+   "level": 3,
+   "requires": [
+    "gpu-basics",
+    "training-loop"
+   ],
+   "why": "How models too big for one GPU get trained.",
+   "learn": {
+    "title": "PyTorch: Distributed overview",
+    "url": "https://docs.pytorch.org/tutorials/beginner/dist_overview.html"
+   },
+   "track": "deep-learning",
+   "depth": 11
+  },
+  {
+   "id": "experiment-tracking",
+   "title": "Experiment tracking",
+   "level": 2,
+   "requires": [
+    "training-loop"
+   ],
+   "why": "Know which run, data and settings produced your best model.",
+   "learn": {
+    "title": "MLflow Tracking docs",
+    "url": "https://mlflow.org/docs/latest/ml/tracking/"
+   },
+   "track": "deep-learning",
+   "depth": 11
+  },
+  {
+   "id": "tokenization",
+   "title": "Tokenization (BPE)",
+   "level": 1,
+   "requires": [
+    "text-data"
+   ],
+   "why": "Models read tokens, not words; it explains pricing and weird bugs.",
+   "learn": {
+    "title": "Karpathy: Let's build the GPT Tokenizer",
+    "url": "https://www.youtube.com/watch?v=zduSFxRajkE"
+   },
+   "track": "transformers",
+   "depth": 6
+  },
+  {
+   "id": "word-embeddings",
+   "title": "Word embeddings (word2vec)",
+   "level": 2,
+   "requires": [
+    "vectors",
+    "dot-product",
+    "mlp"
+   ],
+   "why": "King minus man plus woman equals queen: meaning as geometry.",
+   "learn": {
+    "title": "Jay Alammar: The Illustrated Word2vec",
+    "url": "https://jalammar.github.io/illustrated-word2vec/"
+   },
+   "track": "transformers",
+   "depth": 9
+  },
+  {
+   "id": "language-modeling",
+   "title": "Language modeling (next-token prediction)",
+   "level": 1,
+   "requires": [
+    "tokenization",
+    "softmax",
+    "entropy-cross-entropy"
+   ],
+   "why": "The one simple task that every LLM is trained on.",
+   "learn": {
+    "title": "Karpathy: makemore (Zero to Hero)",
+    "url": "https://karpathy.ai/zero-to-hero.html"
+   },
+   "track": "transformers",
+   "depth": 10
+  },
+  {
+   "id": "seq2seq",
+   "title": "Sequence-to-sequence models",
+   "level": 2,
+   "requires": [
+    "rnn-lstm"
+   ],
+   "why": "Translation-style encoder/decoder: where attention was born.",
+   "learn": {
+    "title": "Jay Alammar: Seq2seq with attention",
+    "url": "https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/"
+   },
+   "track": "transformers",
+   "depth": 12
+  },
+  {
+   "id": "attention",
+   "title": "Attention",
+   "level": 2,
+   "requires": [
+    "dot-product",
+    "softmax",
+    "word-embeddings"
+   ],
+   "why": "Lets every token look at every other token. The core idea of modern AI.",
+   "learn": {
+    "title": "3Blue1Brown: Attention in transformers",
+    "url": "https://www.3blue1brown.com/lessons/attention"
+   },
+   "track": "transformers",
+   "depth": 10
+  },
+  {
+   "id": "self-attention-qkv",
+   "title": "Self-attention (queries, keys, values)",
+   "level": 2,
+   "requires": [
+    "attention",
+    "matrices"
+   ],
+   "why": "The exact math inside every GPT, Claude and Gemini layer.",
+   "learn": {
+    "title": "Jay Alammar: The Illustrated Transformer",
+    "url": "https://jalammar.github.io/illustrated-transformer/"
+   },
+   "track": "transformers",
+   "depth": 11
+  },
+  {
+   "id": "multi-head-attention",
+   "title": "Multi-head attention",
+   "level": 2,
+   "requires": [
+    "self-attention-qkv"
+   ],
+   "why": "Several attention patterns in parallel, each learning a different relation.",
+   "learn": {
+    "title": "The Annotated Transformer (Harvard NLP)",
+    "url": "https://nlp.seas.harvard.edu/annotated-transformer/"
+   },
+   "track": "transformers",
+   "depth": 12
+  },
+  {
+   "id": "positional-encoding",
+   "title": "Positional encoding (incl. RoPE)",
+   "level": 3,
+   "requires": [
+    "self-attention-qkv"
+   ],
+   "why": "Attention has no sense of order until you add position.",
+   "learn": {
+    "title": "EleutherAI: Rotary embeddings",
+    "url": "https://blog.eleuther.ai/rotary-embeddings/"
+   },
+   "track": "transformers",
+   "depth": 12
+  },
+  {
+   "id": "transformer-architecture",
+   "title": "The transformer block",
+   "level": 2,
+   "requires": [
+    "multi-head-attention",
+    "residual-connections",
+    "normalization-layers",
+    "positional-encoding"
+   ],
+   "why": "Attention + MLP + residuals + norm, stacked N times. That is the whole model.",
+   "learn": {
+    "title": "Attention Is All You Need (paper)",
+    "url": "https://arxiv.org/abs/1706.03762"
+   },
+   "track": "transformers",
+   "depth": 13
+  },
+  {
+   "id": "build-gpt-from-scratch",
+   "title": "Build a GPT from scratch",
+   "level": 3,
+   "requires": [
+    "transformer-architecture",
+    "language-modeling",
+    "training-loop"
+   ],
+   "why": "The project that makes everything click. Do it once.",
+   "learn": {
+    "title": "Karpathy: Let's build GPT",
+    "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY"
+   },
+   "track": "transformers",
+   "depth": 14
+  },
+  {
+   "id": "encoder-vs-decoder",
+   "title": "Encoder vs decoder models (BERT vs GPT)",
+   "level": 2,
+   "requires": [
+    "transformer-architecture"
+   ],
+   "why": "Know which family to use for search vs generation.",
+   "learn": {
+    "title": "Hugging Face LLM Course: How Transformers work",
+    "url": "https://huggingface.co/learn/llm-course/chapter1/4"
+   },
+   "track": "transformers",
+   "depth": 14
+  },
+  {
+   "id": "pretraining",
+   "title": "Pretraining at scale",
+   "level": 2,
+   "requires": [
+    "language-modeling",
+    "transformer-architecture"
+   ],
+   "why": "Reading the internet is where a model's knowledge comes from.",
+   "learn": {
+    "title": "Karpathy: Intro to Large Language Models",
+    "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g"
+   },
+   "track": "transformers",
+   "depth": 14
+  },
+  {
+   "id": "scaling-laws",
+   "title": "Scaling laws",
+   "level": 3,
+   "requires": [
+    "pretraining"
+   ],
+   "why": "Why labs keep making models bigger, and when it stops paying.",
+   "learn": {
+    "title": "Chinchilla paper (Hoffmann et al.)",
+    "url": "https://arxiv.org/abs/2203.15556"
+   },
+   "track": "transformers",
+   "depth": 15
+  },
+  {
+   "id": "instruction-tuning",
+   "title": "Instruction tuning (SFT)",
+   "level": 2,
+   "requires": [
+    "pretraining"
+   ],
+   "why": "Turns an autocomplete engine into an assistant that follows orders.",
+   "learn": {
+    "title": "Hugging Face LLM Course: Fine-tuning",
+    "url": "https://huggingface.co/learn/llm-course/chapter11/1"
+   },
+   "track": "transformers",
+   "depth": 15
+  },
+  {
+   "id": "rlhf",
+   "title": "RLHF and preference tuning",
+   "level": 3,
+   "requires": [
+    "instruction-tuning",
+    "kl-divergence"
+   ],
+   "why": "How models learn to be helpful and refuse harmful requests.",
+   "learn": {
+    "title": "Hugging Face: Illustrating RLHF",
+    "url": "https://huggingface.co/blog/rlhf"
+   },
+   "track": "transformers",
+   "depth": 16
+  },
+  {
+   "id": "constitutional-ai",
+   "title": "Constitutional AI and RLAIF",
+   "level": 3,
+   "requires": [
+    "rlhf"
+   ],
+   "why": "Training with written principles and AI feedback instead of only human labels.",
+   "learn": {
+    "title": "Anthropic: Constitutional AI paper",
+    "url": "https://arxiv.org/abs/2212.08073"
+   },
+   "track": "transformers",
+   "depth": 17
+  },
+  {
+   "id": "reasoning-models",
+   "title": "Reasoning models and test-time compute",
+   "level": 3,
+   "requires": [
+    "rlhf",
+    "chain-of-thought"
+   ],
+   "why": "Models that think before answering, trained with RL on verifiable tasks.",
+   "learn": {
+    "title": "DeepSeek-R1 paper",
+    "url": "https://arxiv.org/abs/2501.12948"
+   },
+   "track": "transformers",
+   "depth": 17
+  },
+  {
+   "id": "mixture-of-experts",
+   "title": "Mixture of experts",
+   "level": 3,
+   "requires": [
+    "transformer-architecture"
+   ],
+   "why": "Huge models that only use a slice of their weights per token.",
+   "learn": {
+    "title": "Hugging Face: Mixture of Experts explained",
+    "url": "https://huggingface.co/blog/moe"
+   },
+   "track": "transformers",
+   "depth": 14
+  },
+  {
+   "id": "kv-cache",
+   "title": "KV cache",
+   "level": 3,
+   "requires": [
+    "self-attention-qkv"
+   ],
+   "why": "Why the first token is slow and the rest are fast; and why long chats cost more.",
+   "learn": {
+    "title": "Hugging Face: KV caching explained",
+    "url": "https://huggingface.co/blog/not-lain/kv-caching"
+   },
+   "track": "transformers",
+   "depth": 12
+  },
+  {
+   "id": "context-window",
+   "title": "Context windows and long context",
+   "level": 1,
+   "requires": [
+    "tokenization"
+   ],
+   "why": "How much a model can \"see\" at once, and what falls out.",
+   "learn": {
+    "title": "Claude docs: Context windows",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows"
+   },
+   "track": "transformers",
+   "depth": 7
+  },
+  {
+   "id": "sampling-temperature",
+   "title": "Sampling, temperature, top-p",
+   "level": 1,
+   "requires": [
+    "softmax",
+    "language-modeling"
+   ],
+   "why": "The knobs between \"creative\" and \"repeatable\".",
+   "learn": {
+    "title": "Hugging Face: How to generate text",
+    "url": "https://huggingface.co/blog/how-to-generate"
+   },
+   "track": "transformers",
+   "depth": 11
+  },
+  {
+   "id": "hallucination",
+   "title": "Why models hallucinate",
+   "level": 1,
+   "requires": [
+    "language-modeling"
+   ],
+   "why": "Plausible is not the same as true; design around it.",
+   "learn": {
+    "title": "Why Language Models Hallucinate (paper)",
+    "url": "https://arxiv.org/abs/2509.04664"
+   },
+   "track": "transformers",
+   "depth": 11
+  },
+  {
+   "id": "hugging-face-hub",
+   "title": "Hugging Face Hub and transformers library",
+   "level": 1,
+   "requires": [
+    "pytorch-basics"
+   ],
+   "why": "Where open models, datasets and demos live.",
+   "learn": {
+    "title": "Hugging Face LLM Course",
+    "url": "https://huggingface.co/learn/llm-course/chapter1/1"
+   },
+   "track": "transformers",
+   "depth": 5
+  },
+  {
+   "id": "interpretability",
+   "title": "Mechanistic interpretability",
+   "level": 3,
+   "requires": [
+    "transformer-architecture"
+   ],
+   "why": "Looking inside the model to see what it is actually computing.",
+   "learn": {
+    "title": "Anthropic: Mapping the Mind of a Large Language Model",
+    "url": "https://www.anthropic.com/research/mapping-mind-language-model"
+   },
+   "track": "transformers",
+   "depth": 14
+  },
+  {
+   "id": "llm-landscape",
+   "title": "The model landscape (closed vs open)",
+   "level": 1,
+   "requires": [
+    "context-window"
+   ],
+   "why": "Claude, GPT, Gemini, Llama, Qwen, DeepSeek: pick by task, cost and privacy.",
+   "learn": {
+    "title": "Artificial Analysis: model comparison",
+    "url": "https://artificialanalysis.ai/"
+   },
+   "track": "llm-apps",
+   "depth": 8
+  },
+  {
+   "id": "llm-api-basics",
+   "title": "Calling an LLM API",
+   "level": 1,
+   "requires": [
+    "python-requests",
+    "env-secrets",
+    "llm-landscape"
+   ],
+   "why": "Messages in, text out. Your first AI feature is 10 lines.",
+   "learn": {
+    "title": "Claude docs: Get started",
+    "url": "https://platform.claude.com/docs/en/get-started"
+   },
+   "track": "llm-apps",
+   "depth": 9
+  },
+  {
+   "id": "tokens-and-pricing",
+   "title": "Tokens, pricing and rate limits",
+   "level": 1,
+   "requires": [
+    "llm-api-basics",
+    "tokenization"
+   ],
+   "why": "The difference between a $5 and a $5,000 monthly bill.",
+   "learn": {
+    "title": "Claude docs: Pricing",
+    "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+   },
+   "track": "llm-apps",
+   "depth": 10
+  },
+  {
+   "id": "system-prompts",
+   "title": "System prompts and roles",
+   "level": 1,
+   "requires": [
+    "llm-api-basics"
+   ],
+   "why": "Set who the model is and what rules it follows.",
+   "learn": {
+    "title": "Claude docs: System prompts",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/system-prompts"
+   },
+   "track": "llm-apps",
+   "depth": 10
+  },
+  {
+   "id": "prompt-engineering",
+   "title": "Prompt engineering fundamentals",
+   "level": 1,
+   "requires": [
+    "system-prompts"
+   ],
+   "why": "Clear instructions, context and examples beat clever tricks.",
+   "learn": {
+    "title": "Anthropic: Interactive prompt engineering tutorial",
+    "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial"
+   },
+   "track": "llm-apps",
+   "depth": 11
+  },
+  {
+   "id": "few-shot",
+   "title": "Few-shot examples",
+   "level": 1,
+   "requires": [
+    "prompt-engineering"
+   ],
+   "why": "Show, don't tell: 3 examples beat 3 paragraphs.",
+   "learn": {
+    "title": "Claude docs: Use examples",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/multishot-prompting"
+   },
+   "track": "llm-apps",
+   "depth": 12
+  },
+  {
+   "id": "chain-of-thought",
+   "title": "Chain-of-thought prompting",
+   "level": 1,
+   "requires": [
+    "prompt-engineering"
+   ],
+   "why": "Letting the model think step by step improves hard answers.",
+   "learn": {
+    "title": "Chain-of-Thought paper (Wei et al.)",
+    "url": "https://arxiv.org/abs/2201.11903"
+   },
+   "track": "llm-apps",
+   "depth": 12
+  },
+  {
+   "id": "extended-thinking",
+   "title": "Extended thinking / reasoning modes",
+   "level": 2,
+   "requires": [
+    "chain-of-thought",
+    "tokens-and-pricing"
+   ],
+   "why": "When to pay for more thinking, and when it is waste.",
+   "learn": {
+    "title": "Claude docs: Extended thinking",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking"
+   },
+   "track": "llm-apps",
+   "depth": 13
+  },
+  {
+   "id": "structured-outputs",
+   "title": "Structured outputs (JSON)",
+   "level": 2,
+   "requires": [
+    "prompt-engineering",
+    "json-yaml",
+    "python-typing"
+   ],
+   "why": "Turn free text into data your code can trust.",
+   "learn": {
+    "title": "Pydantic docs",
+    "url": "https://docs.pydantic.dev/latest/"
+   },
+   "track": "llm-apps",
+   "depth": 12
+  },
+  {
+   "id": "streaming",
+   "title": "Streaming responses",
+   "level": 2,
+   "requires": [
+    "llm-api-basics"
+   ],
+   "why": "Show words as they arrive so the app feels instant.",
+   "learn": {
+    "title": "Claude docs: Streaming",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/streaming"
+   },
+   "track": "llm-apps",
+   "depth": 10
+  },
+  {
+   "id": "conversation-memory",
+   "title": "Conversation history and memory",
+   "level": 2,
+   "requires": [
+    "system-prompts",
+    "context-window"
+   ],
+   "why": "LLMs are stateless; you decide what they remember.",
+   "learn": {
+    "title": "Claude docs: Messages API",
+    "url": "https://platform.claude.com/docs/en/api/messages"
+   },
+   "track": "llm-apps",
+   "depth": 11
+  },
+  {
+   "id": "context-engineering",
+   "title": "Context engineering",
+   "level": 2,
+   "requires": [
+    "conversation-memory",
+    "prompt-engineering"
+   ],
+   "why": "What goes into the window matters more than the prompt wording.",
+   "learn": {
+    "title": "Anthropic: Effective context engineering for AI agents",
+    "url": "https://www.anthropic.com/research/effective-context-engineering-for-ai-agents"
+   },
+   "track": "llm-apps",
+   "depth": 12
+  },
+  {
+   "id": "prompt-caching",
+   "title": "Prompt caching",
+   "level": 2,
+   "requires": [
+    "tokens-and-pricing",
+    "kv-cache"
+   ],
+   "why": "Cut cost and latency up to 90% on repeated context.",
+   "learn": {
+    "title": "Claude docs: Prompt caching",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching"
+   },
+   "track": "llm-apps",
+   "depth": 13
+  },
+  {
+   "id": "batch-api",
+   "title": "Batch processing",
+   "level": 2,
+   "requires": [
+    "tokens-and-pricing"
+   ],
+   "why": "Half price for jobs that can wait a few hours.",
+   "learn": {
+    "title": "Claude docs: Batch processing",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing"
+   },
+   "track": "llm-apps",
+   "depth": 11
+  },
+  {
+   "id": "tool-use",
+   "title": "Tool use / function calling",
+   "level": 2,
+   "requires": [
+    "structured-outputs"
+   ],
+   "why": "The model decides to call your code. The bridge from chatbot to agent.",
+   "learn": {
+    "title": "Claude docs: Tool use",
+    "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+   },
+   "track": "llm-apps",
+   "depth": 13
+  },
+  {
+   "id": "vision-inputs",
+   "title": "Images and PDFs as input",
+   "level": 2,
+   "requires": [
+    "llm-api-basics"
+   ],
+   "why": "Read receipts, charts, screenshots and scanned documents.",
+   "learn": {
+    "title": "Claude docs: Vision",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/vision"
+   },
+   "track": "llm-apps",
+   "depth": 10
+  },
+  {
+   "id": "local-llms",
+   "title": "Running models locally (Ollama, llama.cpp)",
+   "level": 2,
+   "requires": [
+    "llm-landscape",
+    "command-line"
+   ],
+   "why": "Free, private, offline AI on your own laptop.",
+   "learn": {
+    "title": "Ollama",
+    "url": "https://github.com/ollama/ollama"
+   },
+   "track": "llm-apps",
+   "depth": 9
+  },
+  {
+   "id": "quantization",
+   "title": "Quantization (8-bit, 4-bit, GGUF)",
+   "level": 3,
+   "requires": [
+    "local-llms",
+    "mixed-precision"
+   ],
+   "why": "Fit a 70B model on a gaming GPU.",
+   "learn": {
+    "title": "Hugging Face: Quantization overview",
+    "url": "https://huggingface.co/docs/transformers/main/en/quantization/overview"
+   },
+   "track": "llm-apps",
+   "depth": 10
+  },
+  {
+   "id": "llm-frameworks",
+   "title": "LLM frameworks (LangChain, LlamaIndex)",
+   "level": 2,
+   "requires": [
+    "tool-use"
+   ],
+   "why": "Ready-made pieces; know when they help and when to write it yourself.",
+   "learn": {
+    "title": "LangChain docs",
+    "url": "https://docs.langchain.com/"
+   },
+   "track": "llm-apps",
+   "depth": 14
+  },
+  {
+   "id": "chat-ui",
+   "title": "Building a chat UI",
+   "level": 2,
+   "requires": [
+    "streaming",
+    "web-frontend-basics"
+   ],
+   "why": "Ship something people can click on, not just a script.",
+   "learn": {
+    "title": "Gradio quickstart",
+    "url": "https://www.gradio.app/guides/quickstart"
+   },
+   "track": "llm-apps",
+   "depth": 11
+  },
+  {
+   "id": "speech-ai",
+   "title": "Speech-to-text and text-to-speech",
+   "level": 2,
+   "requires": [
+    "llm-api-basics"
+   ],
+   "why": "Voice agents, transcription and narration.",
+   "learn": {
+    "title": "OpenAI Whisper (open source)",
+    "url": "https://github.com/openai/whisper"
+   },
+   "track": "llm-apps",
+   "depth": 10
+  },
+  {
+   "id": "image-generation",
+   "title": "Image generation (diffusion)",
+   "level": 3,
+   "requires": [
+    "autoencoders",
+    "distributions"
+   ],
+   "why": "How text becomes pictures; Stable Diffusion, Imagen, gpt-image.",
+   "learn": {
+    "title": "Hugging Face Diffusion Models Course",
+    "url": "https://huggingface.co/learn/diffusion-course/unit0/1"
+   },
+   "track": "llm-apps",
+   "depth": 10
+  },
+  {
+   "id": "multimodal-models",
+   "title": "Multimodal models (CLIP and beyond)",
+   "level": 3,
+   "requires": [
+    "vision-inputs",
+    "embeddings"
+   ],
+   "why": "One model that understands text, images and audio together.",
+   "learn": {
+    "title": "OpenAI CLIP paper",
+    "url": "https://arxiv.org/abs/2103.00020"
+   },
+   "track": "llm-apps",
+   "depth": 11
+  },
+  {
+   "id": "ai-coding-assistants",
+   "title": "AI coding assistants (Claude Code, Codex, Cursor)",
+   "level": 1,
+   "requires": [
+    "git-basics",
+    "prompt-engineering"
+   ],
+   "why": "The fastest way to build everything else on this map.",
+   "learn": {
+    "title": "Claude Code docs",
+    "url": "https://code.claude.com/docs/en/overview"
+   },
+   "track": "llm-apps",
+   "depth": 12
+  },
+  {
+   "id": "embeddings",
+   "title": "Text embeddings",
+   "level": 1,
+   "requires": [
+    "word-embeddings",
+    "llm-api-basics"
+   ],
+   "why": "Turn any text into a vector so you can search by meaning.",
+   "learn": {
+    "title": "Sentence Transformers docs",
+    "url": "https://sbert.net/"
+   },
+   "track": "rag",
+   "depth": 10
+  },
+  {
+   "id": "semantic-search",
+   "title": "Semantic search",
+   "level": 1,
+   "requires": [
+    "embeddings",
+    "dot-product"
+   ],
+   "why": "Find \"refund policy\" when the doc says \"money-back guarantee\".",
+   "learn": {
+    "title": "Hugging Face LLM Course: Semantic search with FAISS",
+    "url": "https://huggingface.co/learn/llm-course/chapter5/6"
+   },
+   "track": "rag",
+   "depth": 11
+  },
+  {
+   "id": "keyword-search-bm25",
+   "title": "Keyword search (BM25)",
+   "level": 2,
+   "requires": [
+    "text-data"
+   ],
+   "why": "Still beats embeddings on names, codes and exact terms.",
+   "learn": {
+    "title": "Elastic: Practical BM25",
+    "url": "https://www.elastic.co/blog/practical-bm25-part-2-the-bm25-algorithm-and-its-variables"
+   },
+   "track": "rag",
+   "depth": 6
+  },
+  {
+   "id": "vector-databases",
+   "title": "Vector databases",
+   "level": 2,
+   "requires": [
+    "semantic-search"
+   ],
+   "why": "Store and search millions of embeddings in milliseconds.",
+   "learn": {
+    "title": "pgvector (Postgres extension)",
+    "url": "https://github.com/pgvector/pgvector"
+   },
+   "track": "rag",
+   "depth": 12
+  },
+  {
+   "id": "ann-indexes",
+   "title": "Approximate nearest neighbor (HNSW)",
+   "level": 3,
+   "requires": [
+    "vector-databases",
+    "knn"
+   ],
+   "why": "How vector DBs stay fast at scale.",
+   "learn": {
+    "title": "Pinecone: HNSW explained",
+    "url": "https://www.pinecone.io/learn/series/faiss/hnsw/"
+   },
+   "track": "rag",
+   "depth": 13
+  },
+  {
+   "id": "chunking",
+   "title": "Chunking strategies",
+   "level": 2,
+   "requires": [
+    "document-parsing",
+    "embeddings"
+   ],
+   "why": "Bad chunks are the #1 reason RAG answers are wrong.",
+   "learn": {
+    "title": "Pinecone: Chunking strategies",
+    "url": "https://www.pinecone.io/learn/chunking-strategies/"
+   },
+   "track": "rag",
+   "depth": 11
+  },
+  {
+   "id": "rag-basics",
+   "title": "Retrieval-augmented generation (RAG)",
+   "level": 2,
+   "requires": [
+    "semantic-search",
+    "chunking",
+    "prompt-engineering"
+   ],
+   "why": "Answer questions from YOUR documents instead of the model's memory.",
+   "learn": {
+    "title": "Original RAG paper (Lewis et al.)",
+    "url": "https://arxiv.org/abs/2005.11401"
+   },
+   "track": "rag",
+   "depth": 12
+  },
+  {
+   "id": "hybrid-search",
+   "title": "Hybrid search",
+   "level": 2,
+   "requires": [
+    "keyword-search-bm25",
+    "semantic-search"
+   ],
+   "why": "Combine keywords and meaning for the best of both.",
+   "learn": {
+    "title": "Weaviate: Hybrid search explained",
+    "url": "https://weaviate.io/blog/hybrid-search-explained"
+   },
+   "track": "rag",
+   "depth": 12
+  },
+  {
+   "id": "reranking",
+   "title": "Reranking",
+   "level": 2,
+   "requires": [
+    "rag-basics"
+   ],
+   "why": "A second pass that puts the truly relevant chunk on top.",
+   "learn": {
+    "title": "Sentence Transformers: Cross-encoders",
+    "url": "https://sbert.net/examples/cross_encoder/applications/README.html"
+   },
+   "track": "rag",
+   "depth": 13
+  },
+  {
+   "id": "contextual-retrieval",
+   "title": "Contextual retrieval",
+   "level": 3,
+   "requires": [
+    "hybrid-search",
+    "prompt-caching"
+   ],
+   "why": "Add context to each chunk before embedding; big drop in failed retrievals.",
+   "learn": {
+    "title": "Anthropic: Introducing Contextual Retrieval",
+    "url": "https://www.anthropic.com/research/contextual-retrieval"
+   },
+   "track": "rag",
+   "depth": 14
+  },
+  {
+   "id": "query-rewriting",
+   "title": "Query rewriting and HyDE",
+   "level": 3,
+   "requires": [
+    "rag-basics"
+   ],
+   "why": "Users ask badly; rewrite the question before you search.",
+   "learn": {
+    "title": "HyDE paper",
+    "url": "https://arxiv.org/abs/2212.10496"
+   },
+   "track": "rag",
+   "depth": 13
+  },
+  {
+   "id": "citations-grounding",
+   "title": "Citations and grounding",
+   "level": 2,
+   "requires": [
+    "rag-basics"
+   ],
+   "why": "Show the source so users can check, and hallucinations drop.",
+   "learn": {
+    "title": "Claude docs: Citations",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/citations"
+   },
+   "track": "rag",
+   "depth": 13
+  },
+  {
+   "id": "rag-evaluation",
+   "title": "Evaluating RAG",
+   "level": 3,
+   "requires": [
+    "rag-basics",
+    "llm-as-judge"
+   ],
+   "why": "Measure retrieval and answer quality separately or you will fix the wrong thing.",
+   "learn": {
+    "title": "Ragas docs",
+    "url": "https://docs.ragas.io/"
+   },
+   "track": "rag",
+   "depth": 13
+  },
+  {
+   "id": "knowledge-graphs",
+   "title": "Knowledge graphs",
+   "level": 2,
+   "requires": [
+    "sql-basics"
+   ],
+   "why": "Entities and relationships: the structure that plain text search misses.",
+   "learn": {
+    "title": "Neo4j GraphAcademy (free)",
+    "url": "https://graphacademy.neo4j.com/"
+   },
+   "track": "rag",
+   "depth": 1
+  },
+  {
+   "id": "graphrag",
+   "title": "GraphRAG",
+   "level": 3,
+   "requires": [
+    "knowledge-graphs",
+    "rag-basics"
+   ],
+   "why": "Answer \"what are the main themes?\" questions that chunk search cannot.",
+   "learn": {
+    "title": "Microsoft GraphRAG",
+    "url": "https://microsoft.github.io/graphrag/"
+   },
+   "track": "rag",
+   "depth": 13
+  },
+  {
+   "id": "agentic-rag",
+   "title": "Agentic RAG",
+   "level": 3,
+   "requires": [
+    "rag-basics",
+    "agent-loop"
+   ],
+   "why": "Let the model decide what to search, and search again if needed.",
+   "learn": {
+    "title": "Hugging Face Agents Course: Agentic RAG",
+    "url": "https://huggingface.co/learn/agents-course/unit2/smolagents/retrieval_agents"
+   },
+   "track": "rag",
+   "depth": 16
+  },
+  {
+   "id": "long-context-vs-rag",
+   "title": "Long context vs RAG",
+   "level": 2,
+   "requires": [
+    "rag-basics",
+    "context-window",
+    "prompt-caching"
+   ],
+   "why": "Sometimes you should just paste the whole document in.",
+   "learn": {
+    "title": "Claude docs: Long context tips",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/long-context-tips"
+   },
+   "track": "rag",
+   "depth": 14
+  },
+  {
+   "id": "what-is-an-agent",
+   "title": "What an agent is (vs a workflow)",
+   "level": 1,
+   "requires": [
+    "tool-use"
+   ],
+   "why": "An LLM using tools in a loop until the job is done. Most tasks need less.",
+   "learn": {
+    "title": "Anthropic: Building effective agents",
+    "url": "https://www.anthropic.com/research/building-effective-agents"
+   },
+   "track": "agents",
+   "depth": 14
+  },
+  {
+   "id": "workflow-patterns",
+   "title": "Workflow patterns (chaining, routing, parallel)",
+   "level": 2,
+   "requires": [
+    "what-is-an-agent"
+   ],
+   "why": "Predictable building blocks before you reach for full autonomy.",
+   "learn": {
+    "title": "Anthropic: Building effective agents",
+    "url": "https://www.anthropic.com/research/building-effective-agents"
+   },
+   "track": "agents",
+   "depth": 15
+  },
+  {
+   "id": "agent-loop",
+   "title": "The agent loop (ReAct)",
+   "level": 2,
+   "requires": [
+    "what-is-an-agent"
+   ],
+   "why": "Think, act, observe, repeat. The engine of every agent.",
+   "learn": {
+    "title": "ReAct paper (Yao et al.)",
+    "url": "https://arxiv.org/abs/2210.03629"
+   },
+   "track": "agents",
+   "depth": 15
+  },
+  {
+   "id": "tool-design",
+   "title": "Designing good tools",
+   "level": 2,
+   "requires": [
+    "agent-loop"
+   ],
+   "why": "Agents fail on vague tools far more than on weak models.",
+   "learn": {
+    "title": "Anthropic: Writing effective tools for agents",
+    "url": "https://www.anthropic.com/research/writing-tools-for-agents"
+   },
+   "track": "agents",
+   "depth": 16
+  },
+  {
+   "id": "mcp",
+   "title": "Model Context Protocol (MCP)",
+   "level": 2,
+   "requires": [
+    "tool-use",
+    "http-rest"
+   ],
+   "why": "One standard plug to connect any AI app to any tool or data source.",
+   "learn": {
+    "title": "modelcontextprotocol.io",
+    "url": "https://modelcontextprotocol.io/"
+   },
+   "track": "agents",
+   "depth": 14
+  },
+  {
+   "id": "build-mcp-server",
+   "title": "Build an MCP server",
+   "level": 2,
+   "requires": [
+    "mcp",
+    "python-async"
+   ],
+   "why": "Give Claude, ChatGPT or Cursor access to your own data in an afternoon.",
+   "learn": {
+    "title": "MCP: Build a server",
+    "url": "https://modelcontextprotocol.io/docs/develop/build-server"
+   },
+   "track": "agents",
+   "depth": 15
+  },
+  {
+   "id": "agent-skills",
+   "title": "Agent skills",
+   "level": 2,
+   "requires": [
+    "context-engineering",
+    "what-is-an-agent"
+   ],
+   "why": "Package instructions and scripts an agent loads only when needed.",
+   "learn": {
+    "title": "Anthropic: Agent Skills",
+    "url": "https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills"
+   },
+   "track": "agents",
+   "depth": 15
+  },
+  {
+   "id": "agent-memory",
+   "title": "Agent memory",
+   "level": 3,
+   "requires": [
+    "agent-loop",
+    "conversation-memory",
+    "vector-databases"
+   ],
+   "why": "Remember users and past work across sessions.",
+   "learn": {
+    "title": "Letta (MemGPT) docs",
+    "url": "https://docs.letta.com/"
+   },
+   "track": "agents",
+   "depth": 16
+  },
+  {
+   "id": "planning",
+   "title": "Planning and task decomposition",
+   "level": 3,
+   "requires": [
+    "agent-loop",
+    "chain-of-thought"
+   ],
+   "why": "Break a big goal into steps the agent can actually finish.",
+   "learn": {
+    "title": "Lilian Weng: LLM Powered Autonomous Agents",
+    "url": "https://lilianweng.github.io/posts/2023-06-23-agent/"
+   },
+   "track": "agents",
+   "depth": 16
+  },
+  {
+   "id": "multi-agent",
+   "title": "Multi-agent systems",
+   "level": 3,
+   "requires": [
+    "planning",
+    "workflow-patterns"
+   ],
+   "why": "An orchestrator plus specialist sub-agents for big, parallel jobs.",
+   "learn": {
+    "title": "Anthropic: How we built our multi-agent research system",
+    "url": "https://www.anthropic.com/research/multi-agent-research-system"
+   },
+   "track": "agents",
+   "depth": 17
+  },
+  {
+   "id": "agent-sdks",
+   "title": "Agent SDKs and frameworks",
+   "level": 2,
+   "requires": [
+    "agent-loop"
+   ],
+   "why": "Claude Agent SDK, OpenAI Agents SDK, LangGraph: don't rebuild the loop.",
+   "learn": {
+    "title": "Claude Agent SDK overview",
+    "url": "https://code.claude.com/docs/en/agent-sdk/overview"
+   },
+   "track": "agents",
+   "depth": 16
+  },
+  {
+   "id": "langgraph",
+   "title": "Stateful agent graphs (LangGraph)",
+   "level": 3,
+   "requires": [
+    "agent-sdks",
+    "workflow-patterns"
+   ],
+   "why": "Explicit state machines for agents that must not go off the rails.",
+   "learn": {
+    "title": "LangChain Academy: Intro to LangGraph (free)",
+    "url": "https://academy.langchain.com/courses/intro-to-langgraph"
+   },
+   "track": "agents",
+   "depth": 17
+  },
+  {
+   "id": "computer-use",
+   "title": "Computer-use and browser agents",
+   "level": 3,
+   "requires": [
+    "agent-loop",
+    "vision-inputs"
+   ],
+   "why": "Agents that click, type and browse like a person.",
+   "learn": {
+    "title": "Claude docs: Computer use",
+    "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool"
+   },
+   "track": "agents",
+   "depth": 16
+  },
+  {
+   "id": "coding-agents",
+   "title": "Coding agents",
+   "level": 2,
+   "requires": [
+    "ai-coding-assistants",
+    "agent-loop"
+   ],
+   "why": "Agents that read a repo, edit files, run tests and open PRs.",
+   "learn": {
+    "title": "Claude Code: Best practices",
+    "url": "https://code.claude.com/docs/en/best-practices"
+   },
+   "track": "agents",
+   "depth": 16
+  },
+  {
+   "id": "human-in-the-loop",
+   "title": "Human-in-the-loop and approvals",
+   "level": 2,
+   "requires": [
+    "agent-loop"
+   ],
+   "why": "Pause before the agent sends the email or spends the money.",
+   "learn": {
+    "title": "LangGraph: Human-in-the-loop",
+    "url": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+   },
+   "track": "agents",
+   "depth": 16
+  },
+  {
+   "id": "agent-evaluation",
+   "title": "Evaluating agents",
+   "level": 3,
+   "requires": [
+    "agent-loop",
+    "evals-basics"
+   ],
+   "why": "Agents take many steps; you must grade the path and the result.",
+   "learn": {
+    "title": "Anthropic: Demystifying evals for AI agents",
+    "url": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents"
+   },
+   "track": "agents",
+   "depth": 16
+  },
+  {
+   "id": "a2a",
+   "title": "Agent-to-agent protocols (A2A)",
+   "level": 3,
+   "requires": [
+    "mcp",
+    "multi-agent"
+   ],
+   "why": "Agents from different companies talking to each other.",
+   "learn": {
+    "title": "A2A protocol",
+    "url": "https://a2a-protocol.org/"
+   },
+   "track": "agents",
+   "depth": 18
+  },
+  {
+   "id": "when-to-fine-tune",
+   "title": "Prompting vs RAG vs fine-tuning",
+   "level": 2,
+   "requires": [
+    "rag-basics",
+    "prompt-engineering",
+    "transfer-learning"
+   ],
+   "why": "Most people fine-tune when they should have fixed the prompt or the data.",
+   "learn": {
+    "title": "OpenAI: Model optimization guide",
+    "url": "https://developers.openai.com/api/docs/guides/model-optimization"
+   },
+   "track": "fine-tuning",
+   "depth": 13
+  },
+  {
+   "id": "fine-tuning-datasets",
+   "title": "Building a fine-tuning dataset",
+   "level": 2,
+   "requires": [
+    "when-to-fine-tune",
+    "data-labeling",
+    "json-yaml"
+   ],
+   "why": "500 great examples beat 50,000 sloppy ones.",
+   "learn": {
+    "title": "Hugging Face: Chat templates",
+    "url": "https://huggingface.co/docs/transformers/main/en/chat_templating"
+   },
+   "track": "fine-tuning",
+   "depth": 14
+  },
+  {
+   "id": "full-fine-tuning",
+   "title": "Full fine-tuning",
+   "level": 3,
+   "requires": [
+    "instruction-tuning",
+    "fine-tuning-datasets",
+    "training-loop"
+   ],
+   "why": "Update every weight. Powerful, expensive, rarely needed.",
+   "learn": {
+    "title": "Hugging Face TRL: SFT Trainer",
+    "url": "https://huggingface.co/docs/trl/sft_trainer"
+   },
+   "track": "fine-tuning",
+   "depth": 16
+  },
+  {
+   "id": "lora",
+   "title": "LoRA and PEFT",
+   "level": 2,
+   "requires": [
+    "fine-tuning-datasets",
+    "matrices"
+   ],
+   "why": "Fine-tune a big model by training a tiny add-on. Fits on a free GPU.",
+   "learn": {
+    "title": "Hugging Face PEFT docs",
+    "url": "https://huggingface.co/docs/peft/index"
+   },
+   "track": "fine-tuning",
+   "depth": 15
+  },
+  {
+   "id": "qlora",
+   "title": "QLoRA",
+   "level": 3,
+   "requires": [
+    "lora",
+    "quantization"
+   ],
+   "why": "LoRA on a 4-bit model: fine-tune 7B–70B on one card.",
+   "learn": {
+    "title": "QLoRA paper",
+    "url": "https://arxiv.org/abs/2305.14314"
+   },
+   "track": "fine-tuning",
+   "depth": 16
+  },
+  {
+   "id": "unsloth-colab",
+   "title": "Fine-tuning on free Colab/Kaggle GPUs",
+   "level": 2,
+   "requires": [
+    "lora",
+    "jupyter"
+   ],
+   "why": "Your first fine-tune, for $0, in an hour.",
+   "learn": {
+    "title": "Unsloth docs",
+    "url": "https://unsloth.ai/docs"
+   },
+   "track": "fine-tuning",
+   "depth": 16
+  },
+  {
+   "id": "dpo",
+   "title": "DPO and preference fine-tuning",
+   "level": 3,
+   "requires": [
+    "lora",
+    "rlhf"
+   ],
+   "why": "Teach style and preferences with \"better/worse\" pairs, no reward model.",
+   "learn": {
+    "title": "Hugging Face TRL: DPO Trainer",
+    "url": "https://huggingface.co/docs/trl/dpo_trainer"
+   },
+   "track": "fine-tuning",
+   "depth": 17
+  },
+  {
+   "id": "rl-fine-tuning",
+   "title": "RL fine-tuning (GRPO) on verifiable tasks",
+   "level": 3,
+   "requires": [
+    "dpo",
+    "reasoning-models"
+   ],
+   "why": "How small open models learn to reason on math and code.",
+   "learn": {
+    "title": "Hugging Face TRL: GRPO Trainer",
+    "url": "https://huggingface.co/docs/trl/grpo_trainer"
+   },
+   "track": "fine-tuning",
+   "depth": 18
+  },
+  {
+   "id": "distillation",
+   "title": "Distillation",
+   "level": 3,
+   "requires": [
+    "fine-tuning-datasets",
+    "kl-divergence"
+   ],
+   "why": "Teach a small, cheap model to copy a big one.",
+   "learn": {
+    "title": "Hinton et al.: Distilling the Knowledge in a Neural Network",
+    "url": "https://arxiv.org/abs/1503.02531"
+   },
+   "track": "fine-tuning",
+   "depth": 15
+  },
+  {
+   "id": "embedding-fine-tuning",
+   "title": "Fine-tuning embedding models",
+   "level": 3,
+   "requires": [
+    "embeddings",
+    "lora"
+   ],
+   "why": "Make search understand your domain's jargon.",
+   "learn": {
+    "title": "Sentence Transformers: Training overview",
+    "url": "https://sbert.net/docs/sentence_transformer/training_overview.html"
+   },
+   "track": "fine-tuning",
+   "depth": 16
+  },
+  {
+   "id": "model-merging",
+   "title": "Model merging",
+   "level": 3,
+   "requires": [
+    "lora"
+   ],
+   "why": "Combine fine-tunes without retraining.",
+   "learn": {
+    "title": "mergekit",
+    "url": "https://github.com/arcee-ai/mergekit"
+   },
+   "track": "fine-tuning",
+   "depth": 16
+  },
+  {
+   "id": "evals-basics",
+   "title": "Evals: tests for AI",
+   "level": 1,
+   "requires": [
+    "testing-pytest",
+    "llm-api-basics"
+   ],
+   "why": "The skill that separates AI engineers from prompt tinkerers.",
+   "learn": {
+    "title": "Claude docs: Define success and build evals",
+    "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+   },
+   "track": "evals-safety",
+   "depth": 10
+  },
+  {
+   "id": "golden-datasets",
+   "title": "Golden test sets",
+   "level": 2,
+   "requires": [
+    "evals-basics",
+    "data-labeling"
+   ],
+   "why": "50 hand-checked examples you run after every change.",
+   "learn": {
+    "title": "Hamel Husain: Your AI product needs evals",
+    "url": "https://hamel.dev/blog/posts/evals/"
+   },
+   "track": "evals-safety",
+   "depth": 11
+  },
+  {
+   "id": "error-analysis",
+   "title": "Error analysis",
+   "level": 2,
+   "requires": [
+    "golden-datasets"
+   ],
+   "why": "Read the failures, group them, fix the biggest group first.",
+   "learn": {
+    "title": "Hamel Husain: A field guide to rapidly improving AI products",
+    "url": "https://hamel.dev/blog/posts/field-guide/"
+   },
+   "track": "evals-safety",
+   "depth": 12
+  },
+  {
+   "id": "code-graded-evals",
+   "title": "Code-graded evals",
+   "level": 2,
+   "requires": [
+    "evals-basics",
+    "structured-outputs"
+   ],
+   "why": "Exact match, regex, schema checks: cheap and reliable.",
+   "learn": {
+    "title": "Anthropic courses: Prompt evaluations",
+    "url": "https://github.com/anthropics/courses/tree/master/prompt_evaluations"
+   },
+   "track": "evals-safety",
+   "depth": 13
+  },
+  {
+   "id": "llm-as-judge",
+   "title": "LLM-as-a-judge",
+   "level": 2,
+   "requires": [
+    "evals-basics",
+    "prompt-engineering"
+   ],
+   "why": "Grade open-ended answers at scale; calibrate it against humans.",
+   "learn": {
+    "title": "Hugging Face cookbook: LLM-as-a-judge",
+    "url": "https://huggingface.co/learn/cookbook/en/llm_judge"
+   },
+   "track": "evals-safety",
+   "depth": 12
+  },
+  {
+   "id": "benchmarks",
+   "title": "Public benchmarks (MMLU, SWE-bench, ...)",
+   "level": 2,
+   "requires": [
+    "evals-basics"
+   ],
+   "why": "Read leaderboards critically; your task is not the benchmark.",
+   "learn": {
+    "title": "Stanford HELM",
+    "url": "https://crfm.stanford.edu/helm/"
+   },
+   "track": "evals-safety",
+   "depth": 11
+  },
+  {
+   "id": "eval-statistics",
+   "title": "Statistics for evals",
+   "level": 3,
+   "requires": [
+    "golden-datasets",
+    "hypothesis-testing"
+   ],
+   "why": "Is a 2-point gain real or noise? Error bars on evals.",
+   "learn": {
+    "title": "Anthropic: Adding error bars to evals",
+    "url": "https://www.anthropic.com/research/statistical-approach-to-model-evals"
+   },
+   "track": "evals-safety",
+   "depth": 12
+  },
+  {
+   "id": "prompt-injection",
+   "title": "Prompt injection",
+   "level": 2,
+   "requires": [
+    "tool-use",
+    "rag-basics"
+   ],
+   "why": "A web page or email can hijack your agent. The #1 LLM security risk.",
+   "learn": {
+    "title": "OWASP Top 10 for LLM Applications",
+    "url": "https://genai.owasp.org/llm-top-10/"
+   },
+   "track": "evals-safety",
+   "depth": 14
+  },
+  {
+   "id": "jailbreaks-guardrails",
+   "title": "Jailbreaks and guardrails",
+   "level": 2,
+   "requires": [
+    "prompt-injection"
+   ],
+   "why": "Input/output filters and policies that keep the app safe.",
+   "learn": {
+    "title": "Claude docs: Mitigate jailbreaks",
+    "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks"
+   },
+   "track": "evals-safety",
+   "depth": 15
+  },
+  {
+   "id": "red-teaming",
+   "title": "Red teaming",
+   "level": 3,
+   "requires": [
+    "jailbreaks-guardrails",
+    "golden-datasets"
+   ],
+   "why": "Attack your own app before users do.",
+   "learn": {
+    "title": "promptfoo: Red teaming docs",
+    "url": "https://www.promptfoo.dev/docs/red-team/"
+   },
+   "track": "evals-safety",
+   "depth": 16
+  },
+  {
+   "id": "pii-privacy",
+   "title": "PII and data privacy",
+   "level": 2,
+   "requires": [
+    "llm-api-basics"
+   ],
+   "why": "Know what you may send to a third-party model, and what you may not.",
+   "learn": {
+    "title": "Microsoft Presidio (PII detection)",
+    "url": "https://microsoft.github.io/presidio/"
+   },
+   "track": "evals-safety",
+   "depth": 10
+  },
+  {
+   "id": "bias-fairness",
+   "title": "Bias and fairness",
+   "level": 2,
+   "requires": [
+    "classification-metrics"
+   ],
+   "why": "Models copy the biases in their data; measure it.",
+   "learn": {
+    "title": "Google MLCC: Fairness",
+    "url": "https://developers.google.com/machine-learning/crash-course/fairness"
+   },
+   "track": "evals-safety",
+   "depth": 7
+  },
+  {
+   "id": "ai-safety-alignment",
+   "title": "AI safety and alignment",
+   "level": 3,
+   "requires": [
+    "rlhf"
+   ],
+   "why": "Why the labs care so much about models doing what we actually intend.",
+   "learn": {
+    "title": "BlueDot Impact: AI Safety Fundamentals",
+    "url": "https://bluedot.org/"
+   },
+   "track": "evals-safety",
+   "depth": 17
+  },
+  {
+   "id": "ai-regulation",
+   "title": "AI regulation (EU AI Act and others)",
+   "level": 2,
+   "requires": [
+    "pii-privacy"
+   ],
+   "why": "Rules on what you can deploy, and where.",
+   "learn": {
+    "title": "EU AI Act explorer",
+    "url": "https://artificialintelligenceact.eu/"
+   },
+   "track": "evals-safety",
+   "depth": 11
+  },
+  {
+   "id": "deploy-web-app",
+   "title": "Deploying a web app",
+   "level": 2,
+   "requires": [
+    "web-backend",
+    "git-basics"
+   ],
+   "why": "A project nobody can open is not a portfolio project.",
+   "learn": {
+    "title": "Vercel docs",
+    "url": "https://vercel.com/docs"
+   },
+   "track": "production",
+   "depth": 5
+  },
+  {
+   "id": "hf-spaces",
+   "title": "Free demos on Hugging Face Spaces",
+   "level": 1,
+   "requires": [
+    "chat-ui",
+    "hugging-face-hub"
+   ],
+   "why": "Share a working AI demo with a link, for free.",
+   "learn": {
+    "title": "Hugging Face Spaces docs",
+    "url": "https://huggingface.co/docs/hub/spaces"
+   },
+   "track": "production",
+   "depth": 12
+  },
+  {
+   "id": "cloud-basics",
+   "title": "Cloud basics (AWS, GCP, Azure)",
+   "level": 2,
+   "requires": [
+    "linux-servers"
+   ],
+   "why": "Where real AI products run, and their free tiers.",
+   "learn": {
+    "title": "Google Cloud Skills Boost",
+    "url": "https://www.skills.google/"
+   },
+   "track": "production",
+   "depth": 2
+  },
+  {
+   "id": "model-serving",
+   "title": "Serving open models (vLLM, TGI)",
+   "level": 3,
+   "requires": [
+    "docker",
+    "gpu-basics",
+    "kv-cache"
+   ],
+   "why": "Host your own model fast enough for real users.",
+   "learn": {
+    "title": "vLLM docs",
+    "url": "https://docs.vllm.ai/"
+   },
+   "track": "production",
+   "depth": 13
+  },
+  {
+   "id": "latency-optimization",
+   "title": "Latency and cost optimization",
+   "level": 2,
+   "requires": [
+    "prompt-caching",
+    "streaming",
+    "batch-api"
+   ],
+   "why": "Pick the smallest model that passes your evals; cache everything.",
+   "learn": {
+    "title": "Claude docs: Reducing latency",
+    "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-latency"
+   },
+   "track": "production",
+   "depth": 14
+  },
+  {
+   "id": "model-routing",
+   "title": "Model routing and fallbacks",
+   "level": 3,
+   "requires": [
+    "latency-optimization",
+    "evals-basics"
+   ],
+   "why": "Cheap model for easy questions, big model for hard ones, backup when one is down.",
+   "learn": {
+    "title": "LiteLLM docs",
+    "url": "https://docs.litellm.ai/"
+   },
+   "track": "production",
+   "depth": 15
+  },
+  {
+   "id": "retries-rate-limits",
+   "title": "Retries, timeouts and rate limits",
+   "level": 2,
+   "requires": [
+    "python-errors",
+    "tokens-and-pricing"
+   ],
+   "why": "APIs fail at 2 AM; your app should not.",
+   "learn": {
+    "title": "Claude docs: Errors",
+    "url": "https://platform.claude.com/docs/en/api/errors"
+   },
+   "track": "production",
+   "depth": 11
+  },
+  {
+   "id": "observability-tracing",
+   "title": "LLM observability and tracing",
+   "level": 2,
+   "requires": [
+    "agent-loop",
+    "evals-basics"
+   ],
+   "why": "See every prompt, tool call, token and cost in production.",
+   "learn": {
+    "title": "Langfuse docs (open source)",
+    "url": "https://langfuse.com/docs"
+   },
+   "track": "production",
+   "depth": 16
+  },
+  {
+   "id": "online-evals-feedback",
+   "title": "Online evals and user feedback",
+   "level": 3,
+   "requires": [
+    "observability-tracing",
+    "llm-as-judge"
+   ],
+   "why": "Thumbs up/down and sampled grading on live traffic.",
+   "learn": {
+    "title": "Langfuse: Evaluation",
+    "url": "https://langfuse.com/docs/evaluation/overview"
+   },
+   "track": "production",
+   "depth": 17
+  },
+  {
+   "id": "ci-cd",
+   "title": "CI/CD with GitHub Actions",
+   "level": 2,
+   "requires": [
+    "github-collab",
+    "testing-pytest"
+   ],
+   "why": "Run tests and evals automatically on every push.",
+   "learn": {
+    "title": "GitHub Actions docs",
+    "url": "https://docs.github.com/en/actions"
+   },
+   "track": "production",
+   "depth": 3
+  },
+  {
+   "id": "mlops",
+   "title": "MLOps (model registry, retraining, drift)",
+   "level": 3,
+   "requires": [
+    "experiment-tracking",
+    "ci-cd",
+    "data-pipelines"
+   ],
+   "why": "Keep models accurate after launch, as the world changes.",
+   "learn": {
+    "title": "Made With ML (free MLOps course)",
+    "url": "https://madewithml.com/"
+   },
+   "track": "production",
+   "depth": 12
+  },
+  {
+   "id": "security-auth",
+   "title": "Auth, keys and abuse protection",
+   "level": 2,
+   "requires": [
+    "web-backend",
+    "env-secrets"
+   ],
+   "why": "An open AI endpoint is a credit card on the internet.",
+   "learn": {
+    "title": "OWASP API Security Top 10",
+    "url": "https://api-security.owasp.org/"
+   },
+   "track": "production",
+   "depth": 5
+  },
+  {
+   "id": "portfolio-projects",
+   "title": "Portfolio projects that get interviews",
+   "level": 2,
+   "requires": [
+    "deploy-web-app",
+    "rag-basics",
+    "evals-basics"
+   ],
+   "why": "One deployed, evaluated, written-up project beats ten tutorials.",
+   "learn": {
+    "title": "Chip Huyen: Designing ML systems (notes)",
+    "url": "https://huyenchip.com/machine-learning-systems-design/toc.html"
+   },
+   "track": "production",
+   "depth": 13
+  },
+  {
+   "id": "ml-system-design",
+   "title": "ML/AI system design interviews",
+   "level": 3,
+   "requires": [
+    "portfolio-projects",
+    "model-routing",
+    "observability-tracing"
+   ],
+   "why": "The senior interview: design a RAG/agent system end to end.",
+   "learn": {
+    "title": "Chip Huyen: AI Engineering (book site)",
+    "url": "https://huyenchip.com/books/"
+   },
+   "track": "production",
+   "depth": 17
+  }
+ ],
+ "edges": [
+  {
+   "from": "python-basics",
+   "to": "python-data-structures"
+  },
+  {
+   "from": "python-basics",
+   "to": "python-functions-modules"
+  },
+  {
+   "from": "python-functions-modules",
+   "to": "python-oop"
+  },
+  {
+   "from": "python-basics",
+   "to": "python-errors"
+  },
+  {
+   "from": "python-basics",
+   "to": "python-files-io"
+  },
+  {
+   "from": "python-functions-modules",
+   "to": "python-venv-pip"
+  },
+  {
+   "from": "python-functions-modules",
+   "to": "python-typing"
+  },
+  {
+   "from": "python-functions-modules",
+   "to": "python-async"
+  },
+  {
+   "from": "python-errors",
+   "to": "python-async"
+  },
+  {
+   "from": "command-line",
+   "to": "git-basics"
+  },
+  {
+   "from": "git-basics",
+   "to": "github-collab"
+  },
+  {
+   "from": "python-basics",
+   "to": "jupyter"
+  },
+  {
+   "from": "python-data-structures",
+   "to": "json-yaml"
+  },
+  {
+   "from": "json-yaml",
+   "to": "http-rest"
+  },
+  {
+   "from": "http-rest",
+   "to": "python-requests"
+  },
+  {
+   "from": "python-errors",
+   "to": "python-requests"
+  },
+  {
+   "from": "command-line",
+   "to": "env-secrets"
+  },
+  {
+   "from": "python-data-structures",
+   "to": "data-structures-algorithms"
+  },
+  {
+   "from": "python-functions-modules",
+   "to": "testing-pytest"
+  },
+  {
+   "from": "command-line",
+   "to": "linux-servers"
+  },
+  {
+   "from": "linux-servers",
+   "to": "docker"
+  },
+  {
+   "from": "http-rest",
+   "to": "web-backend"
+  },
+  {
+   "from": "python-typing",
+   "to": "web-backend"
+  },
+  {
+   "from": "vectors",
+   "to": "dot-product"
+  },
+  {
+   "from": "vectors",
+   "to": "matrices"
+  },
+  {
+   "from": "matrices",
+   "to": "linear-transformations"
+  },
+  {
+   "from": "linear-transformations",
+   "to": "eigen"
+  },
+  {
+   "from": "eigen",
+   "to": "svd"
+  },
+  {
+   "from": "matrices",
+   "to": "tensors"
+  },
+  {
+   "from": "functions-graphs",
+   "to": "exp-log"
+  },
+  {
+   "from": "functions-graphs",
+   "to": "derivatives"
+  },
+  {
+   "from": "derivatives",
+   "to": "chain-rule"
+  },
+  {
+   "from": "derivatives",
+   "to": "partial-derivatives-gradients"
+  },
+  {
+   "from": "vectors",
+   "to": "partial-derivatives-gradients"
+  },
+  {
+   "from": "partial-derivatives-gradients",
+   "to": "gradient-descent"
+  },
+  {
+   "from": "probability-basics",
+   "to": "conditional-probability-bayes"
+  },
+  {
+   "from": "probability-basics",
+   "to": "distributions"
+  },
+  {
+   "from": "probability-basics",
+   "to": "descriptive-stats"
+  },
+  {
+   "from": "descriptive-stats",
+   "to": "hypothesis-testing"
+  },
+  {
+   "from": "distributions",
+   "to": "hypothesis-testing"
+  },
+  {
+   "from": "distributions",
+   "to": "maximum-likelihood"
+  },
+  {
+   "from": "exp-log",
+   "to": "maximum-likelihood"
+  },
+  {
+   "from": "exp-log",
+   "to": "entropy-cross-entropy"
+  },
+  {
+   "from": "probability-basics",
+   "to": "entropy-cross-entropy"
+  },
+  {
+   "from": "entropy-cross-entropy",
+   "to": "kl-divergence"
+  },
+  {
+   "from": "gradient-descent",
+   "to": "optimization-basics"
+  },
+  {
+   "from": "python-data-structures",
+   "to": "numpy"
+  },
+  {
+   "from": "tensors",
+   "to": "numpy"
+  },
+  {
+   "from": "numpy",
+   "to": "pandas"
+  },
+  {
+   "from": "pandas",
+   "to": "data-visualization"
+  },
+  {
+   "from": "pandas",
+   "to": "data-cleaning"
+  },
+  {
+   "from": "data-visualization",
+   "to": "eda"
+  },
+  {
+   "from": "data-cleaning",
+   "to": "eda"
+  },
+  {
+   "from": "descriptive-stats",
+   "to": "eda"
+  },
+  {
+   "from": "eda",
+   "to": "feature-engineering"
+  },
+  {
+   "from": "pandas",
+   "to": "train-test-split"
+  },
+  {
+   "from": "train-test-split",
+   "to": "data-leakage"
+  },
+  {
+   "from": "pandas",
+   "to": "text-data"
+  },
+  {
+   "from": "text-data",
+   "to": "document-parsing"
+  },
+  {
+   "from": "python-files-io",
+   "to": "document-parsing"
+  },
+  {
+   "from": "python-requests",
+   "to": "web-scraping"
+  },
+  {
+   "from": "eda",
+   "to": "data-labeling"
+  },
+  {
+   "from": "data-labeling",
+   "to": "synthetic-data"
+  },
+  {
+   "from": "structured-outputs",
+   "to": "synthetic-data"
+  },
+  {
+   "from": "sql-basics",
+   "to": "data-pipelines"
+  },
+  {
+   "from": "data-cleaning",
+   "to": "data-pipelines"
+  },
+  {
+   "from": "functions-graphs",
+   "to": "what-is-ml"
+  },
+  {
+   "from": "what-is-ml",
+   "to": "supervised-learning"
+  },
+  {
+   "from": "what-is-ml",
+   "to": "unsupervised-learning"
+  },
+  {
+   "from": "supervised-learning",
+   "to": "linear-regression"
+  },
+  {
+   "from": "gradient-descent",
+   "to": "linear-regression"
+  },
+  {
+   "from": "linear-regression",
+   "to": "loss-functions"
+  },
+  {
+   "from": "linear-regression",
+   "to": "logistic-regression"
+  },
+  {
+   "from": "exp-log",
+   "to": "logistic-regression"
+  },
+  {
+   "from": "loss-functions",
+   "to": "overfitting"
+  },
+  {
+   "from": "train-test-split",
+   "to": "overfitting"
+  },
+  {
+   "from": "overfitting",
+   "to": "bias-variance"
+  },
+  {
+   "from": "bias-variance",
+   "to": "regularization"
+  },
+  {
+   "from": "logistic-regression",
+   "to": "classification-metrics"
+  },
+  {
+   "from": "classification-metrics",
+   "to": "roc-auc"
+  },
+  {
+   "from": "overfitting",
+   "to": "cross-validation"
+  },
+  {
+   "from": "cross-validation",
+   "to": "hyperparameter-tuning"
+  },
+  {
+   "from": "pandas",
+   "to": "scikit-learn"
+  },
+  {
+   "from": "supervised-learning",
+   "to": "scikit-learn"
+  },
+  {
+   "from": "supervised-learning",
+   "to": "knn"
+  },
+  {
+   "from": "dot-product",
+   "to": "knn"
+  },
+  {
+   "from": "supervised-learning",
+   "to": "decision-trees"
+  },
+  {
+   "from": "decision-trees",
+   "to": "random-forests"
+  },
+  {
+   "from": "decision-trees",
+   "to": "gradient-boosting"
+  },
+  {
+   "from": "gradient-descent",
+   "to": "gradient-boosting"
+  },
+  {
+   "from": "logistic-regression",
+   "to": "svm"
+  },
+  {
+   "from": "dot-product",
+   "to": "svm"
+  },
+  {
+   "from": "conditional-probability-bayes",
+   "to": "naive-bayes"
+  },
+  {
+   "from": "supervised-learning",
+   "to": "naive-bayes"
+  },
+  {
+   "from": "unsupervised-learning",
+   "to": "k-means"
+  },
+  {
+   "from": "dot-product",
+   "to": "k-means"
+  },
+  {
+   "from": "unsupervised-learning",
+   "to": "pca"
+  },
+  {
+   "from": "eigen",
+   "to": "pca"
+  },
+  {
+   "from": "unsupervised-learning",
+   "to": "anomaly-detection"
+  },
+  {
+   "from": "descriptive-stats",
+   "to": "anomaly-detection"
+  },
+  {
+   "from": "knn",
+   "to": "recommender-systems"
+  },
+  {
+   "from": "svd",
+   "to": "recommender-systems"
+  },
+  {
+   "from": "linear-regression",
+   "to": "time-series"
+  },
+  {
+   "from": "eda",
+   "to": "time-series"
+  },
+  {
+   "from": "logistic-regression",
+   "to": "perceptron-neuron"
+  },
+  {
+   "from": "perceptron-neuron",
+   "to": "activation-functions"
+  },
+  {
+   "from": "activation-functions",
+   "to": "mlp"
+  },
+  {
+   "from": "matrices",
+   "to": "mlp"
+  },
+  {
+   "from": "mlp",
+   "to": "backpropagation"
+  },
+  {
+   "from": "chain-rule",
+   "to": "backpropagation"
+  },
+  {
+   "from": "exp-log",
+   "to": "softmax"
+  },
+  {
+   "from": "mlp",
+   "to": "softmax"
+  },
+  {
+   "from": "numpy",
+   "to": "pytorch-basics"
+  },
+  {
+   "from": "python-oop",
+   "to": "pytorch-basics"
+  },
+  {
+   "from": "pytorch-basics",
+   "to": "training-loop"
+  },
+  {
+   "from": "backpropagation",
+   "to": "training-loop"
+  },
+  {
+   "from": "loss-functions",
+   "to": "training-loop"
+  },
+  {
+   "from": "training-loop",
+   "to": "optimizers"
+  },
+  {
+   "from": "optimizers",
+   "to": "learning-rate-schedules"
+  },
+  {
+   "from": "training-loop",
+   "to": "batching"
+  },
+  {
+   "from": "mlp",
+   "to": "normalization-layers"
+  },
+  {
+   "from": "descriptive-stats",
+   "to": "normalization-layers"
+  },
+  {
+   "from": "regularization",
+   "to": "dropout"
+  },
+  {
+   "from": "mlp",
+   "to": "dropout"
+  },
+  {
+   "from": "mlp",
+   "to": "weight-init"
+  },
+  {
+   "from": "distributions",
+   "to": "weight-init"
+  },
+  {
+   "from": "backpropagation",
+   "to": "vanishing-gradients"
+  },
+  {
+   "from": "vanishing-gradients",
+   "to": "residual-connections"
+  },
+  {
+   "from": "mlp",
+   "to": "cnn"
+  },
+  {
+   "from": "mlp",
+   "to": "rnn-lstm"
+  },
+  {
+   "from": "vanishing-gradients",
+   "to": "rnn-lstm"
+  },
+  {
+   "from": "mlp",
+   "to": "autoencoders"
+  },
+  {
+   "from": "pca",
+   "to": "autoencoders"
+  },
+  {
+   "from": "training-loop",
+   "to": "transfer-learning"
+  },
+  {
+   "from": "tensors",
+   "to": "gpu-basics"
+  },
+  {
+   "from": "pytorch-basics",
+   "to": "gpu-basics"
+  },
+  {
+   "from": "gpu-basics",
+   "to": "mixed-precision"
+  },
+  {
+   "from": "gpu-basics",
+   "to": "distributed-training"
+  },
+  {
+   "from": "training-loop",
+   "to": "distributed-training"
+  },
+  {
+   "from": "training-loop",
+   "to": "experiment-tracking"
+  },
+  {
+   "from": "text-data",
+   "to": "tokenization"
+  },
+  {
+   "from": "vectors",
+   "to": "word-embeddings"
+  },
+  {
+   "from": "dot-product",
+   "to": "word-embeddings"
+  },
+  {
+   "from": "mlp",
+   "to": "word-embeddings"
+  },
+  {
+   "from": "tokenization",
+   "to": "language-modeling"
+  },
+  {
+   "from": "softmax",
+   "to": "language-modeling"
+  },
+  {
+   "from": "entropy-cross-entropy",
+   "to": "language-modeling"
+  },
+  {
+   "from": "rnn-lstm",
+   "to": "seq2seq"
+  },
+  {
+   "from": "dot-product",
+   "to": "attention"
+  },
+  {
+   "from": "softmax",
+   "to": "attention"
+  },
+  {
+   "from": "word-embeddings",
+   "to": "attention"
+  },
+  {
+   "from": "attention",
+   "to": "self-attention-qkv"
+  },
+  {
+   "from": "matrices",
+   "to": "self-attention-qkv"
+  },
+  {
+   "from": "self-attention-qkv",
+   "to": "multi-head-attention"
+  },
+  {
+   "from": "self-attention-qkv",
+   "to": "positional-encoding"
+  },
+  {
+   "from": "multi-head-attention",
+   "to": "transformer-architecture"
+  },
+  {
+   "from": "residual-connections",
+   "to": "transformer-architecture"
+  },
+  {
+   "from": "normalization-layers",
+   "to": "transformer-architecture"
+  },
+  {
+   "from": "positional-encoding",
+   "to": "transformer-architecture"
+  },
+  {
+   "from": "transformer-architecture",
+   "to": "build-gpt-from-scratch"
+  },
+  {
+   "from": "language-modeling",
+   "to": "build-gpt-from-scratch"
+  },
+  {
+   "from": "training-loop",
+   "to": "build-gpt-from-scratch"
+  },
+  {
+   "from": "transformer-architecture",
+   "to": "encoder-vs-decoder"
+  },
+  {
+   "from": "language-modeling",
+   "to": "pretraining"
+  },
+  {
+   "from": "transformer-architecture",
+   "to": "pretraining"
+  },
+  {
+   "from": "pretraining",
+   "to": "scaling-laws"
+  },
+  {
+   "from": "pretraining",
+   "to": "instruction-tuning"
+  },
+  {
+   "from": "instruction-tuning",
+   "to": "rlhf"
+  },
+  {
+   "from": "kl-divergence",
+   "to": "rlhf"
+  },
+  {
+   "from": "rlhf",
+   "to": "constitutional-ai"
+  },
+  {
+   "from": "rlhf",
+   "to": "reasoning-models"
+  },
+  {
+   "from": "chain-of-thought",
+   "to": "reasoning-models"
+  },
+  {
+   "from": "transformer-architecture",
+   "to": "mixture-of-experts"
+  },
+  {
+   "from": "self-attention-qkv",
+   "to": "kv-cache"
+  },
+  {
+   "from": "tokenization",
+   "to": "context-window"
+  },
+  {
+   "from": "softmax",
+   "to": "sampling-temperature"
+  },
+  {
+   "from": "language-modeling",
+   "to": "sampling-temperature"
+  },
+  {
+   "from": "language-modeling",
+   "to": "hallucination"
+  },
+  {
+   "from": "pytorch-basics",
+   "to": "hugging-face-hub"
+  },
+  {
+   "from": "transformer-architecture",
+   "to": "interpretability"
+  },
+  {
+   "from": "context-window",
+   "to": "llm-landscape"
+  },
+  {
+   "from": "python-requests",
+   "to": "llm-api-basics"
+  },
+  {
+   "from": "env-secrets",
+   "to": "llm-api-basics"
+  },
+  {
+   "from": "llm-landscape",
+   "to": "llm-api-basics"
+  },
+  {
+   "from": "llm-api-basics",
+   "to": "tokens-and-pricing"
+  },
+  {
+   "from": "tokenization",
+   "to": "tokens-and-pricing"
+  },
+  {
+   "from": "llm-api-basics",
+   "to": "system-prompts"
+  },
+  {
+   "from": "system-prompts",
+   "to": "prompt-engineering"
+  },
+  {
+   "from": "prompt-engineering",
+   "to": "few-shot"
+  },
+  {
+   "from": "prompt-engineering",
+   "to": "chain-of-thought"
+  },
+  {
+   "from": "chain-of-thought",
+   "to": "extended-thinking"
+  },
+  {
+   "from": "tokens-and-pricing",
+   "to": "extended-thinking"
+  },
+  {
+   "from": "prompt-engineering",
+   "to": "structured-outputs"
+  },
+  {
+   "from": "json-yaml",
+   "to": "structured-outputs"
+  },
+  {
+   "from": "python-typing",
+   "to": "structured-outputs"
+  },
+  {
+   "from": "llm-api-basics",
+   "to": "streaming"
+  },
+  {
+   "from": "system-prompts",
+   "to": "conversation-memory"
+  },
+  {
+   "from": "context-window",
+   "to": "conversation-memory"
+  },
+  {
+   "from": "conversation-memory",
+   "to": "context-engineering"
+  },
+  {
+   "from": "prompt-engineering",
+   "to": "context-engineering"
+  },
+  {
+   "from": "tokens-and-pricing",
+   "to": "prompt-caching"
+  },
+  {
+   "from": "kv-cache",
+   "to": "prompt-caching"
+  },
+  {
+   "from": "tokens-and-pricing",
+   "to": "batch-api"
+  },
+  {
+   "from": "structured-outputs",
+   "to": "tool-use"
+  },
+  {
+   "from": "llm-api-basics",
+   "to": "vision-inputs"
+  },
+  {
+   "from": "llm-landscape",
+   "to": "local-llms"
+  },
+  {
+   "from": "command-line",
+   "to": "local-llms"
+  },
+  {
+   "from": "local-llms",
+   "to": "quantization"
+  },
+  {
+   "from": "mixed-precision",
+   "to": "quantization"
+  },
+  {
+   "from": "tool-use",
+   "to": "llm-frameworks"
+  },
+  {
+   "from": "streaming",
+   "to": "chat-ui"
+  },
+  {
+   "from": "web-frontend-basics",
+   "to": "chat-ui"
+  },
+  {
+   "from": "llm-api-basics",
+   "to": "speech-ai"
+  },
+  {
+   "from": "autoencoders",
+   "to": "image-generation"
+  },
+  {
+   "from": "distributions",
+   "to": "image-generation"
+  },
+  {
+   "from": "vision-inputs",
+   "to": "multimodal-models"
+  },
+  {
+   "from": "embeddings",
+   "to": "multimodal-models"
+  },
+  {
+   "from": "git-basics",
+   "to": "ai-coding-assistants"
+  },
+  {
+   "from": "prompt-engineering",
+   "to": "ai-coding-assistants"
+  },
+  {
+   "from": "word-embeddings",
+   "to": "embeddings"
+  },
+  {
+   "from": "llm-api-basics",
+   "to": "embeddings"
+  },
+  {
+   "from": "embeddings",
+   "to": "semantic-search"
+  },
+  {
+   "from": "dot-product",
+   "to": "semantic-search"
+  },
+  {
+   "from": "text-data",
+   "to": "keyword-search-bm25"
+  },
+  {
+   "from": "semantic-search",
+   "to": "vector-databases"
+  },
+  {
+   "from": "vector-databases",
+   "to": "ann-indexes"
+  },
+  {
+   "from": "knn",
+   "to": "ann-indexes"
+  },
+  {
+   "from": "document-parsing",
+   "to": "chunking"
+  },
+  {
+   "from": "embeddings",
+   "to": "chunking"
+  },
+  {
+   "from": "semantic-search",
+   "to": "rag-basics"
+  },
+  {
+   "from": "chunking",
+   "to": "rag-basics"
+  },
+  {
+   "from": "prompt-engineering",
+   "to": "rag-basics"
+  },
+  {
+   "from": "keyword-search-bm25",
+   "to": "hybrid-search"
+  },
+  {
+   "from": "semantic-search",
+   "to": "hybrid-search"
+  },
+  {
+   "from": "rag-basics",
+   "to": "reranking"
+  },
+  {
+   "from": "hybrid-search",
+   "to": "contextual-retrieval"
+  },
+  {
+   "from": "prompt-caching",
+   "to": "contextual-retrieval"
+  },
+  {
+   "from": "rag-basics",
+   "to": "query-rewriting"
+  },
+  {
+   "from": "rag-basics",
+   "to": "citations-grounding"
+  },
+  {
+   "from": "rag-basics",
+   "to": "rag-evaluation"
+  },
+  {
+   "from": "llm-as-judge",
+   "to": "rag-evaluation"
+  },
+  {
+   "from": "sql-basics",
+   "to": "knowledge-graphs"
+  },
+  {
+   "from": "knowledge-graphs",
+   "to": "graphrag"
+  },
+  {
+   "from": "rag-basics",
+   "to": "graphrag"
+  },
+  {
+   "from": "rag-basics",
+   "to": "agentic-rag"
+  },
+  {
+   "from": "agent-loop",
+   "to": "agentic-rag"
+  },
+  {
+   "from": "rag-basics",
+   "to": "long-context-vs-rag"
+  },
+  {
+   "from": "context-window",
+   "to": "long-context-vs-rag"
+  },
+  {
+   "from": "prompt-caching",
+   "to": "long-context-vs-rag"
+  },
+  {
+   "from": "tool-use",
+   "to": "what-is-an-agent"
+  },
+  {
+   "from": "what-is-an-agent",
+   "to": "workflow-patterns"
+  },
+  {
+   "from": "what-is-an-agent",
+   "to": "agent-loop"
+  },
+  {
+   "from": "agent-loop",
+   "to": "tool-design"
+  },
+  {
+   "from": "tool-use",
+   "to": "mcp"
+  },
+  {
+   "from": "http-rest",
+   "to": "mcp"
+  },
+  {
+   "from": "mcp",
+   "to": "build-mcp-server"
+  },
+  {
+   "from": "python-async",
+   "to": "build-mcp-server"
+  },
+  {
+   "from": "context-engineering",
+   "to": "agent-skills"
+  },
+  {
+   "from": "what-is-an-agent",
+   "to": "agent-skills"
+  },
+  {
+   "from": "agent-loop",
+   "to": "agent-memory"
+  },
+  {
+   "from": "conversation-memory",
+   "to": "agent-memory"
+  },
+  {
+   "from": "vector-databases",
+   "to": "agent-memory"
+  },
+  {
+   "from": "agent-loop",
+   "to": "planning"
+  },
+  {
+   "from": "chain-of-thought",
+   "to": "planning"
+  },
+  {
+   "from": "planning",
+   "to": "multi-agent"
+  },
+  {
+   "from": "workflow-patterns",
+   "to": "multi-agent"
+  },
+  {
+   "from": "agent-loop",
+   "to": "agent-sdks"
+  },
+  {
+   "from": "agent-sdks",
+   "to": "langgraph"
+  },
+  {
+   "from": "workflow-patterns",
+   "to": "langgraph"
+  },
+  {
+   "from": "agent-loop",
+   "to": "computer-use"
+  },
+  {
+   "from": "vision-inputs",
+   "to": "computer-use"
+  },
+  {
+   "from": "ai-coding-assistants",
+   "to": "coding-agents"
+  },
+  {
+   "from": "agent-loop",
+   "to": "coding-agents"
+  },
+  {
+   "from": "agent-loop",
+   "to": "human-in-the-loop"
+  },
+  {
+   "from": "agent-loop",
+   "to": "agent-evaluation"
+  },
+  {
+   "from": "evals-basics",
+   "to": "agent-evaluation"
+  },
+  {
+   "from": "mcp",
+   "to": "a2a"
+  },
+  {
+   "from": "multi-agent",
+   "to": "a2a"
+  },
+  {
+   "from": "rag-basics",
+   "to": "when-to-fine-tune"
+  },
+  {
+   "from": "prompt-engineering",
+   "to": "when-to-fine-tune"
+  },
+  {
+   "from": "transfer-learning",
+   "to": "when-to-fine-tune"
+  },
+  {
+   "from": "when-to-fine-tune",
+   "to": "fine-tuning-datasets"
+  },
+  {
+   "from": "data-labeling",
+   "to": "fine-tuning-datasets"
+  },
+  {
+   "from": "json-yaml",
+   "to": "fine-tuning-datasets"
+  },
+  {
+   "from": "instruction-tuning",
+   "to": "full-fine-tuning"
+  },
+  {
+   "from": "fine-tuning-datasets",
+   "to": "full-fine-tuning"
+  },
+  {
+   "from": "training-loop",
+   "to": "full-fine-tuning"
+  },
+  {
+   "from": "fine-tuning-datasets",
+   "to": "lora"
+  },
+  {
+   "from": "matrices",
+   "to": "lora"
+  },
+  {
+   "from": "lora",
+   "to": "qlora"
+  },
+  {
+   "from": "quantization",
+   "to": "qlora"
+  },
+  {
+   "from": "lora",
+   "to": "unsloth-colab"
+  },
+  {
+   "from": "jupyter",
+   "to": "unsloth-colab"
+  },
+  {
+   "from": "lora",
+   "to": "dpo"
+  },
+  {
+   "from": "rlhf",
+   "to": "dpo"
+  },
+  {
+   "from": "dpo",
+   "to": "rl-fine-tuning"
+  },
+  {
+   "from": "reasoning-models",
+   "to": "rl-fine-tuning"
+  },
+  {
+   "from": "fine-tuning-datasets",
+   "to": "distillation"
+  },
+  {
+   "from": "kl-divergence",
+   "to": "distillation"
+  },
+  {
+   "from": "embeddings",
+   "to": "embedding-fine-tuning"
+  },
+  {
+   "from": "lora",
+   "to": "embedding-fine-tuning"
+  },
+  {
+   "from": "lora",
+   "to": "model-merging"
+  },
+  {
+   "from": "testing-pytest",
+   "to": "evals-basics"
+  },
+  {
+   "from": "llm-api-basics",
+   "to": "evals-basics"
+  },
+  {
+   "from": "evals-basics",
+   "to": "golden-datasets"
+  },
+  {
+   "from": "data-labeling",
+   "to": "golden-datasets"
+  },
+  {
+   "from": "golden-datasets",
+   "to": "error-analysis"
+  },
+  {
+   "from": "evals-basics",
+   "to": "code-graded-evals"
+  },
+  {
+   "from": "structured-outputs",
+   "to": "code-graded-evals"
+  },
+  {
+   "from": "evals-basics",
+   "to": "llm-as-judge"
+  },
+  {
+   "from": "prompt-engineering",
+   "to": "llm-as-judge"
+  },
+  {
+   "from": "evals-basics",
+   "to": "benchmarks"
+  },
+  {
+   "from": "golden-datasets",
+   "to": "eval-statistics"
+  },
+  {
+   "from": "hypothesis-testing",
+   "to": "eval-statistics"
+  },
+  {
+   "from": "tool-use",
+   "to": "prompt-injection"
+  },
+  {
+   "from": "rag-basics",
+   "to": "prompt-injection"
+  },
+  {
+   "from": "prompt-injection",
+   "to": "jailbreaks-guardrails"
+  },
+  {
+   "from": "jailbreaks-guardrails",
+   "to": "red-teaming"
+  },
+  {
+   "from": "golden-datasets",
+   "to": "red-teaming"
+  },
+  {
+   "from": "llm-api-basics",
+   "to": "pii-privacy"
+  },
+  {
+   "from": "classification-metrics",
+   "to": "bias-fairness"
+  },
+  {
+   "from": "rlhf",
+   "to": "ai-safety-alignment"
+  },
+  {
+   "from": "pii-privacy",
+   "to": "ai-regulation"
+  },
+  {
+   "from": "web-backend",
+   "to": "deploy-web-app"
+  },
+  {
+   "from": "git-basics",
+   "to": "deploy-web-app"
+  },
+  {
+   "from": "chat-ui",
+   "to": "hf-spaces"
+  },
+  {
+   "from": "hugging-face-hub",
+   "to": "hf-spaces"
+  },
+  {
+   "from": "linux-servers",
+   "to": "cloud-basics"
+  },
+  {
+   "from": "docker",
+   "to": "model-serving"
+  },
+  {
+   "from": "gpu-basics",
+   "to": "model-serving"
+  },
+  {
+   "from": "kv-cache",
+   "to": "model-serving"
+  },
+  {
+   "from": "prompt-caching",
+   "to": "latency-optimization"
+  },
+  {
+   "from": "streaming",
+   "to": "latency-optimization"
+  },
+  {
+   "from": "batch-api",
+   "to": "latency-optimization"
+  },
+  {
+   "from": "latency-optimization",
+   "to": "model-routing"
+  },
+  {
+   "from": "evals-basics",
+   "to": "model-routing"
+  },
+  {
+   "from": "python-errors",
+   "to": "retries-rate-limits"
+  },
+  {
+   "from": "tokens-and-pricing",
+   "to": "retries-rate-limits"
+  },
+  {
+   "from": "agent-loop",
+   "to": "observability-tracing"
+  },
+  {
+   "from": "evals-basics",
+   "to": "observability-tracing"
+  },
+  {
+   "from": "observability-tracing",
+   "to": "online-evals-feedback"
+  },
+  {
+   "from": "llm-as-judge",
+   "to": "online-evals-feedback"
+  },
+  {
+   "from": "github-collab",
+   "to": "ci-cd"
+  },
+  {
+   "from": "testing-pytest",
+   "to": "ci-cd"
+  },
+  {
+   "from": "experiment-tracking",
+   "to": "mlops"
+  },
+  {
+   "from": "ci-cd",
+   "to": "mlops"
+  },
+  {
+   "from": "data-pipelines",
+   "to": "mlops"
+  },
+  {
+   "from": "web-backend",
+   "to": "security-auth"
+  },
+  {
+   "from": "env-secrets",
+   "to": "security-auth"
+  },
+  {
+   "from": "deploy-web-app",
+   "to": "portfolio-projects"
+  },
+  {
+   "from": "rag-basics",
+   "to": "portfolio-projects"
+  },
+  {
+   "from": "evals-basics",
+   "to": "portfolio-projects"
+  },
+  {
+   "from": "portfolio-projects",
+   "to": "ml-system-design"
+  },
+  {
+   "from": "model-routing",
+   "to": "ml-system-design"
+  },
+  {
+   "from": "observability-tracing",
+   "to": "ml-system-design"
+  }
+ ]
+}

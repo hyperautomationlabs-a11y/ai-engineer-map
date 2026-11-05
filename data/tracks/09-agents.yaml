@@ -1,0 +1,122 @@
+track: agents
+title: AI Agents
+color: "#C2410C"
+concepts:
+  - id: what-is-an-agent
+    title: What an agent is (vs a workflow)
+    level: 1
+    requires: [tool-use]
+    why: An LLM using tools in a loop until the job is done. Most tasks need less.
+    learn: { title: "Anthropic: Building effective agents", url: "https://www.anthropic.com/research/building-effective-agents" }
+
+  - id: workflow-patterns
+    title: Workflow patterns (chaining, routing, parallel)
+    level: 2
+    requires: [what-is-an-agent]
+    why: Predictable building blocks before you reach for full autonomy.
+    learn: { title: "Anthropic: Building effective agents", url: "https://www.anthropic.com/research/building-effective-agents" }
+
+  - id: agent-loop
+    title: The agent loop (ReAct)
+    level: 2
+    requires: [what-is-an-agent]
+    why: Think, act, observe, repeat. The engine of every agent.
+    learn: { title: "ReAct paper (Yao et al.)", url: "https://arxiv.org/abs/2210.03629" }
+
+  - id: tool-design
+    title: Designing good tools
+    level: 2
+    requires: [agent-loop]
+    why: Agents fail on vague tools far more than on weak models.
+    learn: { title: "Anthropic: Writing effective tools for agents", url: "https://www.anthropic.com/research/writing-tools-for-agents" }
+
+  - id: mcp
+    title: Model Context Protocol (MCP)
+    level: 2
+    requires: [tool-use, http-rest]
+    why: One standard plug to connect any AI app to any tool or data source.
+    learn: { title: "modelcontextprotocol.io", url: "https://modelcontextprotocol.io/" }
+
+  - id: build-mcp-server
+    title: Build an MCP server
+    level: 2
+    requires: [mcp, python-async]
+    why: Give Claude, ChatGPT or Cursor access to your own data in an afternoon.
+    learn: { title: "MCP: Build a server", url: "https://modelcontextprotocol.io/docs/develop/build-server" }
+
+  - id: agent-skills
+    title: Agent skills
+    level: 2
+    requires: [context-engineering, what-is-an-agent]
+    why: Package instructions and scripts an agent loads only when needed.
+    learn: { title: "Anthropic: Agent Skills", url: "https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills" }
+
+  - id: agent-memory
+    title: Agent memory
+    level: 3
+    requires: [agent-loop, conversation-memory, vector-databases]
+    why: Remember users and past work across sessions.
+    learn: { title: "Letta (MemGPT) docs", url: "https://docs.letta.com/" }
+
+  - id: planning
+    title: Planning and task decomposition
+    level: 3
+    requires: [agent-loop, chain-of-thought]
+    why: Break a big goal into steps the agent can actually finish.
+    learn: { title: "Lilian Weng: LLM Powered Autonomous Agents", url: "https://lilianweng.github.io/posts/2023-06-23-agent/" }
+
+  - id: multi-agent
+    title: Multi-agent systems
+    level: 3
+    requires: [planning, workflow-patterns]
+    why: An orchestrator plus specialist sub-agents for big, parallel jobs.
+    learn: { title: "Anthropic: How we built our multi-agent research system", url: "https://www.anthropic.com/research/multi-agent-research-system" }
+
+  - id: agent-sdks
+    title: Agent SDKs and frameworks
+    level: 2
+    requires: [agent-loop]
+    why: "Claude Agent SDK, OpenAI Agents SDK, LangGraph: don't rebuild the loop."
+    learn: { title: "Claude Agent SDK overview", url: "https://code.claude.com/docs/en/agent-sdk/overview" }
+
+  - id: langgraph
+    title: Stateful agent graphs (LangGraph)
+    level: 3
+    requires: [agent-sdks, workflow-patterns]
+    why: Explicit state machines for agents that must not go off the rails.
+    learn: { title: "LangChain Academy: Intro to LangGraph (free)", url: "https://academy.langchain.com/courses/intro-to-langgraph" }
+
+  - id: computer-use
+    title: Computer-use and browser agents
+    level: 3
+    requires: [agent-loop, vision-inputs]
+    why: Agents that click, type and browse like a person.
+    learn: { title: "Claude docs: Computer use", url: "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool" }
+
+  - id: coding-agents
+    title: Coding agents
+    level: 2
+    requires: [ai-coding-assistants, agent-loop]
+    why: Agents that read a repo, edit files, run tests and open PRs.
+    learn: { title: "Claude Code: Best practices", url: "https://code.claude.com/docs/en/best-practices" }
+
+  - id: human-in-the-loop
+    title: Human-in-the-loop and approvals
+    level: 2
+    requires: [agent-loop]
+    why: Pause before the agent sends the email or spends the money.
+    learn: { title: "LangGraph: Human-in-the-loop", url: "https://docs.langchain.com/oss/python/langgraph/interrupts" }
+
+  - id: agent-evaluation
+    title: Evaluating agents
+    level: 3
+    requires: [agent-loop, evals-basics]
+    why: Agents take many steps; you must grade the path and the result.
+    learn: { title: "Anthropic: Demystifying evals for AI agents", url: "https://www.anthropic.com/research/demystifying-evals-for-ai-agents" }
+
+  - id: a2a
+    title: Agent-to-agent protocols (A2A)
+    level: 3
+    requires: [mcp, multi-agent]
+    why: Agents from different companies talking to each other.
+    learn: { title: "A2A protocol", url: "https://a2a-protocol.org/" }

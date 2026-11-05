@@ -1,0 +1,101 @@
+track: data
+title: Working With Data
+color: "#2BB673"
+concepts:
+  - id: numpy
+    title: NumPy arrays
+    level: 1
+    requires: [python-data-structures, tensors]
+    why: The array library under pandas, scikit-learn and PyTorch.
+    learn: { title: "NumPy: absolute beginners guide", url: "https://numpy.org/doc/stable/user/absolute_beginners.html" }
+
+  - id: pandas
+    title: pandas DataFrames
+    level: 1
+    requires: [numpy]
+    why: Load, clean and inspect any table of data in a few lines.
+    learn: { title: "Kaggle Learn: Pandas", url: "https://www.kaggle.com/learn/pandas" }
+
+  - id: data-visualization
+    title: Data visualization
+    level: 1
+    requires: [pandas]
+    why: You cannot fix data you have not looked at.
+    learn: { title: "Kaggle Learn: Data Visualization", url: "https://www.kaggle.com/learn/data-visualization" }
+
+  - id: data-cleaning
+    title: Data cleaning
+    level: 1
+    requires: [pandas]
+    why: Real data is messy; garbage in, garbage out.
+    learn: { title: "Kaggle Learn: Data Cleaning", url: "https://www.kaggle.com/learn/data-cleaning" }
+
+  - id: eda
+    title: Exploratory data analysis
+    level: 2
+    requires: [data-visualization, data-cleaning, descriptive-stats]
+    why: Find the patterns and problems before you model anything.
+    learn: { title: "Python Data Science Handbook (free)", url: "https://jakevdp.github.io/PythonDataScienceHandbook/" }
+
+  - id: feature-engineering
+    title: Feature engineering
+    level: 2
+    requires: [eda]
+    why: Often beats a fancier model on tabular problems.
+    learn: { title: "Kaggle Learn: Feature Engineering", url: "https://www.kaggle.com/learn/feature-engineering" }
+
+  - id: train-test-split
+    title: Train, validation and test splits
+    level: 1
+    requires: [pandas]
+    why: The only honest way to know if a model works on new data.
+    learn: { title: "Google ML Crash Course: Datasets", url: "https://developers.google.com/machine-learning/crash-course/overfitting" }
+
+  - id: data-leakage
+    title: Data leakage
+    level: 2
+    requires: [train-test-split]
+    why: The silent bug that makes 99% accuracy fake.
+    learn: { title: "Kaggle Learn: Data Leakage", url: "https://www.kaggle.com/code/alexisbcook/data-leakage" }
+
+  - id: text-data
+    title: Working with text data
+    level: 1
+    requires: [pandas]
+    why: "LLM work is mostly text wrangling: splitting, cleaning, encoding."
+    learn: { title: "Hugging Face: Datasets library", url: "https://huggingface.co/docs/datasets/" }
+
+  - id: document-parsing
+    title: Parsing PDFs, HTML and docs
+    level: 2
+    requires: [text-data, python-files-io]
+    why: Company knowledge is stuck in PDFs; RAG starts by getting it out.
+    learn: { title: "Unstructured: open-source docs", url: "https://docs.unstructured.io/open-source/introduction/overview" }
+
+  - id: web-scraping
+    title: Web scraping
+    level: 2
+    requires: [python-requests]
+    why: Building your own dataset when none exists.
+    learn: { title: "Beautiful Soup documentation", url: "https://www.crummy.com/software/BeautifulSoup/bs4/doc/" }
+
+  - id: data-labeling
+    title: Data labeling and annotation
+    level: 2
+    requires: [eda]
+    why: Good labels beat more data; also how you build eval sets.
+    learn: { title: "Label Studio docs", url: "https://labelstud.io/guide/" }
+
+  - id: synthetic-data
+    title: Synthetic data with LLMs
+    level: 3
+    requires: [data-labeling, structured-outputs]
+    why: Generate training and test data when real data is scarce.
+    learn: { title: "Hugging Face: Synthetic data for cheaper models", url: "https://huggingface.co/blog/synthetic-data-save-costs" }
+
+  - id: data-pipelines
+    title: Data pipelines and ETL
+    level: 3
+    requires: [sql-basics, data-cleaning]
+    why: Keeps your RAG index and training data fresh automatically.
+    learn: { title: "DataTalksClub Data Engineering Zoomcamp", url: "https://github.com/DataTalksClub/data-engineering-zoomcamp" }

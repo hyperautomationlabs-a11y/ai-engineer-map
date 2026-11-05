@@ -1,0 +1,157 @@
+track: math
+title: Math for AI
+color: "#9C6ADE"
+concepts:
+  - id: vectors
+    title: Vectors
+    level: 1
+    requires: []
+    why: Every word, image and user becomes a vector inside a model.
+    learn: { title: "3Blue1Brown: Essence of Linear Algebra", url: "https://www.3blue1brown.com/topics/linear-algebra" }
+
+  - id: dot-product
+    title: Dot product and cosine similarity
+    level: 1
+    requires: [vectors]
+    why: The math behind "find similar documents" and attention.
+    learn: { title: "Khan Academy: Vector dot and cross products", url: "https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/vector-dot-product-and-vector-length" }
+
+  - id: matrices
+    title: Matrices and matrix multiplication
+    level: 1
+    requires: [vectors]
+    why: A neural network layer is a matrix multiply.
+    learn: { title: "Khan Academy: Matrices", url: "https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:matrices" }
+
+  - id: linear-transformations
+    title: Linear transformations
+    level: 2
+    requires: [matrices]
+    why: How layers stretch and rotate data into useful shapes.
+    learn: { title: "3Blue1Brown: Linear transformations", url: "https://www.3blue1brown.com/lessons/linear-transformations" }
+
+  - id: eigen
+    title: Eigenvectors and eigenvalues
+    level: 3
+    requires: [linear-transformations]
+    why: The idea under PCA and many stability tricks.
+    learn: { title: "3Blue1Brown: Eigenvectors and eigenvalues", url: "https://www.3blue1brown.com/lessons/eigenvalues" }
+
+  - id: svd
+    title: Singular value decomposition
+    level: 3
+    requires: [eigen]
+    why: Compression, recommendation and the intuition behind LoRA.
+    learn: { title: "MIT 18.06 Linear Algebra (OCW)", url: "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" }
+
+  - id: tensors
+    title: Tensors and shapes
+    level: 1
+    requires: [matrices]
+    why: 90% of deep learning bugs are shape mismatches.
+    learn: { title: "PyTorch: Tensors tutorial", url: "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html" }
+
+  - id: functions-graphs
+    title: Functions and graphs
+    level: 1
+    requires: []
+    why: A model is just a function from input to output.
+    learn: { title: "Khan Academy: Functions", url: "https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions" }
+
+  - id: exp-log
+    title: Exponents and logarithms
+    level: 1
+    requires: [functions-graphs]
+    why: Softmax, log-loss and perplexity are all exp and log.
+    learn: { title: "Khan Academy: Logarithms", url: "https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs" }
+
+  - id: derivatives
+    title: Derivatives
+    level: 1
+    requires: [functions-graphs]
+    why: How a model knows which way to nudge its weights.
+    learn: { title: "3Blue1Brown: Essence of Calculus", url: "https://www.3blue1brown.com/topics/calculus" }
+
+  - id: chain-rule
+    title: The chain rule
+    level: 2
+    requires: [derivatives]
+    why: Backpropagation is the chain rule, applied a billion times.
+    learn: { title: "Khan Academy: Chain rule", url: "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1a/v/chain-rule-introduction" }
+
+  - id: partial-derivatives-gradients
+    title: Partial derivatives and gradients
+    level: 2
+    requires: [derivatives, vectors]
+    why: The gradient tells every weight how to change at once.
+    learn: { title: "Khan Academy: Multivariable calculus", url: "https://www.khanacademy.org/math/multivariable-calculus" }
+
+  - id: gradient-descent
+    title: Gradient descent
+    level: 2
+    requires: [partial-derivatives-gradients]
+    why: The single algorithm that trains almost every AI model.
+    learn: { title: "Google ML Crash Course: Gradient descent", url: "https://developers.google.com/machine-learning/crash-course/linear-regression/gradient-descent" }
+
+  - id: probability-basics
+    title: Probability basics
+    level: 1
+    requires: []
+    why: An LLM is a machine that outputs probabilities for the next token.
+    learn: { title: "Khan Academy: Statistics and probability", url: "https://www.khanacademy.org/math/statistics-probability" }
+
+  - id: conditional-probability-bayes
+    title: Conditional probability and Bayes
+    level: 2
+    requires: [probability-basics]
+    why: "Given what I have seen, what is likely next?"
+    learn: { title: "3Blue1Brown: Bayes theorem", url: "https://www.3blue1brown.com/lessons/bayes-theorem" }
+
+  - id: distributions
+    title: Probability distributions
+    level: 2
+    requires: [probability-basics]
+    why: Sampling, temperature and noise all come from distributions.
+    learn: { title: "Seeing Theory (Brown University)", url: "https://seeing-theory.brown.edu/" }
+
+  - id: descriptive-stats
+    title: Mean, variance, standard deviation
+    level: 1
+    requires: [probability-basics]
+    why: Needed to normalize data and read any eval chart honestly.
+    learn: { title: "Khan Academy: Summarizing quantitative data", url: "https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data" }
+
+  - id: hypothesis-testing
+    title: Hypothesis tests and confidence intervals
+    level: 2
+    requires: [descriptive-stats, distributions]
+    why: Is prompt B really better than prompt A, or just lucky?
+    learn: { title: "OpenIntro Statistics (free book)", url: "https://www.openintro.org/book/os/" }
+
+  - id: maximum-likelihood
+    title: Maximum likelihood
+    level: 3
+    requires: [distributions, exp-log]
+    why: The principle behind the loss every language model minimizes.
+    learn: { title: "StatQuest: Maximum Likelihood", url: "https://www.youtube.com/watch?v=XepXtl9YKwc" }
+
+  - id: entropy-cross-entropy
+    title: Entropy and cross-entropy
+    level: 2
+    requires: [exp-log, probability-basics]
+    why: Cross-entropy is THE loss function of language models.
+    learn: { title: "Chris Olah: Visual Information Theory", url: "https://colah.github.io/posts/2015-09-Visual-Information/" }
+
+  - id: kl-divergence
+    title: KL divergence
+    level: 3
+    requires: [entropy-cross-entropy]
+    why: Keeps RLHF and distillation from drifting too far.
+    learn: { title: "Chris Olah: Visual Information Theory", url: "https://colah.github.io/posts/2015-09-Visual-Information/" }
+
+  - id: optimization-basics
+    title: Optimization and convexity
+    level: 3
+    requires: [gradient-descent]
+    why: Why some problems train easily and others get stuck.
+    learn: { title: "Stanford EE364A Convex Optimization (Boyd)", url: "https://web.stanford.edu/~boyd/cvxbook/" }

@@ -1,0 +1,80 @@
+track: fine-tuning
+title: Fine-tuning and Training
+color: "#7C3AED"
+concepts:
+  - id: when-to-fine-tune
+    title: Prompting vs RAG vs fine-tuning
+    level: 2
+    requires: [rag-basics, prompt-engineering, transfer-learning]
+    why: Most people fine-tune when they should have fixed the prompt or the data.
+    learn: { title: "OpenAI: Model optimization guide", url: "https://developers.openai.com/api/docs/guides/model-optimization" }
+
+  - id: fine-tuning-datasets
+    title: Building a fine-tuning dataset
+    level: 2
+    requires: [when-to-fine-tune, data-labeling, json-yaml]
+    why: 500 great examples beat 50,000 sloppy ones.
+    learn: { title: "Hugging Face: Chat templates", url: "https://huggingface.co/docs/transformers/main/en/chat_templating" }
+
+  - id: full-fine-tuning
+    title: Full fine-tuning
+    level: 3
+    requires: [instruction-tuning, fine-tuning-datasets, training-loop]
+    why: Update every weight. Powerful, expensive, rarely needed.
+    learn: { title: "Hugging Face TRL: SFT Trainer", url: "https://huggingface.co/docs/trl/sft_trainer" }
+
+  - id: lora
+    title: LoRA and PEFT
+    level: 2
+    requires: [fine-tuning-datasets, matrices]
+    why: Fine-tune a big model by training a tiny add-on. Fits on a free GPU.
+    learn: { title: "Hugging Face PEFT docs", url: "https://huggingface.co/docs/peft/index" }
+
+  - id: qlora
+    title: QLoRA
+    level: 3
+    requires: [lora, quantization]
+    why: "LoRA on a 4-bit model: fine-tune 7B–70B on one card."
+    learn: { title: "QLoRA paper", url: "https://arxiv.org/abs/2305.14314" }
+
+  - id: unsloth-colab
+    title: Fine-tuning on free Colab/Kaggle GPUs
+    level: 2
+    requires: [lora, jupyter]
+    why: Your first fine-tune, for $0, in an hour.
+    learn: { title: "Unsloth docs", url: "https://unsloth.ai/docs" }
+
+  - id: dpo
+    title: DPO and preference fine-tuning
+    level: 3
+    requires: [lora, rlhf]
+    why: Teach style and preferences with "better/worse" pairs, no reward model.
+    learn: { title: "Hugging Face TRL: DPO Trainer", url: "https://huggingface.co/docs/trl/dpo_trainer" }
+
+  - id: rl-fine-tuning
+    title: RL fine-tuning (GRPO) on verifiable tasks
+    level: 3
+    requires: [dpo, reasoning-models]
+    why: How small open models learn to reason on math and code.
+    learn: { title: "Hugging Face TRL: GRPO Trainer", url: "https://huggingface.co/docs/trl/grpo_trainer" }
+
+  - id: distillation
+    title: Distillation
+    level: 3
+    requires: [fine-tuning-datasets, kl-divergence]
+    why: Teach a small, cheap model to copy a big one.
+    learn: { title: "Hinton et al.: Distilling the Knowledge in a Neural Network", url: "https://arxiv.org/abs/1503.02531" }
+
+  - id: embedding-fine-tuning
+    title: Fine-tuning embedding models
+    level: 3
+    requires: [embeddings, lora]
+    why: Make search understand your domain's jargon.
+    learn: { title: "Sentence Transformers: Training overview", url: "https://sbert.net/docs/sentence_transformer/training_overview.html" }
+
+  - id: model-merging
+    title: Model merging
+    level: 3
+    requires: [lora]
+    why: Combine fine-tunes without retraining.
+    learn: { title: "mergekit", url: "https://github.com/arcee-ai/mergekit" }

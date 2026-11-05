@@ -1,0 +1,171 @@
+track: programming
+title: Programming Foundations
+color: "#4C8BF5"
+concepts:
+  - id: python-basics
+    title: Python basics
+    level: 1
+    requires: []
+    why: Almost every AI library, notebook and API example is written in Python.
+    learn: { title: "The Python Tutorial (official)", url: "https://docs.python.org/3/tutorial/" }
+
+  - id: python-data-structures
+    title: Lists, dicts, sets, tuples
+    level: 1
+    requires: [python-basics]
+    why: Every dataset, API response and prompt template is built from these.
+    learn: { title: "Python Tutorial: Data Structures", url: "https://docs.python.org/3/tutorial/datastructures.html" }
+
+  - id: python-functions-modules
+    title: Functions, modules, packages
+    level: 1
+    requires: [python-basics]
+    why: Turns notebook scribbles into reusable code you can ship.
+    learn: { title: "Python Tutorial: Modules", url: "https://docs.python.org/3/tutorial/modules.html" }
+
+  - id: python-oop
+    title: Classes and objects
+    level: 2
+    requires: [python-functions-modules]
+    why: PyTorch models, agents and SDK clients are all classes.
+    learn: { title: "Python Tutorial: Classes", url: "https://docs.python.org/3/tutorial/classes.html" }
+
+  - id: python-errors
+    title: Exceptions and error handling
+    level: 1
+    requires: [python-basics]
+    why: LLM APIs time out and rate-limit; your code has to survive it.
+    learn: { title: "Python Tutorial: Errors and Exceptions", url: "https://docs.python.org/3/tutorial/errors.html" }
+
+  - id: python-files-io
+    title: Reading and writing files
+    level: 1
+    requires: [python-basics]
+    why: Loading datasets, saving results, parsing PDFs all start here.
+    learn: { title: "Python Tutorial: Input and Output", url: "https://docs.python.org/3/tutorial/inputoutput.html" }
+
+  - id: python-venv-pip
+    title: Virtual environments and pip
+    level: 1
+    requires: [python-functions-modules]
+    why: Stops "works on my machine" before it starts.
+    learn: { title: "Python Tutorial: Virtual Environments", url: "https://docs.python.org/3/tutorial/venv.html" }
+
+  - id: python-typing
+    title: Type hints
+    level: 2
+    requires: [python-functions-modules]
+    why: Pydantic schemas and tool definitions are built on type hints.
+    learn: { title: "typing (official docs)", url: "https://docs.python.org/3/library/typing.html" }
+
+  - id: python-async
+    title: Async and concurrency
+    level: 3
+    requires: [python-functions-modules, python-errors]
+    why: Calling an LLM 1,000 times in parallel instead of one by one.
+    learn: { title: "asyncio (official docs)", url: "https://docs.python.org/3/library/asyncio.html" }
+
+  - id: command-line
+    title: The command line
+    level: 1
+    requires: []
+    why: Servers, GPUs, Claude Code and every deploy live in a terminal.
+    learn: { title: "MIT Missing Semester: The Shell", url: "https://missing.csail.mit.edu/2020/course-shell/" }
+
+  - id: git-basics
+    title: Git basics
+    level: 1
+    requires: [command-line]
+    why: Version control for code, prompts and experiments.
+    learn: { title: "Pro Git book (free)", url: "https://git-scm.com/book/en/v2" }
+
+  - id: github-collab
+    title: GitHub, branches and pull requests
+    level: 1
+    requires: [git-basics]
+    why: Your portfolio and every open-source model live on GitHub.
+    learn: { title: "GitHub Skills (free courses)", url: "https://skills.github.com/" }
+
+  - id: jupyter
+    title: Jupyter notebooks and Colab
+    level: 1
+    requires: [python-basics]
+    why: Where you explore data and run free GPU experiments.
+    learn: { title: "Google Colab intro notebook", url: "https://colab.research.google.com/notebooks/intro.ipynb" }
+
+  - id: json-yaml
+    title: JSON and YAML
+    level: 1
+    requires: [python-data-structures]
+    why: Every API request, config file and structured LLM output is JSON.
+    learn: { title: "json module (official docs)", url: "https://docs.python.org/3/library/json.html" }
+
+  - id: http-rest
+    title: HTTP and REST APIs
+    level: 1
+    requires: [json-yaml]
+    why: Every model you will ever call is behind an HTTP API.
+    learn: { title: "MDN: An overview of HTTP", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview" }
+
+  - id: python-requests
+    title: Calling APIs from Python
+    level: 1
+    requires: [http-rest, python-errors]
+    why: "The first step before any SDK: send a request, read the response."
+    learn: { title: "Requests quickstart", url: "https://requests.readthedocs.io/en/latest/user/quickstart/" }
+
+  - id: env-secrets
+    title: Environment variables and API keys
+    level: 1
+    requires: [command-line]
+    why: "Leaked API keys are the #1 beginner mistake (and bill)."
+    learn: { title: "The Twelve-Factor App: Config", url: "https://12factor.net/config" }
+
+  - id: sql-basics
+    title: SQL basics
+    level: 1
+    requires: []
+    why: Most company data lives in SQL databases, and agents query them.
+    learn: { title: "Kaggle Learn: Intro to SQL", url: "https://www.kaggle.com/learn/intro-to-sql" }
+
+  - id: data-structures-algorithms
+    title: Data structures and Big-O
+    level: 2
+    requires: [python-data-structures]
+    why: Interview staple, and why your retrieval code is slow.
+    learn: { title: "MIT 6.006 Introduction to Algorithms (OCW)", url: "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" }
+
+  - id: testing-pytest
+    title: Testing with pytest
+    level: 2
+    requires: [python-functions-modules]
+    why: Evals are tests for AI; learn normal tests first.
+    learn: { title: "pytest: Get started", url: "https://docs.pytest.org/en/stable/getting-started.html" }
+
+  - id: linux-servers
+    title: Linux servers and SSH
+    level: 2
+    requires: [command-line]
+    why: Renting a GPU means SSH-ing into a Linux box.
+    learn: { title: "DigitalOcean: SSH Essentials", url: "https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys" }
+
+  - id: docker
+    title: Docker containers
+    level: 2
+    requires: [linux-servers]
+    why: Ship your model or app the same way everywhere.
+    learn: { title: "Docker: Get started", url: "https://docs.docker.com/get-started/" }
+
+  - id: web-backend
+    title: Building an API backend (FastAPI)
+    level: 2
+    requires: [http-rest, python-typing]
+    why: Wrap your AI feature in an endpoint other apps can call.
+    learn: { title: "FastAPI tutorial", url: "https://fastapi.tiangolo.com/tutorial/" }
+
+  - id: web-frontend-basics
+    title: HTML, CSS and JavaScript basics
+    level: 1
+    requires: []
+    why: Put a face on your AI project so people can actually use it.
+    learn: { title: "MDN: Learn web development", url: "https://developer.mozilla.org/en-US/docs/Learn_web_development" }

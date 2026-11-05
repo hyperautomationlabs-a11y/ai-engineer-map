@@ -1,0 +1,101 @@
+track: production
+title: Shipping to Production
+color: "#475569"
+concepts:
+  - id: deploy-web-app
+    title: Deploying a web app
+    level: 2
+    requires: [web-backend, git-basics]
+    why: A project nobody can open is not a portfolio project.
+    learn: { title: "Vercel docs", url: "https://vercel.com/docs" }
+
+  - id: hf-spaces
+    title: Free demos on Hugging Face Spaces
+    level: 1
+    requires: [chat-ui, hugging-face-hub]
+    why: Share a working AI demo with a link, for free.
+    learn: { title: "Hugging Face Spaces docs", url: "https://huggingface.co/docs/hub/spaces" }
+
+  - id: cloud-basics
+    title: Cloud basics (AWS, GCP, Azure)
+    level: 2
+    requires: [linux-servers]
+    why: Where real AI products run, and their free tiers.
+    learn: { title: "Google Cloud Skills Boost", url: "https://www.skills.google/" }
+
+  - id: model-serving
+    title: Serving open models (vLLM, TGI)
+    level: 3
+    requires: [docker, gpu-basics, kv-cache]
+    why: Host your own model fast enough for real users.
+    learn: { title: "vLLM docs", url: "https://docs.vllm.ai/" }
+
+  - id: latency-optimization
+    title: Latency and cost optimization
+    level: 2
+    requires: [prompt-caching, streaming, batch-api]
+    why: Pick the smallest model that passes your evals; cache everything.
+    learn: { title: "Claude docs: Reducing latency", url: "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-latency" }
+
+  - id: model-routing
+    title: Model routing and fallbacks
+    level: 3
+    requires: [latency-optimization, evals-basics]
+    why: Cheap model for easy questions, big model for hard ones, backup when one is down.
+    learn: { title: "LiteLLM docs", url: "https://docs.litellm.ai/" }
+
+  - id: retries-rate-limits
+    title: Retries, timeouts and rate limits
+    level: 2
+    requires: [python-errors, tokens-and-pricing]
+    why: APIs fail at 2 AM; your app should not.
+    learn: { title: "Claude docs: Errors", url: "https://platform.claude.com/docs/en/api/errors" }
+
+  - id: observability-tracing
+    title: LLM observability and tracing
+    level: 2
+    requires: [agent-loop, evals-basics]
+    why: See every prompt, tool call, token and cost in production.
+    learn: { title: "Langfuse docs (open source)", url: "https://langfuse.com/docs" }
+
+  - id: online-evals-feedback
+    title: Online evals and user feedback
+    level: 3
+    requires: [observability-tracing, llm-as-judge]
+    why: Thumbs up/down and sampled grading on live traffic.
+    learn: { title: "Langfuse: Evaluation", url: "https://langfuse.com/docs/evaluation/overview" }
+
+  - id: ci-cd
+    title: CI/CD with GitHub Actions
+    level: 2
+    requires: [github-collab, testing-pytest]
+    why: Run tests and evals automatically on every push.
+    learn: { title: "GitHub Actions docs", url: "https://docs.github.com/en/actions" }
+
+  - id: mlops
+    title: MLOps (model registry, retraining, drift)
+    level: 3
+    requires: [experiment-tracking, ci-cd, data-pipelines]
+    why: Keep models accurate after launch, as the world changes.
+    learn: { title: "Made With ML (free MLOps course)", url: "https://madewithml.com/" }
+
+  - id: security-auth
+    title: Auth, keys and abuse protection
+    level: 2
+    requires: [web-backend, env-secrets]
+    why: An open AI endpoint is a credit card on the internet.
+    learn: { title: "OWASP API Security Top 10", url: "https://api-security.owasp.org/" }
+
+  - id: portfolio-projects
+    title: Portfolio projects that get interviews
+    level: 2
+    requires: [deploy-web-app, rag-basics, evals-basics]
+    why: One deployed, evaluated, written-up project beats ten tutorials.
+    learn: { title: "Chip Huyen: Designing ML systems (notes)", url: "https://huyenchip.com/machine-learning-systems-design/toc.html" }
+
+  - id: ml-system-design
+    title: ML/AI system design interviews
+    level: 3
+    requires: [portfolio-projects, model-routing, observability-tracing]
+    why: "The senior interview: design a RAG/agent system end to end."
+    learn: { title: "Chip Huyen: AI Engineering (book site)", url: "https://huyenchip.com/books/" }

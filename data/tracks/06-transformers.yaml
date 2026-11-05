@@ -1,0 +1,171 @@
+track: transformers
+title: NLP and Transformers
+color: "#00A6C8"
+concepts:
+  - id: tokenization
+    title: Tokenization (BPE)
+    level: 1
+    requires: [text-data]
+    why: Models read tokens, not words; it explains pricing and weird bugs.
+    learn: { title: "Karpathy: Let's build the GPT Tokenizer", url: "https://www.youtube.com/watch?v=zduSFxRajkE" }
+
+  - id: word-embeddings
+    title: Word embeddings (word2vec)
+    level: 2
+    requires: [vectors, dot-product, mlp]
+    why: "King minus man plus woman equals queen: meaning as geometry."
+    learn: { title: "Jay Alammar: The Illustrated Word2vec", url: "https://jalammar.github.io/illustrated-word2vec/" }
+
+  - id: language-modeling
+    title: Language modeling (next-token prediction)
+    level: 1
+    requires: [tokenization, softmax, entropy-cross-entropy]
+    why: The one simple task that every LLM is trained on.
+    learn: { title: "Karpathy: makemore (Zero to Hero)", url: "https://karpathy.ai/zero-to-hero.html" }
+
+  - id: seq2seq
+    title: Sequence-to-sequence models
+    level: 2
+    requires: [rnn-lstm]
+    why: "Translation-style encoder/decoder: where attention was born."
+    learn: { title: "Jay Alammar: Seq2seq with attention", url: "https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/" }
+
+  - id: attention
+    title: Attention
+    level: 2
+    requires: [dot-product, softmax, word-embeddings]
+    why: Lets every token look at every other token. The core idea of modern AI.
+    learn: { title: "3Blue1Brown: Attention in transformers", url: "https://www.3blue1brown.com/lessons/attention" }
+
+  - id: self-attention-qkv
+    title: Self-attention (queries, keys, values)
+    level: 2
+    requires: [attention, matrices]
+    why: The exact math inside every GPT, Claude and Gemini layer.
+    learn: { title: "Jay Alammar: The Illustrated Transformer", url: "https://jalammar.github.io/illustrated-transformer/" }
+
+  - id: multi-head-attention
+    title: Multi-head attention
+    level: 2
+    requires: [self-attention-qkv]
+    why: Several attention patterns in parallel, each learning a different relation.
+    learn: { title: "The Annotated Transformer (Harvard NLP)", url: "https://nlp.seas.harvard.edu/annotated-transformer/" }
+
+  - id: positional-encoding
+    title: Positional encoding (incl. RoPE)
+    level: 3
+    requires: [self-attention-qkv]
+    why: Attention has no sense of order until you add position.
+    learn: { title: "EleutherAI: Rotary embeddings", url: "https://blog.eleuther.ai/rotary-embeddings/" }
+
+  - id: transformer-architecture
+    title: The transformer block
+    level: 2
+    requires: [multi-head-attention, residual-connections, normalization-layers, positional-encoding]
+    why: Attention + MLP + residuals + norm, stacked N times. That is the whole model.
+    learn: { title: "Attention Is All You Need (paper)", url: "https://arxiv.org/abs/1706.03762" }
+
+  - id: build-gpt-from-scratch
+    title: Build a GPT from scratch
+    level: 3
+    requires: [transformer-architecture, language-modeling, training-loop]
+    why: The project that makes everything click. Do it once.
+    learn: { title: "Karpathy: Let's build GPT", url: "https://www.youtube.com/watch?v=kCc8FmEb1nY" }
+
+  - id: encoder-vs-decoder
+    title: Encoder vs decoder models (BERT vs GPT)
+    level: 2
+    requires: [transformer-architecture]
+    why: Know which family to use for search vs generation.
+    learn: { title: "Hugging Face LLM Course: How Transformers work", url: "https://huggingface.co/learn/llm-course/chapter1/4" }
+
+  - id: pretraining
+    title: Pretraining at scale
+    level: 2
+    requires: [language-modeling, transformer-architecture]
+    why: Reading the internet is where a model's knowledge comes from.
+    learn: { title: "Karpathy: Intro to Large Language Models", url: "https://www.youtube.com/watch?v=zjkBMFhNj_g" }
+
+  - id: scaling-laws
+    title: Scaling laws
+    level: 3
+    requires: [pretraining]
+    why: Why labs keep making models bigger, and when it stops paying.
+    learn: { title: "Chinchilla paper (Hoffmann et al.)", url: "https://arxiv.org/abs/2203.15556" }
+
+  - id: instruction-tuning
+    title: Instruction tuning (SFT)
+    level: 2
+    requires: [pretraining]
+    why: Turns an autocomplete engine into an assistant that follows orders.
+    learn: { title: "Hugging Face LLM Course: Fine-tuning", url: "https://huggingface.co/learn/llm-course/chapter11/1" }
+
+  - id: rlhf
+    title: RLHF and preference tuning
+    level: 3
+    requires: [instruction-tuning, kl-divergence]
+    why: How models learn to be helpful and refuse harmful requests.
+    learn: { title: "Hugging Face: Illustrating RLHF", url: "https://huggingface.co/blog/rlhf" }
+
+  - id: constitutional-ai
+    title: Constitutional AI and RLAIF
+    level: 3
+    requires: [rlhf]
+    why: Training with written principles and AI feedback instead of only human labels.
+    learn: { title: "Anthropic: Constitutional AI paper", url: "https://arxiv.org/abs/2212.08073" }
+
+  - id: reasoning-models
+    title: Reasoning models and test-time compute
+    level: 3
+    requires: [rlhf, chain-of-thought]
+    why: Models that think before answering, trained with RL on verifiable tasks.
+    learn: { title: "DeepSeek-R1 paper", url: "https://arxiv.org/abs/2501.12948" }
+
+  - id: mixture-of-experts
+    title: Mixture of experts
+    level: 3
+    requires: [transformer-architecture]
+    why: Huge models that only use a slice of their weights per token.
+    learn: { title: "Hugging Face: Mixture of Experts explained", url: "https://huggingface.co/blog/moe" }
+
+  - id: kv-cache
+    title: KV cache
+    level: 3
+    requires: [self-attention-qkv]
+    why: Why the first token is slow and the rest are fast; and why long chats cost more.
+    learn: { title: "Hugging Face: KV caching explained", url: "https://huggingface.co/blog/not-lain/kv-caching" }
+
+  - id: context-window
+    title: Context windows and long context
+    level: 1
+    requires: [tokenization]
+    why: How much a model can "see" at once, and what falls out.
+    learn: { title: "Claude docs: Context windows", url: "https://platform.claude.com/docs/en/build-with-claude/context-windows" }
+
+  - id: sampling-temperature
+    title: Sampling, temperature, top-p
+    level: 1
+    requires: [softmax, language-modeling]
+    why: The knobs between "creative" and "repeatable".
+    learn: { title: "Hugging Face: How to generate text", url: "https://huggingface.co/blog/how-to-generate" }
+
+  - id: hallucination
+    title: Why models hallucinate
+    level: 1
+    requires: [language-modeling]
+    why: Plausible is not the same as true; design around it.
+    learn: { title: "Why Language Models Hallucinate (paper)", url: "https://arxiv.org/abs/2509.04664" }
+
+  - id: hugging-face-hub
+    title: Hugging Face Hub and transformers library
+    level: 1
+    requires: [pytorch-basics]
+    why: Where open models, datasets and demos live.
+    learn: { title: "Hugging Face LLM Course", url: "https://huggingface.co/learn/llm-course/chapter1/1" }
+
+  - id: interpretability
+    title: Mechanistic interpretability
+    level: 3
+    requires: [transformer-architecture]
+    why: Looking inside the model to see what it is actually computing.
+    learn: { title: "Anthropic: Mapping the Mind of a Large Language Model", url: "https://www.anthropic.com/research/mapping-mind-language-model" }

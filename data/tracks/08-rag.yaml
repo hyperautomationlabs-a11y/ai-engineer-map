@@ -1,0 +1,122 @@
+track: rag
+title: Retrieval and RAG
+color: "#1F9E89"
+concepts:
+  - id: embeddings
+    title: Text embeddings
+    level: 1
+    requires: [word-embeddings, llm-api-basics]
+    why: Turn any text into a vector so you can search by meaning.
+    learn: { title: "Sentence Transformers docs", url: "https://sbert.net/" }
+
+  - id: semantic-search
+    title: Semantic search
+    level: 1
+    requires: [embeddings, dot-product]
+    why: Find "refund policy" when the doc says "money-back guarantee".
+    learn: { title: "Hugging Face LLM Course: Semantic search with FAISS", url: "https://huggingface.co/learn/llm-course/chapter5/6" }
+
+  - id: keyword-search-bm25
+    title: Keyword search (BM25)
+    level: 2
+    requires: [text-data]
+    why: Still beats embeddings on names, codes and exact terms.
+    learn: { title: "Elastic: Practical BM25", url: "https://www.elastic.co/blog/practical-bm25-part-2-the-bm25-algorithm-and-its-variables" }
+
+  - id: vector-databases
+    title: Vector databases
+    level: 2
+    requires: [semantic-search]
+    why: Store and search millions of embeddings in milliseconds.
+    learn: { title: "pgvector (Postgres extension)", url: "https://github.com/pgvector/pgvector" }
+
+  - id: ann-indexes
+    title: Approximate nearest neighbor (HNSW)
+    level: 3
+    requires: [vector-databases, knn]
+    why: How vector DBs stay fast at scale.
+    learn: { title: "Pinecone: HNSW explained", url: "https://www.pinecone.io/learn/series/faiss/hnsw/" }
+
+  - id: chunking
+    title: Chunking strategies
+    level: 2
+    requires: [document-parsing, embeddings]
+    why: "Bad chunks are the #1 reason RAG answers are wrong."
+    learn: { title: "Pinecone: Chunking strategies", url: "https://www.pinecone.io/learn/chunking-strategies/" }
+
+  - id: rag-basics
+    title: Retrieval-augmented generation (RAG)
+    level: 2
+    requires: [semantic-search, chunking, prompt-engineering]
+    why: Answer questions from YOUR documents instead of the model's memory.
+    learn: { title: "Original RAG paper (Lewis et al.)", url: "https://arxiv.org/abs/2005.11401" }
+
+  - id: hybrid-search
+    title: Hybrid search
+    level: 2
+    requires: [keyword-search-bm25, semantic-search]
+    why: Combine keywords and meaning for the best of both.
+    learn: { title: "Weaviate: Hybrid search explained", url: "https://weaviate.io/blog/hybrid-search-explained" }
+
+  - id: reranking
+    title: Reranking
+    level: 2
+    requires: [rag-basics]
+    why: A second pass that puts the truly relevant chunk on top.
+    learn: { title: "Sentence Transformers: Cross-encoders", url: "https://sbert.net/examples/cross_encoder/applications/README.html" }
+
+  - id: contextual-retrieval
+    title: Contextual retrieval
+    level: 3
+    requires: [hybrid-search, prompt-caching]
+    why: Add context to each chunk before embedding; big drop in failed retrievals.
+    learn: { title: "Anthropic: Introducing Contextual Retrieval", url: "https://www.anthropic.com/research/contextual-retrieval" }
+
+  - id: query-rewriting
+    title: Query rewriting and HyDE
+    level: 3
+    requires: [rag-basics]
+    why: Users ask badly; rewrite the question before you search.
+    learn: { title: "HyDE paper", url: "https://arxiv.org/abs/2212.10496" }
+
+  - id: citations-grounding
+    title: Citations and grounding
+    level: 2
+    requires: [rag-basics]
+    why: Show the source so users can check, and hallucinations drop.
+    learn: { title: "Claude docs: Citations", url: "https://platform.claude.com/docs/en/build-with-claude/citations" }
+
+  - id: rag-evaluation
+    title: Evaluating RAG
+    level: 3
+    requires: [rag-basics, llm-as-judge]
+    why: Measure retrieval and answer quality separately or you will fix the wrong thing.
+    learn: { title: "Ragas docs", url: "https://docs.ragas.io/" }
+
+  - id: knowledge-graphs
+    title: Knowledge graphs
+    level: 2
+    requires: [sql-basics]
+    why: "Entities and relationships: the structure that plain text search misses."
+    learn: { title: "Neo4j GraphAcademy (free)", url: "https://graphacademy.neo4j.com/" }
+
+  - id: graphrag
+    title: GraphRAG
+    level: 3
+    requires: [knowledge-graphs, rag-basics]
+    why: Answer "what are the main themes?" questions that chunk search cannot.
+    learn: { title: "Microsoft GraphRAG", url: "https://microsoft.github.io/graphrag/" }
+
+  - id: agentic-rag
+    title: Agentic RAG
+    level: 3
+    requires: [rag-basics, agent-loop]
+    why: Let the model decide what to search, and search again if needed.
+    learn: { title: "Hugging Face Agents Course: Agentic RAG", url: "https://huggingface.co/learn/agents-course/unit2/smolagents/retrieval_agents" }
+
+  - id: long-context-vs-rag
+    title: Long context vs RAG
+    level: 2
+    requires: [rag-basics, context-window, prompt-caching]
+    why: Sometimes you should just paste the whole document in.
+    learn: { title: "Claude docs: Long context tips", url: "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/long-context-tips" }

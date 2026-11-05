@@ -1,0 +1,164 @@
+track: deep-learning
+title: Deep Learning
+color: "#E8505B"
+concepts:
+  - id: perceptron-neuron
+    title: The artificial neuron
+    level: 1
+    requires: [logistic-regression]
+    why: "Weighted sum plus activation: the Lego brick of all networks."
+    learn: { title: "3Blue1Brown: But what is a neural network?", url: "https://www.3blue1brown.com/lessons/neural-networks" }
+
+  - id: activation-functions
+    title: Activation functions (ReLU, GELU, sigmoid)
+    level: 1
+    requires: [perceptron-neuron]
+    why: Without them a 100-layer network is just one linear layer.
+    learn: { title: "Dive into Deep Learning: MLPs", url: "https://d2l.ai/chapter_multilayer-perceptrons/mlp.html" }
+
+  - id: mlp
+    title: Multi-layer perceptrons
+    level: 1
+    requires: [activation-functions, matrices]
+    why: Stacked layers that can approximate almost any function.
+    learn: { title: "Dive into Deep Learning: MLPs", url: "https://d2l.ai/chapter_multilayer-perceptrons/index.html" }
+
+  - id: backpropagation
+    title: Backpropagation
+    level: 2
+    requires: [mlp, chain-rule]
+    why: How every weight learns its share of the blame.
+    learn: { title: "Karpathy: micrograd (Zero to Hero #1)", url: "https://karpathy.ai/zero-to-hero.html" }
+
+  - id: softmax
+    title: Softmax
+    level: 1
+    requires: [exp-log, mlp]
+    why: Turns raw scores into probabilities; picks the next token.
+    learn: { title: "Dive into Deep Learning: Softmax regression", url: "https://d2l.ai/chapter_linear-classification/softmax-regression.html" }
+
+  - id: pytorch-basics
+    title: PyTorch basics
+    level: 1
+    requires: [numpy, python-oop]
+    why: The framework almost all modern AI research and open models use.
+    learn: { title: "PyTorch: Learn the Basics", url: "https://docs.pytorch.org/tutorials/beginner/basics/intro.html" }
+
+  - id: training-loop
+    title: The training loop
+    level: 2
+    requires: [pytorch-basics, backpropagation, loss-functions]
+    why: "Forward, loss, backward, step: the four lines that train everything."
+    learn: { title: "PyTorch: Optimizing model parameters", url: "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html" }
+
+  - id: optimizers
+    title: Optimizers (SGD, Adam, AdamW)
+    level: 2
+    requires: [training-loop]
+    why: Smarter ways to walk downhill than plain gradient descent.
+    learn: { title: "Dive into Deep Learning: Optimization", url: "https://d2l.ai/chapter_optimization/index.html" }
+
+  - id: learning-rate-schedules
+    title: Learning rates and schedules
+    level: 2
+    requires: [optimizers]
+    why: The most important hyperparameter in deep learning.
+    learn: { title: "Dive into Deep Learning: LR scheduling", url: "https://d2l.ai/chapter_optimization/lr-scheduler.html" }
+
+  - id: batching
+    title: Batches, epochs and data loaders
+    level: 1
+    requires: [training-loop]
+    why: How to feed data that does not fit in memory.
+    learn: { title: "PyTorch: Datasets and DataLoaders", url: "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html" }
+
+  - id: normalization-layers
+    title: BatchNorm and LayerNorm
+    level: 2
+    requires: [mlp, descriptive-stats]
+    why: Keeps deep networks trainable; LayerNorm is in every transformer.
+    learn: { title: "Dive into Deep Learning: Batch normalization", url: "https://d2l.ai/chapter_convolutional-modern/batch-norm.html" }
+
+  - id: dropout
+    title: Dropout
+    level: 2
+    requires: [regularization, mlp]
+    why: Randomly switch neurons off so the network cannot memorize.
+    learn: { title: "Dive into Deep Learning: Dropout", url: "https://d2l.ai/chapter_multilayer-perceptrons/dropout.html" }
+
+  - id: weight-init
+    title: Weight initialization
+    level: 3
+    requires: [mlp, distributions]
+    why: Bad starting weights mean a network that never learns.
+    learn: { title: "Dive into Deep Learning: Numerical stability", url: "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html" }
+
+  - id: vanishing-gradients
+    title: Vanishing and exploding gradients
+    level: 2
+    requires: [backpropagation]
+    why: Why deep networks were hard to train until ~2015.
+    learn: { title: "Dive into Deep Learning: Numerical stability", url: "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html" }
+
+  - id: residual-connections
+    title: Residual connections
+    level: 2
+    requires: [vanishing-gradients]
+    why: The shortcut that lets transformers be 100+ layers deep.
+    learn: { title: "Dive into Deep Learning: ResNet", url: "https://d2l.ai/chapter_convolutional-modern/resnet.html" }
+
+  - id: cnn
+    title: Convolutional neural networks
+    level: 2
+    requires: [mlp]
+    why: The architecture that made computers see.
+    learn: { title: "Stanford CS231n notes", url: "https://cs231n.github.io/convolutional-networks/" }
+
+  - id: rnn-lstm
+    title: RNNs and LSTMs
+    level: 2
+    requires: [mlp, vanishing-gradients]
+    why: Sequence models before transformers; explains why attention won.
+    learn: { title: "Chris Olah: Understanding LSTMs", url: "https://colah.github.io/posts/2015-08-Understanding-LSTMs/" }
+
+  - id: autoencoders
+    title: Autoencoders
+    level: 3
+    requires: [mlp, pca]
+    why: Compress-then-rebuild; the idea under latent diffusion.
+    learn: { title: "Dive into Deep Learning (free book)", url: "https://d2l.ai/" }
+
+  - id: transfer-learning
+    title: Transfer learning
+    level: 2
+    requires: [training-loop]
+    why: Reuse a model trained on billions of examples for your small task.
+    learn: { title: "fast.ai: Practical Deep Learning for Coders", url: "https://course.fast.ai/" }
+
+  - id: gpu-basics
+    title: GPUs and CUDA basics
+    level: 2
+    requires: [tensors, pytorch-basics]
+    why: Why AI runs on NVIDIA, and how to not run out of VRAM.
+    learn: { title: "PyTorch: CUDA semantics", url: "https://docs.pytorch.org/docs/stable/notes/cuda.html" }
+
+  - id: mixed-precision
+    title: Mixed precision (fp16, bf16)
+    level: 3
+    requires: [gpu-basics]
+    why: Train twice as fast in half the memory.
+    learn: { title: "PyTorch: Automatic mixed precision", url: "https://docs.pytorch.org/tutorials/recipes/recipes/amp_recipe.html" }
+
+  - id: distributed-training
+    title: Distributed training (DDP, FSDP)
+    level: 3
+    requires: [gpu-basics, training-loop]
+    why: How models too big for one GPU get trained.
+    learn: { title: "PyTorch: Distributed overview", url: "https://docs.pytorch.org/tutorials/beginner/dist_overview.html" }
+
+  - id: experiment-tracking
+    title: Experiment tracking
+    level: 2
+    requires: [training-loop]
+    why: Know which run, data and settings produced your best model.
+    learn: { title: "MLflow Tracking docs", url: "https://mlflow.org/docs/latest/ml/tracking/" }

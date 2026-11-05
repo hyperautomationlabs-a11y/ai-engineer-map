@@ -1,0 +1,171 @@
+track: llm-apps
+title: Building With LLMs
+color: "#D97757"
+concepts:
+  - id: llm-landscape
+    title: The model landscape (closed vs open)
+    level: 1
+    requires: [context-window]
+    why: "Claude, GPT, Gemini, Llama, Qwen, DeepSeek: pick by task, cost and privacy."
+    learn: { title: "Artificial Analysis: model comparison", url: "https://artificialanalysis.ai/" }
+
+  - id: llm-api-basics
+    title: Calling an LLM API
+    level: 1
+    requires: [python-requests, env-secrets, llm-landscape]
+    why: Messages in, text out. Your first AI feature is 10 lines.
+    learn: { title: "Claude docs: Get started", url: "https://platform.claude.com/docs/en/get-started" }
+
+  - id: tokens-and-pricing
+    title: Tokens, pricing and rate limits
+    level: 1
+    requires: [llm-api-basics, tokenization]
+    why: The difference between a $5 and a $5,000 monthly bill.
+    learn: { title: "Claude docs: Pricing", url: "https://platform.claude.com/docs/en/about-claude/pricing" }
+
+  - id: system-prompts
+    title: System prompts and roles
+    level: 1
+    requires: [llm-api-basics]
+    why: Set who the model is and what rules it follows.
+    learn: { title: "Claude docs: System prompts", url: "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/system-prompts" }
+
+  - id: prompt-engineering
+    title: Prompt engineering fundamentals
+    level: 1
+    requires: [system-prompts]
+    why: Clear instructions, context and examples beat clever tricks.
+    learn: { title: "Anthropic: Interactive prompt engineering tutorial", url: "https://github.com/anthropics/prompt-eng-interactive-tutorial" }
+
+  - id: few-shot
+    title: Few-shot examples
+    level: 1
+    requires: [prompt-engineering]
+    why: "Show, don't tell: 3 examples beat 3 paragraphs."
+    learn: { title: "Claude docs: Use examples", url: "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/multishot-prompting" }
+
+  - id: chain-of-thought
+    title: Chain-of-thought prompting
+    level: 1
+    requires: [prompt-engineering]
+    why: Letting the model think step by step improves hard answers.
+    learn: { title: "Chain-of-Thought paper (Wei et al.)", url: "https://arxiv.org/abs/2201.11903" }
+
+  - id: extended-thinking
+    title: Extended thinking / reasoning modes
+    level: 2
+    requires: [chain-of-thought, tokens-and-pricing]
+    why: When to pay for more thinking, and when it is waste.
+    learn: { title: "Claude docs: Extended thinking", url: "https://platform.claude.com/docs/en/build-with-claude/extended-thinking" }
+
+  - id: structured-outputs
+    title: Structured outputs (JSON)
+    level: 2
+    requires: [prompt-engineering, json-yaml, python-typing]
+    why: Turn free text into data your code can trust.
+    learn: { title: "Pydantic docs", url: "https://docs.pydantic.dev/latest/" }
+
+  - id: streaming
+    title: Streaming responses
+    level: 2
+    requires: [llm-api-basics]
+    why: Show words as they arrive so the app feels instant.
+    learn: { title: "Claude docs: Streaming", url: "https://platform.claude.com/docs/en/build-with-claude/streaming" }
+
+  - id: conversation-memory
+    title: Conversation history and memory
+    level: 2
+    requires: [system-prompts, context-window]
+    why: LLMs are stateless; you decide what they remember.
+    learn: { title: "Claude docs: Messages API", url: "https://platform.claude.com/docs/en/api/messages" }
+
+  - id: context-engineering
+    title: Context engineering
+    level: 2
+    requires: [conversation-memory, prompt-engineering]
+    why: What goes into the window matters more than the prompt wording.
+    learn: { title: "Anthropic: Effective context engineering for AI agents", url: "https://www.anthropic.com/research/effective-context-engineering-for-ai-agents" }
+
+  - id: prompt-caching
+    title: Prompt caching
+    level: 2
+    requires: [tokens-and-pricing, kv-cache]
+    why: Cut cost and latency up to 90% on repeated context.
+    learn: { title: "Claude docs: Prompt caching", url: "https://platform.claude.com/docs/en/build-with-claude/prompt-caching" }
+
+  - id: batch-api
+    title: Batch processing
+    level: 2
+    requires: [tokens-and-pricing]
+    why: Half price for jobs that can wait a few hours.
+    learn: { title: "Claude docs: Batch processing", url: "https://platform.claude.com/docs/en/build-with-claude/batch-processing" }
+
+  - id: tool-use
+    title: Tool use / function calling
+    level: 2
+    requires: [structured-outputs]
+    why: The model decides to call your code. The bridge from chatbot to agent.
+    learn: { title: "Claude docs: Tool use", url: "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview" }
+
+  - id: vision-inputs
+    title: Images and PDFs as input
+    level: 2
+    requires: [llm-api-basics]
+    why: Read receipts, charts, screenshots and scanned documents.
+    learn: { title: "Claude docs: Vision", url: "https://platform.claude.com/docs/en/build-with-claude/vision" }
+
+  - id: local-llms
+    title: Running models locally (Ollama, llama.cpp)
+    level: 2
+    requires: [llm-landscape, command-line]
+    why: Free, private, offline AI on your own laptop.
+    learn: { title: "Ollama", url: "https://github.com/ollama/ollama" }
+
+  - id: quantization
+    title: Quantization (8-bit, 4-bit, GGUF)
+    level: 3
+    requires: [local-llms, mixed-precision]
+    why: Fit a 70B model on a gaming GPU.
+    learn: { title: "Hugging Face: Quantization overview", url: "https://huggingface.co/docs/transformers/main/en/quantization/overview" }
+
+  - id: llm-frameworks
+    title: LLM frameworks (LangChain, LlamaIndex)
+    level: 2
+    requires: [tool-use]
+    why: Ready-made pieces; know when they help and when to write it yourself.
+    learn: { title: "LangChain docs", url: "https://docs.langchain.com/" }
+
+  - id: chat-ui
+    title: Building a chat UI
+    level: 2
+    requires: [streaming, web-frontend-basics]
+    why: Ship something people can click on, not just a script.
+    learn: { title: "Gradio quickstart", url: "https://www.gradio.app/guides/quickstart" }
+
+  - id: speech-ai
+    title: Speech-to-text and text-to-speech
+    level: 2
+    requires: [llm-api-basics]
+    why: Voice agents, transcription and narration.
+    learn: { title: "OpenAI Whisper (open source)", url: "https://github.com/openai/whisper" }
+
+  - id: image-generation
+    title: Image generation (diffusion)
+    level: 3
+    requires: [autoencoders, distributions]
+    why: How text becomes pictures; Stable Diffusion, Imagen, gpt-image.
+    learn: { title: "Hugging Face Diffusion Models Course", url: "https://huggingface.co/learn/diffusion-course/unit0/1" }
+
+  - id: multimodal-models
+    title: Multimodal models (CLIP and beyond)
+    level: 3
+    requires: [vision-inputs, embeddings]
+    why: One model that understands text, images and audio together.
+    learn: { title: "OpenAI CLIP paper", url: "https://arxiv.org/abs/2103.00020" }
+
+  - id: ai-coding-assistants
+    title: AI coding assistants (Claude Code, Codex, Cursor)
+    level: 1
+    requires: [git-basics, prompt-engineering]
+    why: The fastest way to build everything else on this map.
+    learn: { title: "Claude Code docs", url: "https://code.claude.com/docs/en/overview" }

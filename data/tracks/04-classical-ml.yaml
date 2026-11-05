@@ -1,0 +1,178 @@
+track: classical-ml
+title: Classical Machine Learning
+color: "#F5A623"
+concepts:
+  - id: what-is-ml
+    title: What machine learning is
+    level: 1
+    requires: [functions-graphs]
+    why: Learning patterns from examples instead of writing rules.
+    learn: { title: "Google ML Crash Course", url: "https://developers.google.com/machine-learning/crash-course" }
+
+  - id: supervised-learning
+    title: Supervised learning
+    level: 1
+    requires: [what-is-ml]
+    why: Inputs plus correct answers in, a predictor out.
+    learn: { title: "Andrew Ng: Machine Learning Specialization (audit free)", url: "https://www.coursera.org/specializations/machine-learning-introduction" }
+
+  - id: unsupervised-learning
+    title: Unsupervised learning
+    level: 2
+    requires: [what-is-ml]
+    why: "Finding structure with no labels: clusters, topics, anomalies."
+    learn: { title: "scikit-learn: Unsupervised learning", url: "https://scikit-learn.org/stable/unsupervised_learning.html" }
+
+  - id: linear-regression
+    title: Linear regression
+    level: 1
+    requires: [supervised-learning, gradient-descent]
+    why: The "hello world" model; a neuron is linear regression plus a twist.
+    learn: { title: "Google MLCC: Linear regression", url: "https://developers.google.com/machine-learning/crash-course/linear-regression" }
+
+  - id: loss-functions
+    title: Loss functions
+    level: 1
+    requires: [linear-regression]
+    why: The number training is trying to push down.
+    learn: { title: "Google MLCC: Loss", url: "https://developers.google.com/machine-learning/crash-course/linear-regression/loss" }
+
+  - id: logistic-regression
+    title: Logistic regression and classification
+    level: 2
+    requires: [linear-regression, exp-log]
+    why: Yes/no predictions, and the sigmoid every network uses.
+    learn: { title: "Google MLCC: Logistic regression", url: "https://developers.google.com/machine-learning/crash-course/logistic-regression" }
+
+  - id: overfitting
+    title: Overfitting and underfitting
+    level: 1
+    requires: [loss-functions, train-test-split]
+    why: Memorizing the training set is not learning.
+    learn: { title: "Google MLCC: Overfitting", url: "https://developers.google.com/machine-learning/crash-course/overfitting" }
+
+  - id: bias-variance
+    title: Bias-variance tradeoff
+    level: 2
+    requires: [overfitting]
+    why: The mental model for "more data, or bigger model?"
+    learn: { title: "StatQuest: Bias and Variance", url: "https://www.youtube.com/watch?v=EuBBz3bI-aA" }
+
+  - id: regularization
+    title: Regularization (L1, L2)
+    level: 2
+    requires: [bias-variance]
+    why: The standard cure for overfitting.
+    learn: { title: "Google MLCC: Regularization", url: "https://developers.google.com/machine-learning/crash-course/overfitting/regularization" }
+
+  - id: classification-metrics
+    title: Accuracy, precision, recall, F1
+    level: 1
+    requires: [logistic-regression]
+    why: 99% accuracy can still be useless; know which number matters.
+    learn: { title: "Google MLCC: Classification metrics", url: "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall" }
+
+  - id: roc-auc
+    title: ROC curves and AUC
+    level: 2
+    requires: [classification-metrics]
+    why: Compare classifiers across every threshold at once.
+    learn: { title: "Google MLCC: ROC and AUC", url: "https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc" }
+
+  - id: cross-validation
+    title: Cross-validation
+    level: 2
+    requires: [overfitting]
+    why: Reliable scores on small datasets.
+    learn: { title: "scikit-learn: Cross-validation", url: "https://scikit-learn.org/stable/modules/cross_validation.html" }
+
+  - id: hyperparameter-tuning
+    title: Hyperparameter tuning
+    level: 2
+    requires: [cross-validation]
+    why: "Learning rate, depth, batch size: knobs that make or break models."
+    learn: { title: "scikit-learn: Tuning hyperparameters", url: "https://scikit-learn.org/stable/modules/grid_search.html" }
+
+  - id: scikit-learn
+    title: scikit-learn workflow
+    level: 1
+    requires: [pandas, supervised-learning]
+    why: "Fit, predict, score: the standard API for classical ML."
+    learn: { title: "Kaggle Learn: Intro to Machine Learning", url: "https://www.kaggle.com/learn/intro-to-machine-learning" }
+
+  - id: knn
+    title: k-nearest neighbors
+    level: 1
+    requires: [supervised-learning, dot-product]
+    why: "The ancestor of vector search: similar inputs, similar outputs."
+    learn: { title: "scikit-learn: Nearest Neighbors", url: "https://scikit-learn.org/stable/modules/neighbors.html" }
+
+  - id: decision-trees
+    title: Decision trees
+    level: 1
+    requires: [supervised-learning]
+    why: Readable models made of if/else splits.
+    learn: { title: "StatQuest: Decision Trees", url: "https://www.youtube.com/watch?v=_L39rN6gz7Y" }
+
+  - id: random-forests
+    title: Random forests
+    level: 2
+    requires: [decision-trees]
+    why: Many trees voting; a robust default for tabular data.
+    learn: { title: "Kaggle Learn: Random Forests", url: "https://www.kaggle.com/code/dansbecker/random-forests" }
+
+  - id: gradient-boosting
+    title: Gradient boosting (XGBoost, LightGBM)
+    level: 2
+    requires: [decision-trees, gradient-descent]
+    why: Still wins most tabular competitions and business problems.
+    learn: { title: "Kaggle Learn: XGBoost", url: "https://www.kaggle.com/code/alexisbcook/xgboost" }
+
+  - id: svm
+    title: Support vector machines
+    level: 3
+    requires: [logistic-regression, dot-product]
+    why: Classic margin-based classifier; shows up in interviews.
+    learn: { title: "scikit-learn: SVM", url: "https://scikit-learn.org/stable/modules/svm.html" }
+
+  - id: naive-bayes
+    title: Naive Bayes
+    level: 2
+    requires: [conditional-probability-bayes, supervised-learning]
+    why: Fast text classifier; spam filters ran on it.
+    learn: { title: "scikit-learn: Naive Bayes", url: "https://scikit-learn.org/stable/modules/naive_bayes.html" }
+
+  - id: k-means
+    title: k-means clustering
+    level: 1
+    requires: [unsupervised-learning, dot-product]
+    why: Group similar items; used to explore embeddings.
+    learn: { title: "scikit-learn: Clustering", url: "https://scikit-learn.org/stable/modules/clustering.html" }
+
+  - id: pca
+    title: PCA and dimensionality reduction
+    level: 2
+    requires: [unsupervised-learning, eigen]
+    why: Squash 1,536-dimension embeddings to 2D so you can see them.
+    learn: { title: "StatQuest: PCA", url: "https://www.youtube.com/watch?v=FgakZw6K1QQ" }
+
+  - id: anomaly-detection
+    title: Anomaly detection
+    level: 3
+    requires: [unsupervised-learning, descriptive-stats]
+    why: "Fraud, outages, bad data: find the weird ones."
+    learn: { title: "scikit-learn: Outlier detection", url: "https://scikit-learn.org/stable/modules/outlier_detection.html" }
+
+  - id: recommender-systems
+    title: Recommender systems
+    level: 3
+    requires: [knn, svd]
+    why: The AI that runs YouTube, Netflix and Amazon.
+    learn: { title: "Google: Recommendation Systems course", url: "https://developers.google.com/machine-learning/recommendation" }
+
+  - id: time-series
+    title: Time series forecasting
+    level: 3
+    requires: [linear-regression, eda]
+    why: Sales, traffic, stock and sensor prediction.
+    learn: { title: "Kaggle Learn: Time Series", url: "https://www.kaggle.com/learn/time-series" }
